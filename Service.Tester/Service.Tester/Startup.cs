@@ -16,8 +16,8 @@ namespace Service.Tester
 
         public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
+            
             var serverAddressesFeature = app.ServerFeatures.Get<IServerAddressesFeature>();
-
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
