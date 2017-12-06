@@ -1,9 +1,6 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Net;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Razor.Language;
 using Microsoft.Extensions.Configuration;
 
 namespace Service.Tester
@@ -17,23 +14,14 @@ namespace Service.Tester
             BuildWebHost(args).Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args)
+        private static IWebHost BuildWebHost(string[] args)
         {
-            var builder = new ConfigurationBuilder()
-                  .SetBasePath(Directory.GetCurrentDirectory())
-                  .AddJsonFile("appsettings.json");
-            Configuration = builder.Build();
-
-            return WebHost.CreateDefaultBuilder(args)
-
+            return new WebHostBuilder()
                 .UseStartup<Startup>()
+                .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseKestrel(options =>
                 {
                     options.Listen(IPAddress.Loopback, 5000);
-                    //options.Listen(IPAddress.Loopback, 5001, listenOptions =>
-                    //{
-                    //    listenOptions.UseHttps("testCert.pfx", "testPassword");
-                    //});
                 })
                 .Build();
         }

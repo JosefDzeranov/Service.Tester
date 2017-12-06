@@ -1,46 +1,42 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting.Server.Features;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Service.Tester
 {
     public class Startup
     {
+        public Startup(IHostingEnvironment environment)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(environment.ContentRootPath)
+                .AddJsonFile("appsettings.json");
+
+            Configuration = builder.Build();
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(Configuration)
+                .CreateLogger();
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
         }
 
+        public static IConfiguration Configuration;
+
         public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
-            
-            var serverAddressesFeature = app.ServerFeatures.Get<IServerAddressesFeature>();
             app.UseStaticFiles();
+            loggerFactory.AddSerilog();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-            });
-
-            app.Run(async (context) =>
-            {
-                context.Response.ContentType = "text/html";
-                await context.Response
-                    .WriteAsync("<p>Hosted by Kestrel</p>");
-
-                if (serverAddressesFeature != null)
-                {
-                    await context.Response
-                        .WriteAsync("<p>Listening on the following addresses: " +
-                                    string.Join(", ", serverAddressesFeature.Addresses) +
-                                    "</p>");
-                }
-
-                await context.Response.WriteAsync($"<p>Request URL: {context.Request.GetDisplayUrl()}<p>");
             });
         }
     }

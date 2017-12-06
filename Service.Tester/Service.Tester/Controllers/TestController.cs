@@ -4,9 +4,9 @@ namespace Service.Tester.Controllers
 {
     public class TestController : Controller
     {
-        public string Get()
+        public IActionResult Get()
         {
-            return "Yes!!!";
+            return Ok("Yes!!!");
         }
     }
 }
