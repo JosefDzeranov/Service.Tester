@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
+using Service.Compilation.Interfaces;
+using Service.Compilation.Roslyn;
 
 namespace Service.Tester
 {
@@ -24,7 +26,7 @@ namespace Service.Tester
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddSingleton<ICompiler, RoslynCompiler>();
         }
 
         public static IConfiguration Configuration;
