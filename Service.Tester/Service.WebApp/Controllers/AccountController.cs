@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Service.Domain.Entities;
 using Service.WebApp.Models;
 using Service.WebApp.Models.AccountViewModels;
 using Service.WebApp.Services;

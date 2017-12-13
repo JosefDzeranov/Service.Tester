@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Service.Domain.Entities;
 using Service.WebApp.Models;
 using Service.WebApp.Models.ManageViewModels;
 using Service.WebApp.Services;
