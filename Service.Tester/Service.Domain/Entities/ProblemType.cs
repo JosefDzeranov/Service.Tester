@@ -6,10 +6,8 @@ namespace Service.Domain.Entities
     /// <summary>
     /// Тип задания
     /// </summary>
-    public class ProblemType
+    internal class ProblemType : EntityModel
     {
-        public Guid Id { get; set; }
-
         /// <summary>
         /// Имя типа задания
         /// </summary>

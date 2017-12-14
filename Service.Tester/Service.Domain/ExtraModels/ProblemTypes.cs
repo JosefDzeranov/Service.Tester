@@ -1,7 +1,7 @@
 ﻿namespace Service.Domain.ExtraModels
 {
     /// <summary>
-    /// Все типы задания
+    /// Перечисление всех типов задания
     /// </summary>
     public enum ProblemTypes
     {
