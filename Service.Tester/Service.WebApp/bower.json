@@ -1,0 +1,7 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "Sortable": "sortablejs#1.6.0"
+  }
+}

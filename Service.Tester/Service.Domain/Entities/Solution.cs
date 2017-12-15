@@ -17,7 +17,7 @@ namespace Service.Domain.Entities
         /// Отправитель решения
         /// </summary>
         public Guid UserId { get; set; }
-        public User User { get; set; }
+        //public User User { get; set; }
 
         /// <summary>
         /// На каком языке программирования решение 

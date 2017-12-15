@@ -14,6 +14,7 @@ using Service.Domain.Entities;
 using Service.WebApp.Models;
 using Service.WebApp.Models.AccountViewModels;
 using Service.WebApp.Services;
+using User = Service.WebApp.Models.User;
 
 namespace Service.WebApp.Controllers
 {
