@@ -6,11 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Service.Domain.Context;
 using Service.Domain.Entities;
-using Service.WebApp.Data;
-using Service.WebApp.Models;
 using Service.WebApp.Services;
-using ApplicationDbContext = Service.WebApp.Data.ApplicationDbContext;
-using User = Service.WebApp.Models.User;
 
 namespace Service.WebApp
 {

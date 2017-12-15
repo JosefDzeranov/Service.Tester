@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
@@ -9,12 +8,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Service.Domain.Entities;
-using Service.WebApp.Models;
 using Service.WebApp.Models.ManageViewModels;
 using Service.WebApp.Services;
-using User = Service.WebApp.Models.User;
 
 namespace Service.WebApp.Controllers
 {

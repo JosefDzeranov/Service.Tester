@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Service.Domain.Entities;
-using User = Service.WebApp.Models.User;
+using User = Service.Domain.Entities.User;
 
-namespace Service.WebApp.Data
+namespace Service.Domain.Context
 {
     public class ApplicationDbContext : IdentityDbContext<User>
     {
