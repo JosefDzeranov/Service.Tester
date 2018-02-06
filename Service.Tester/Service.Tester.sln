@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Tester", "Service.Tester\Service.Tester.csproj", "{5E3FD25E-439C-4A6E-94BE-71B49ED905C0}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Domain", "Service.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.CompilationTest", "Service.CompilationTest\Service.CompilationTest.csproj", "{4B4D19DD-1666-480D-A584-4A05F08F5A7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Runer", "Service.Runer\Service.Runer.csproj", "{5092CE32-AFEB-4E4C-AA13-32B185D4ECF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Runner", "Service.Runer\Service.Runner.csproj", "{5092CE32-AFEB-4E4C-AA13-32B185D4ECF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9855444B-EFA4-438E-9AFA-9B407B156C83}"
 EndProject
