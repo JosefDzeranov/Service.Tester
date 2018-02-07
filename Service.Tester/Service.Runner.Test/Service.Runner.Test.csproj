@@ -51,10 +51,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSharpProcessBuilder.Tests.cs" />
+    <Compile Include="CSharpProcessBuilderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharpRunnerTest.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

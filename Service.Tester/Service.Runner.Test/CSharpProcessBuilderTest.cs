@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Service.Runner.Test
 {
     [TestFixture]
-    public class CSharpProcessBuilderTests
+    public class CSharpProcessBuilderTest
     {
         [Test]
         public void GetProcess_GetValue_NotNull()
