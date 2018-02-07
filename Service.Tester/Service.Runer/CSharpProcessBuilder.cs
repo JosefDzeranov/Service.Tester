@@ -19,7 +19,7 @@ namespace Service.Runner
             return process;
         }
 
-        void IProcessor.BuildProcess(string workingDirectory, string fileName)
+        public void BuildProcess(string workingDirectory, string fileName)
         {
             process.StartInfo.WorkingDirectory = workingDirectory;
             process.StartInfo.FileName = Path.Combine(workingDirectory, fileName);
