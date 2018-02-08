@@ -1,8 +1,8 @@
 ﻿namespace TestConsoleApp
 {
-    public static class DefaultValues
+    internal static class DefaultValues
     {
-        static string sourceCode = @"
+        internal static string sourceCode = @"
 using System;
 namespace ConsoleApp3
 {
