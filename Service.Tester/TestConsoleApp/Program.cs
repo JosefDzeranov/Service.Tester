@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.CSharp.RuntimeBinder;
 using Service.Compilation.Roslyn;
 using Service.Runner;
 
@@ -16,9 +15,9 @@ namespace TestConsoleApp
             var workingDirectory = result.PathToAssembly;
             Console.WriteLine(workingDirectory);
 
-            var process = new CSharpProcessBuilder();
-            process.BuildProcess(workingDirectory, fileName);
-            var runner = new CSharpRunner(process);
+            var processBuilder = new CSharpProcessBuilder();
+            processBuilder.BuildProcess(workingDirectory, fileName);
+            var runner = new CSharpRunner(processBuilder);
             Console.WriteLine(runner.Run());
         }
     }

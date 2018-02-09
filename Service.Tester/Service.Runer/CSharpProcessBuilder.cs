@@ -5,7 +5,7 @@ using Service.Runner.Interfaces;
 
 namespace Service.Runner
 {
-    public class CSharpProcessBuilder : IProcessor
+    public class CSharpProcessBuilder : IBuilderProcessor
     {
         private readonly Process process;
 
