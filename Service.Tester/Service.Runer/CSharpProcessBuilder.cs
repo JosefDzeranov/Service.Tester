@@ -19,11 +19,12 @@ namespace Service.Runner
             return process;
         }
 
-        public void BuildProcess(string workingDirectory, string fileName)
+        public void BuildProcess(string workingDirectory, string fileName, bool redirectStandardInput = false)
         {
             process.StartInfo.WorkingDirectory = workingDirectory;
             process.StartInfo.FileName = Path.Combine(workingDirectory, fileName);
             process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardInput = redirectStandardInput;
         }
 
         public void AddProcessExitEventHandler(EventHandler exitHandler)
