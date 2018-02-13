@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Service.Compilation.Interfaces;
 
 namespace Service.Tester.Controllers
@@ -13,9 +14,9 @@ namespace Service.Tester.Controllers
         }
 
         [HttpPost]
-        public IActionResult Run(string sourceCode)
+        public IActionResult Run(string sourceCode, string fileName = "Test")
         {
-            var compileResult = compilerService.Compile(sourceCode, "Test");
+            var compileResult = compilerService.Compile(sourceCode, fileName);
             return Ok(compileResult);
         }
     }

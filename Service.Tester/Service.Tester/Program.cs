@@ -21,7 +21,7 @@ namespace Service.Tester
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseKestrel(options =>
                 {
-                    options.Listen(IPAddress.Loopback, 5000);
+                    options.Listen(IPAddress.Loopback, 9015);
                 })
                 .Build();
         }
