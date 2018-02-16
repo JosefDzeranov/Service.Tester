@@ -5,7 +5,10 @@ namespace Service.Runner.Interfaces
 {
     public interface IBuilderProcessor
     {
-        void BuildProcess(string workingDirectory, string fileName, bool redirectStandardInput = false);
+        void BuildProcessWithRedirectStandartInput(string workingDirectory, string fileName);
+
+        void BuildProcessWithoutRedirectStandartInput(string workingDirectory, string fileName);
+        void BuildProcess(string fileName);
         Process GetProcess();
         void AddProcessExitEventHandler(EventHandler exitHandler);
     }

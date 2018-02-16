@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
 
-namespace Service.Compilation.Roslyn
+namespace Service.Common
 {
 
     /// <summary>
     /// Класс для хранения статических данных.
     /// </summary>
-    internal sealed class DefaultValues
+    public sealed class DefaultValues
     {
         /// <summary>
         /// Путь расположения все откомпилированных файлов.
         /// </summary>
-        internal const string CompilePath = @"D:\\Compilers\\";
+        public const string CompilePath = @"D:\\Compilers\\";
 
         /// <summary>
         /// Стандартные пространства имен необходимые для компиляции кода.
         /// </summary>
-        internal static readonly IEnumerable<string> SystemNamespaces =
+        public static readonly IEnumerable<string> SystemNamespaces =
             new[]
             {
                 "System",
@@ -31,7 +31,7 @@ namespace Service.Compilation.Roslyn
         /// <summary>
         /// Стнадартные сборки необходимые для компиляции кода.
         /// </summary>
-        internal static readonly List<string> DefaultAssemblies = new List<string>
+        public static readonly List<string> DefaultAssemblies = new List<string>
         {
             "mscorlib",
             "System",
@@ -41,7 +41,21 @@ namespace Service.Compilation.Roslyn
         /// <summary>
         /// Путь, где лежат стандартные сборки.
         /// </summary>
-        internal static readonly string RuntimePath =
+        public static readonly string RuntimePath =
             @"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\{0}.dll";
+
+
+        public static string sourceCode = @"
+using System;
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(""Hello world"");
+        }
+    }
+}";
     }
 }

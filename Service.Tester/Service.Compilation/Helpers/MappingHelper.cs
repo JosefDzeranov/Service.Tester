@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.CodeAnalysis.Emit;
-using Service.Compilation.Roslyn;
+using Service.Common;
 
 namespace Service.Compilation.Helpers
 {
@@ -16,9 +16,8 @@ namespace Service.Compilation.Helpers
             };
 
             foreach (var diagnostic in emitResult.Diagnostics)
-            {
-                compileResult.Errors.Add(new Error { Message = diagnostic.GetMessage() });
-            }
+                compileResult.Errors.Add(new Error {Message = diagnostic.GetMessage()});
+
             return compileResult;
         }
     }

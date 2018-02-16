@@ -7,6 +7,7 @@ using Microsoft.CodeAnalysis;
 using System.Linq;
 using Microsoft.CodeAnalysis.Text;
 using Service.Compilation.Helpers;
+using Service.Common;
 
 namespace Service.Compilation.Roslyn
 {
