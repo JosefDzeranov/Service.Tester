@@ -4,17 +4,21 @@ namespace Service.Runner
 {
     public class CSharpRunner : IRunner
     {
-        private readonly IBuilderProcessor _builderProcessor;
         private int timeOut = 2000;
-        public CSharpRunner(IBuilderProcessor builderProcessor)
+
+        public string Run(IBuilderProcessor builderProcessor)
         {
-            this._builderProcessor = builderProcessor;
+            var process = builderProcessor.GetProcess();
+            process.Start();
+            process.WaitForExit(timeOut);
+            return process.StandardOutput.ReadToEnd();
         }
 
-        public string Run()
+        public string Run(IBuilderProcessor builderProcessor, string input)
         {
-            var process = _builderProcessor.GetProcess();
+            var process = builderProcessor.GetProcess();
             process.Start();
+            process.StandardInput.Write(input);
             process.WaitForExit(timeOut);
             return process.StandardOutput.ReadToEnd();
         }

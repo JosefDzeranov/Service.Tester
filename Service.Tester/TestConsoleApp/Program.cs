@@ -1,4 +1,5 @@
 ﻿using System;
+using Service.Common;
 using Service.Compilation.Roslyn;
 using Service.Runner;
 
@@ -16,9 +17,9 @@ namespace TestConsoleApp
             Console.WriteLine(workingDirectory);
 
             var processBuilder = new CSharpProcessBuilder();
-            processBuilder.BuildProcess(workingDirectory, fileName);
-            var runner = new CSharpRunner(processBuilder);
-            Console.WriteLine(runner.Run());
+            processBuilder.BuildProcessWithRedirectStandartInput(workingDirectory, fileName);
+            var runner = new CSharpRunner();
+            Console.WriteLine(runner.Run(processBuilder));
         }
     }
 }
