@@ -86,7 +86,8 @@ namespace WebApp.Controllers
         // GET: Problems/Delete/5
         public ActionResult Delete(Guid id)
         {
-            return View();
+            var findProblem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
+            return View(findProblem);
         }
 
         // POST: Problems/Delete/5
@@ -96,6 +97,9 @@ namespace WebApp.Controllers
         {
             try
             {
+                if (problem.Id != id)
+                    return new NotFoundResult();
+
                 var findProblem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
                 if (findProblem != null)
                     _dbContext.Problems.Remove(problem);
@@ -103,7 +107,7 @@ namespace WebApp.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception exception)
             {
                 return View();
             }
