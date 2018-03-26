@@ -3,10 +3,18 @@ using Service.Domain.Entities;
 
 namespace Service.Domain.Context
 {
-    internal class DatabaseContext : DbContext
+    public class DatabaseContext : DbContext
     {
+
         public DbSet<Problem> Problems { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<ProblemType> ProblemTypes { get; set; }
+
+        public DatabaseContext(DbContextOptions<DatabaseContext> options)
+            : base(options)
+        {
+            Database.EnsureCreated();
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,5 +31,6 @@ namespace Service.Domain.Context
                 .HasForeignKey(pt => pt.ProblemId);
 
         }
+
     }
 }

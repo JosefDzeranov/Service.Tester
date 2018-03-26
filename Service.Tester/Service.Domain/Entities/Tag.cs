@@ -6,7 +6,7 @@ namespace Service.Domain.Entities
     /// <summary>
     /// Тэг задачи
     /// </summary>
-    internal class Tag : EntityModel
+    public class Tag : EntityModel
     {
         /// <summary>
         /// Имя тэга

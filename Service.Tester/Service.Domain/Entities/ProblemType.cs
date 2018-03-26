@@ -6,7 +6,7 @@ namespace Service.Domain.Entities
     /// <summary>
     /// Тип задания
     /// </summary>
-    internal class ProblemType : EntityModel
+    public class ProblemType : EntityModel
     {
         /// <summary>
         /// Имя типа задания

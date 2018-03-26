@@ -6,7 +6,7 @@ namespace Service.Domain.Entities
     /// <summary>
     /// Сущность для  связывания двух сущностей в отношении многие ко многим
     /// </summary>
-    internal class ProblemTag : EntityModel
+    public class ProblemTag : EntityModel
     {
         public Guid ProblemId { get; set; }
 
