@@ -27,6 +27,7 @@ namespace Service.Tester
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ICompiler, RoslynCompiler>();
+            services.AddMvc();
         }
 
         public static IConfiguration Configuration;
