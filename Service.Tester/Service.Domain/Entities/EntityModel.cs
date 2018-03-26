@@ -14,6 +14,6 @@ namespace Service.Domain.Entities
         /// </summary>
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        Guid Id { get; set; }
+        public Guid Id { get; set; }
     }
 }

@@ -18,7 +18,9 @@ namespace Service.Domain.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Problem>()
+                .HasKey(u => u.Id);
+
             // Код для связи многие ко многим
             modelBuilder.Entity<ProblemTag>()
                 .HasOne(pt => pt.Problem)
