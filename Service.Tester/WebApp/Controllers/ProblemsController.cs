@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.KeyVault.Models;
 using Service.Domain.Context;
 using Service.Domain.Entities;
 
@@ -102,14 +103,17 @@ namespace WebApp.Controllers
 
                 var findProblem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
                 if (findProblem != null)
-                    _dbContext.Problems.Remove(problem);
+                {
+                    _dbContext.Problems.Remove(findProblem);
+                    _dbContext.SaveChanges();
+                }
                 // TODO: Add delete logic here
 
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception exception)
             {
-                return View();
+                return View(nameof(Error));
             }
         }
     }
