@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.KeyVault.Models;
+using Microsoft.EntityFrameworkCore;
 using Service.Domain.Context;
 using Service.Domain.Entities;
 
@@ -24,8 +25,11 @@ namespace WebApp.Controllers
         }
 
         // GET: Problems/Details/5
-        public ActionResult Details(Guid id)
+        public ActionResult Details(Guid? id)
         {
+            if (id == null)
+                return NotFound();
+
             var problem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
             return View(problem);
         }
@@ -56,8 +60,11 @@ namespace WebApp.Controllers
         }
 
         // GET: Problems/Edit/5
-        public ActionResult Edit(Guid id)
+        public ActionResult Edit(Guid? id)
         {
+            if (id == null)
+                return NotFound();
+
             var problem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
             return View(problem);
         }
@@ -65,13 +72,10 @@ namespace WebApp.Controllers
         // POST: Problems/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Guid id, Problem problem)
+        public ActionResult Edit(Problem problem)
         {
             try
             {
-                if (problem.Id != id)
-                    return new NotFoundResult();
-
                 _dbContext.Problems.Update(problem);
                 _dbContext.SaveChanges();
                 // TODO: Add update logic here
@@ -85,8 +89,12 @@ namespace WebApp.Controllers
         }
 
         // GET: Problems/Delete/5
-        public ActionResult Delete(Guid id)
+        [ActionName("Delete")]
+        public ActionResult ConfirmDelete(Guid? id)
         {
+            if (id == null)
+                return NotFound();
+
             var findProblem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
             return View(findProblem);
         }
@@ -94,24 +102,19 @@ namespace WebApp.Controllers
         // POST: Problems/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(Guid id, Problem problem)
+        public ActionResult Delete(Guid? id)
         {
             try
             {
-                if (problem.Id != id)
-                    return new NotFoundResult();
+                if (id == null)
+                    return NotFound();
 
-                var findProblem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
-                if (findProblem != null)
-                {
-                    _dbContext.Problems.Remove(findProblem);
-                    _dbContext.SaveChanges();
-                }
-                // TODO: Add delete logic here
-
+                var phone = new Problem { Id = id.Value };
+                _dbContext.Entry(phone).State = EntityState.Deleted;
+                _dbContext.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 return View(nameof(Error));
             }
