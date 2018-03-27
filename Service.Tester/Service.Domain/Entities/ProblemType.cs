@@ -1,5 +1,4 @@
-﻿using System;
-using Service.Domain.ExtraModels;
+﻿using Service.Domain.ExtraModels;
 
 namespace Service.Domain.Entities
 {

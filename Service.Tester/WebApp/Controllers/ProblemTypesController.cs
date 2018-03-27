@@ -2,9 +2,12 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Service.Domain.Context;
 using Service.Domain.Entities;
+using Service.Domain.ExtraModels;
+using WebApp.Utils;
 
 namespace WebApp.Controllers
 {
@@ -44,6 +47,8 @@ namespace WebApp.Controllers
         // GET: ProblemTypes/Create
         public IActionResult Create()
         {
+            // var names = EnumUtil.GetValues<ProblemTypes>();
+            // ViewBag.Names = new SelectList(names, "Name", "FullName");
             return View();
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Azure.KeyVault.Models;
 using Microsoft.EntityFrameworkCore;
 using Service.Domain.Context;
@@ -37,6 +38,8 @@ namespace WebApp.Controllers
         // GET: Problems/Create
         public ActionResult Create()
         {
+            var problemTypes = _dbContext.ProblemTypes.ToList();
+            ViewBag.TypeIds = new SelectList(problemTypes, "Id", "FullName");
             return View();
         }
 
