@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Service.Domain.Entities.Problem>
+﻿@model IEnumerable<WebApp.Models.Problems.ProblemViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,22 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TypeId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TimeLimit)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MemoryLimit)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Path)
+                @Html.DisplayNameFor(model => model.Type)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LastModifiedTime)
@@ -41,22 +29,10 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.TypeId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TimeLimit)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.MemoryLimit)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Path)
+                    @Html.DisplayFor(modelItem => item.Type)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.LastModifiedTime)

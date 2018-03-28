@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

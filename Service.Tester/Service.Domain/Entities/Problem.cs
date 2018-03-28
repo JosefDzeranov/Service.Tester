@@ -13,6 +13,11 @@ namespace Service.Domain.Entities
         /// </summary>
         public string Name { get; set; }
 
+        /// <summary>
+        /// Описание
+        /// </summary>
+        public string Description { get; set; }
+
         public Guid? TypeId { get; set; }
         /// <summary>
         /// Тип задания

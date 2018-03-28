@@ -6,6 +6,10 @@ using Microsoft.Azure.KeyVault.Models;
 using Microsoft.EntityFrameworkCore;
 using Service.Domain.Context;
 using Service.Domain.Entities;
+using Service.Domain.ExtraModels;
+using WebApp.Extensions;
+using WebApp.Models.Problems;
+using WebApp.Models.TraceTable;
 
 namespace WebApp.Controllers
 {
@@ -21,7 +25,14 @@ namespace WebApp.Controllers
         // GET: Problems
         public ActionResult Index()
         {
-            var problems = _dbContext.Problems.ToList();
+            var problems = _dbContext.Problems.Select(x => new ProblemViewModel
+            {
+                Id = x.Id,
+                Type = x.Type.FullName,
+                Name = x.Name,
+                LastModifiedTime = x.LastModifiedTime,
+                Tags = x.Tags
+            });
             return View(problems);
         }
 
@@ -31,35 +42,44 @@ namespace WebApp.Controllers
             if (id == null)
                 return NotFound();
 
-            var problem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
-            return View(problem);
+            var problem = _dbContext.Problems.Include(x => x.Type).FirstOrDefault(x => x.Id == id);
+            return View(problem.ToProblemViewModel());
         }
 
         // GET: Problems/Create
         public ActionResult Create()
         {
-            var problemTypes = _dbContext.ProblemTypes.ToList();
-            ViewBag.TypeIds = new SelectList(problemTypes, "Id", "FullName");
-            return View();
+            //var problemTypes = _dbContext.ProblemTypes.ToList();
+            //ViewBag.TypeIds = new SelectList(problemTypes, "Id", "FullName");
+            return View("TraceTable");
         }
 
         // POST: Problems/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Problem problem)
+        public ActionResult CreateTraceTableProblem(TraceTableViewModel item)
         {
             try
             {
+                var problem = item.ToBo();
+                SetProblemType(problem, ProblemTypes.TraceTable);
+
                 _dbContext.Problems.Add(problem);
                 _dbContext.SaveChanges();
-                // TODO: Add insert logic here
 
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return View("TraceTable");
             }
+        }
+
+        private void SetProblemType(Problem problem, ProblemTypes type)
+        {
+            var problemType = _dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
+            problem.Type = problemType ?? throw new InvalidOperationException();
+            problem.TypeId = problemType?.Id;
         }
 
         // GET: Problems/Edit/5
@@ -98,10 +118,10 @@ namespace WebApp.Controllers
             if (id == null)
                 return NotFound();
 
-            var findProblem = _dbContext.Problems.FirstOrDefault(x => x.Id == id);
+            var findProblem = _dbContext.Problems.Include(x => x.Type).FirstOrDefault(x => x.Id == id).ToProblemViewModel();
+
             return View(findProblem);
         }
-
         // POST: Problems/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -114,7 +134,7 @@ namespace WebApp.Controllers
 
                 var phone = new Problem { Id = id.Value };
                 _dbContext.Entry(phone).State = EntityState.Deleted;
-                _dbContext.SaveChangesAsync();
+                _dbContext.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception)

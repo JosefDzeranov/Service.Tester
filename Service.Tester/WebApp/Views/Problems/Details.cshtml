@@ -1,4 +1,4 @@
-﻿@model Service.Domain.Entities.Problem
+﻿@model WebApp.Models.Problems.ProblemViewModel
 
 @{
     ViewData["Title"] = "Details";
@@ -17,22 +17,10 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt>
-            @Html.DisplayNameFor(model => model.TimeLimit)
+            @Html.DisplayNameFor(model => model.Description)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.TimeLimit)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.MemoryLimit)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.MemoryLimit)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Path)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Path)
+            @Html.DisplayFor(model => model.Description)
         </dd>
         <dt>
             @Html.DisplayNameFor(model => model.LastModifiedTime)
@@ -44,7 +32,7 @@
             @Html.DisplayNameFor(model => model.Type)
         </dt>
         <dd>
-            @Html.DisplayFor(model => model.Type.Id)
+            @Html.DisplayFor(model => model.Type)
         </dd>
     </dl>
 </div>
