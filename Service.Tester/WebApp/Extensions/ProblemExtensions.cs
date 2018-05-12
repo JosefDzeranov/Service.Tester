@@ -20,14 +20,14 @@ namespace WebApp.Extensions
             };
         }
 
-        public static Problem ToBo(this CreateTraceTableViewModel problem)
+        public static Problem ToBo(this TraceTableViewModel problem)
         {
             return new Problem
             {
                 Id = Guid.NewGuid(),
                 Name = problem.Name,
                 LastModifiedTime = DateTime.UtcNow,
-                Description = problem.Description
+                Description = problem.Description,
             };
         }
     }

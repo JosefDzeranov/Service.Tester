@@ -110,7 +110,7 @@ namespace WebApp.Controllers
             }
         }
 
-
+        [HttpPost]
         public ActionResult Create(Guid id)
         {
             return View(GetProblemViewModel(id));
@@ -124,48 +124,18 @@ namespace WebApp.Controllers
 
             switch (problemType?.Name)
             {
-                case ProblemTypes.TraceTable: return new CreateTraceTableViewModel();
+                case ProblemTypes.TraceTable: return new TraceTableViewModel();
                 case ProblemTypes.BlackBox: return new CreateBlackBoxViewModel();
                 default: return new CreateRestoreDataViewModel();
             }
         }
 
-
-        // POST: Problems/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult CreateTraceTableProblem(CreateTraceTableViewModel item)
-        {
-            try
-            {
-                var problem = item.ToBo();
-                SetProblemType(problem, ProblemTypes.TraceTable);
-
-                _dbContext.Problems.Add(problem);
-                _dbContext.SaveChanges();
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View("TraceTable");
-            }
-        }
-
-        private void SetProblemType(Problem problem, ProblemTypes type)
-        {
-            var problemType = _dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
-            problem.Type = problemType ?? throw new InvalidOperationException();
-            problem.TypeId = problemType?.Id;
-        }
-
-        
         #region Selecting problem type
         [HttpGet]
         public IActionResult SelectProblemType()
         {
             var problemTypes = _dbContext.ProblemTypes.ToList().Select(x => x.ToViewModel());
-            ViewBag.Types = new SelectList(problemTypes, "Id", "Name");
+            ViewBag.Types = new SelectList(problemTypes, nameof(ProblemTypeViewModel.Id), nameof(ProblemTypeViewModel.Name));
             return View();
         }
         #endregion

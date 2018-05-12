@@ -31,8 +31,6 @@ namespace Service.Domain.Context
                 .HasOne(pt => pt.Tag)
                 .WithMany(t => t.Problems)
                 .HasForeignKey(pt => pt.ProblemId);
-
         }
-
     }
 }

@@ -49,6 +49,11 @@ namespace Service.Domain.Entities
         /// </summary>
         public List<ProblemTag> Tags { get; set; }
 
+        /// <summary>
+        /// Специфичные данные в формате JSON
+        /// </summary>
+        public string SpecificData { get; set; }
+
         public Problem()
         {
             Tags = new List<ProblemTag>();
