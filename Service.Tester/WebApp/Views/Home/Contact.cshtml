@@ -1,17 +1,104 @@
-﻿@{
-    ViewData["Title"] = "Contact";
-}
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+﻿<html>
+<head>
+    <script>
+         totalLines = -1;
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+//
+// Update the numbers in the side gutter.
+//
+        function updateGutter(allLines) {
+            toAdd = document.createDocumentFragment();
+            document.getElementsByClassName('gutter')[0].innerHTML = '';
+            for (let i = 0; i < allLines;) {
+                i += 1;
+                newDiv = document.createElement('div');
+                newDiv.id = 'r' + i;
+                newDiv.className = 'ansbox';
+                newDiv.innerHTML = `${i}.`;
+                toAdd.appendChild(newDiv);
+                document.getElementsByClassName('gutter')[0].appendChild(toAdd);
+            }
+        }
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+//
+// If the current # of lines = previous # of lines, do nothing.
+// Else, run lineNumbers.
+//
+        function unEqual(linesTotal) {
+            if (linesTotal !== totalLines) {
+                totalLines = linesTotal;
+                updateGutter(totalLines);
+            }
+        }
+
+//
+// Get the length of the text box.
+//
+         getLength = function getLength(element) {
+             linesTotal = element.querySelectorAll('div').length + 1;
+            unEqual(linesTotal);
+        };
+
+//
+// Listen for Keyup to run getLength function.
+//
+         box = document.querySelector('.textBox');
+        box.addEventListener('keyup', function() {
+            getLength(box);
+        });
+    </script>
+    
+    <style>
+        .container {
+            border: 3px solid grey;
+        }
+
+        .gutter {
+            position: relative;
+            width: 55px;
+            border: 1px solid black;
+            float: left;
+        
+        }
+
+        .test-box {
+            overflow:hidden;
+            position: relative;
+            margin-left: 57px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        code {
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>Pair Programming Text Editor</h1>
+</div>
+
+<section class="container">
+    <p>This text can't be edited. Neither can the line numbers.</p>
+    <p>I need to get the line numbers to auto-increment as the text expands to more lines.</p>
+
+    <div class="gutter" align="center">
+        
+        <div id="r1" class="ansbox">1.</div>         
+        
+          
+    </div>
+
+    <div class="textBox" contenteditable>
+        <code>
+            This div can be edited in browsers that support HTML5.
+        </code>
+    </div>
+</section>
+</body>
+</html>

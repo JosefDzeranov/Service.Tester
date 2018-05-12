@@ -8,7 +8,9 @@ using Service.Domain.Context;
 using Service.Domain.Entities;
 using Service.Domain.ExtraModels;
 using WebApp.Extensions;
+using WebApp.Models.BlackBox;
 using WebApp.Models.Problems;
+using WebApp.Models.RestoreData;
 using WebApp.Models.TraceTable;
 
 namespace WebApp.Controllers
@@ -44,42 +46,6 @@ namespace WebApp.Controllers
 
             var problem = _dbContext.Problems.Include(x => x.Type).FirstOrDefault(x => x.Id == id);
             return View(problem.ToProblemViewModel());
-        }
-
-        // GET: Problems/Create
-        public ActionResult Create()
-        {
-            //var problemTypes = _dbContext.ProblemTypes.ToList();
-            //ViewBag.TypeIds = new SelectList(problemTypes, "Id", "FullName");
-            return View("TraceTable");
-        }
-
-        // POST: Problems/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult CreateTraceTableProblem(TraceTableViewModel item)
-        {
-            try
-            {
-                var problem = item.ToBo();
-                SetProblemType(problem, ProblemTypes.TraceTable);
-
-                _dbContext.Problems.Add(problem);
-                _dbContext.SaveChanges();
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View("TraceTable");
-            }
-        }
-
-        private void SetProblemType(Problem problem, ProblemTypes type)
-        {
-            var problemType = _dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
-            problem.Type = problemType ?? throw new InvalidOperationException();
-            problem.TypeId = problemType?.Id;
         }
 
         // GET: Problems/Edit/5
@@ -122,6 +88,7 @@ namespace WebApp.Controllers
 
             return View(findProblem);
         }
+
         // POST: Problems/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -142,5 +109,70 @@ namespace WebApp.Controllers
                 return View(nameof(Error));
             }
         }
+
+
+        public ActionResult Create(Guid id)
+        {
+            return View(GetProblemViewModel(id));
+        }
+
+        private ICreateProblemViewModel GetProblemViewModel(Guid problemTypeId)
+        {
+            if (problemTypeId == null)
+                throw new ArgumentNullException(nameof(problemTypeId));
+            var problemType = _dbContext.ProblemTypes.SingleOrDefault(x => x.Id == problemTypeId);
+
+            switch (problemType?.Name)
+            {
+                case ProblemTypes.TraceTable: return new CreateTraceTableViewModel();
+                case ProblemTypes.BlackBox: return new CreateBlackBoxViewModel();
+                default: return new CreateRestoreDataViewModel();
+            }
+        }
+
+
+        // POST: Problems/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateTraceTableProblem(CreateTraceTableViewModel item)
+        {
+            try
+            {
+                var problem = item.ToBo();
+                SetProblemType(problem, ProblemTypes.TraceTable);
+
+                _dbContext.Problems.Add(problem);
+                _dbContext.SaveChanges();
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View("TraceTable");
+            }
+        }
+
+        private void SetProblemType(Problem problem, ProblemTypes type)
+        {
+            var problemType = _dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
+            problem.Type = problemType ?? throw new InvalidOperationException();
+            problem.TypeId = problemType?.Id;
+        }
+
+        
+        #region Selecting problem type
+        [HttpGet]
+        public IActionResult SelectProblemType()
+        {
+            var problemTypes = _dbContext.ProblemTypes.ToList().Select(x => x.ToViewModel());
+            ViewBag.Types = new SelectList(problemTypes, "Id", "Name");
+            return View();
+        }
+        #endregion
+
+
+
+
+
     }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "vanilla",
+  "homepage": "https://github.com/Okami-/Vanilla-JS-LightBox",
+  "_release": "ea73590de0",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "ea73590de045c9522f47c19120d9a6c80c5888d0"
+  },
+  "_source": "https://github.com/Okami-/Vanilla-JS-LightBox.git",
+  "_target": "*",
+  "_originalSource": "vanilla",
+  "_direct": true
+}

@@ -2,28 +2,25 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Service.Domain.Context;
 using Service.Domain.Entities;
-using Service.Domain.ExtraModels;
-using WebApp.Utils;
 
 namespace WebApp.Controllers
 {
     public class ProblemTypesController : Controller
     {
-        private readonly DatabaseContext _context;
+        private readonly DatabaseContext _dbContext;
 
         public ProblemTypesController(DatabaseContext context)
         {
-            _context = context;
+            _dbContext = context;
         }
 
         // GET: ProblemTypes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.ProblemTypes.ToListAsync());
+            return View(await _dbContext.ProblemTypes.ToListAsync());
         }
 
         // GET: ProblemTypes/Details/5
@@ -34,7 +31,7 @@ namespace WebApp.Controllers
                 return NotFound();
             }
 
-            var problemType = await _context.ProblemTypes
+            var problemType = await _dbContext.ProblemTypes
                 .SingleOrDefaultAsync(m => m.Id == id);
             if (problemType == null)
             {
@@ -62,8 +59,8 @@ namespace WebApp.Controllers
             if (ModelState.IsValid)
             {
                 problemType.Id = Guid.NewGuid();
-                _context.Add(problemType);
-                await _context.SaveChangesAsync();
+                _dbContext.Add(problemType);
+                await _dbContext.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(problemType);
@@ -77,7 +74,7 @@ namespace WebApp.Controllers
                 return NotFound();
             }
 
-            var problemType = await _context.ProblemTypes.SingleOrDefaultAsync(m => m.Id == id);
+            var problemType = await _dbContext.ProblemTypes.SingleOrDefaultAsync(m => m.Id == id);
             if (problemType == null)
             {
                 return NotFound();
@@ -101,8 +98,8 @@ namespace WebApp.Controllers
             {
                 try
                 {
-                    _context.Update(problemType);
-                    await _context.SaveChangesAsync();
+                    _dbContext.Update(problemType);
+                    await _dbContext.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -128,7 +125,7 @@ namespace WebApp.Controllers
                 return NotFound();
             }
 
-            var problemType = await _context.ProblemTypes
+            var problemType = await _dbContext.ProblemTypes
                 .SingleOrDefaultAsync(m => m.Id == id);
             if (problemType == null)
             {
@@ -143,15 +140,15 @@ namespace WebApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
-            var problemType = await _context.ProblemTypes.SingleOrDefaultAsync(m => m.Id == id);
-            _context.ProblemTypes.Remove(problemType);
-            await _context.SaveChangesAsync();
+            var problemType = await _dbContext.ProblemTypes.SingleOrDefaultAsync(m => m.Id == id);
+            _dbContext.ProblemTypes.Remove(problemType);
+            await _dbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        
         private bool ProblemTypeExists(Guid id)
         {
-            return _context.ProblemTypes.Any(e => e.Id == id);
+            return _dbContext.ProblemTypes.Any(e => e.Id == id);
         }
     }
 }

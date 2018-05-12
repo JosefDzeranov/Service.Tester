@@ -20,7 +20,7 @@ namespace WebApp.Extensions
             };
         }
 
-        public static Problem ToBo(this TraceTableViewModel problem)
+        public static Problem ToBo(this CreateTraceTableViewModel problem)
         {
             return new Problem
             {
