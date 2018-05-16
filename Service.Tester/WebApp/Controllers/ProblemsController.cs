@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Azure.KeyVault.Models;
@@ -48,7 +49,8 @@ namespace WebApp.Controllers
             return View(problem.ToProblemViewModel());
         }
 
-        // GET: Problems/Edit/5
+        [HttpGet]
+        [Authorize]
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
@@ -60,7 +62,7 @@ namespace WebApp.Controllers
 
         // POST: Problems/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Edit(Problem problem)
         {
             try
@@ -79,6 +81,7 @@ namespace WebApp.Controllers
 
         // GET: Problems/Delete/5
         [ActionName("Delete")]
+        [Authorize]
         public ActionResult ConfirmDelete(Guid? id)
         {
             if (id == null)
@@ -91,7 +94,7 @@ namespace WebApp.Controllers
 
         // POST: Problems/Delete/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Delete(Guid? id)
         {
             try
@@ -139,10 +142,5 @@ namespace WebApp.Controllers
             return View();
         }
         #endregion
-
-
-
-
-
     }
 }

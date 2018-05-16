@@ -7,7 +7,7 @@
 <h2>Создание задания трассировочная таблица</h2>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-8">
         <form asp-action="Create" asp-controller="TraceTable">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -22,12 +22,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="SourceCode" class="control-label"></label>
-                <input asp-for="SourceCode" class="form-control" />
+                <textarea asp-for="SourceCode" class="form-control source-code-input" ></textarea>
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BreakPointLine" class="control-label"></label>
-                <input asp-for="BreakPointLine" class="form-control" />
+                <div class="source-code-output"></div>
+            </div>
+            <div class="form-group">
+                <input asp-for="BreakPointLine" class="form-control breakpoint-line" type="hidden" />
                 <span asp-validation-for="BreakPointLine" class="text-danger"></span>
             </div>
             <div class="form-group">
