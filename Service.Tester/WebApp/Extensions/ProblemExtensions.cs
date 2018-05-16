@@ -1,5 +1,5 @@
 ﻿using System;
-using Service.Domain.Entities;
+using Service.Storage.Entities;
 using WebApp.Models.Problems;
 using WebApp.Models.TraceTable;
 

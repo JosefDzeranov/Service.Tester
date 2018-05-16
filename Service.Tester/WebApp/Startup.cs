@@ -4,7 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Service.Domain.Context;
+using ProblemProcessor.Restore;
+using Service.Storage.Context;
 using WebApp.Models;
 using WebApp.Services;
 using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
@@ -36,6 +37,7 @@ namespace WebApp
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddSingleton<IRestoreDataService, RestoreDataService>();
 
             services.AddMvc();
         }

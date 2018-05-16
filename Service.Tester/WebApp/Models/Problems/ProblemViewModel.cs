@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Service.Domain.Entities;
+using Service.Storage.Entities;
 
 namespace WebApp.Models.Problems
 {

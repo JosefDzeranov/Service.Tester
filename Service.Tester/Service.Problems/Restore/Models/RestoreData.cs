@@ -1,9 +1,8 @@
 ﻿using System;
-using WebApp.Models.Problems;
 
-namespace WebApp.Models.RestoreData
+namespace Service.Problems.Restore.Models
 {
-    public class CreateRestoreDataViewModel : ICreateProblemViewModel
+    public class RestoreData
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
@@ -11,5 +10,6 @@ namespace WebApp.Models.RestoreData
 
         public string SourceCode { get; set; }
         public string Input { get; set; }
+        public string Output { get; set; }
     }
 }

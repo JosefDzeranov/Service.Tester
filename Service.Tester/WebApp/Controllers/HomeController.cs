@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Service.Domain.Context;
-using Service.Domain.Entities;
-using Service.Domain.ExtraModels;
+using Service.Storage.Context;
+using Service.Storage.Entities;
+using Service.Storage.ExtraModels;
 using WebApp.Models;
 
 namespace WebApp.Controllers

@@ -1,4 +1,4 @@
-﻿using Service.Domain.Entities;
+﻿using Service.Storage.Entities;
 using WebApp.Models.Problems;
 
 namespace WebApp.Extensions

@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Service.Domain.Context;
-using Service.Domain.Entities;
+using Service.Storage.Context;
+using Service.Storage.Entities;
 
 namespace WebApp.Controllers
 {

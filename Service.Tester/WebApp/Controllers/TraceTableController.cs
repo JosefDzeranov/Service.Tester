@@ -3,9 +3,9 @@ using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Service.Domain.Context;
-using Service.Domain.Entities;
-using Service.Domain.ExtraModels;
+using Service.Storage.Context;
+using Service.Storage.Entities;
+using Service.Storage.ExtraModels;
 using WebApp.Extensions;
 using WebApp.Models.TraceTable;
 

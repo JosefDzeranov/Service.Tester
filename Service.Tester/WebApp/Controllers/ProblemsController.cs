@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Azure.KeyVault.Models;
 using Microsoft.EntityFrameworkCore;
-using Service.Domain.Context;
-using Service.Domain.Entities;
-using Service.Domain.ExtraModels;
+using Service.Storage.Context;
+using Service.Storage.Entities;
+using Service.Storage.ExtraModels;
 using WebApp.Extensions;
 using WebApp.Models.BlackBox;
 using WebApp.Models.Problems;
@@ -28,13 +28,13 @@ namespace WebApp.Controllers
         // GET: Problems
         public ActionResult Index()
         {
-            var problems = _dbContext.Problems.Select(x => new ProblemViewModel
+            var problems = _dbContext.Problems.ToList().Select(x => new ProblemViewModel
             {
                 Id = x.Id,
                 Type = x.Type.FullName,
                 Name = x.Name,
                 LastModifiedTime = x.LastModifiedTime,
-                Tags = x.Tags
+                //Tags = x.Tags
             });
             return View(problems);
         }
