@@ -28,7 +28,7 @@ namespace WebApp.Controllers
         // GET: Problems
         public ActionResult Index()
         {
-            var problems = _dbContext.Problems.ToList().Select(x => new ProblemViewModel
+            var problems = _dbContext.Problems.Select(x => new ProblemViewModel
             {
                 Id = x.Id,
                 Type = x.Type.FullName,

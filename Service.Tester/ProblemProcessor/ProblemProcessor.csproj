@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Service.Runer\Service.Runner.csproj" />
     <ProjectReference Include="..\Service.Storage\Service.Storage.csproj" />
   </ItemGroup>
 
