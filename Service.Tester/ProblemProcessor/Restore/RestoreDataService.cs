@@ -2,6 +2,7 @@
 using System.Linq;
 using Newtonsoft.Json;
 using ProblemProcessor.Restore.Models;
+using Service.Runner;
 using Service.Storage.Context;
 using Service.Storage.Entities;
 using Service.Storage.ExtraModels;
@@ -51,7 +52,9 @@ namespace ProblemProcessor.Restore
         }
         private string CalculateOutputData(string sourceCode, string input)
         {
-            throw new NotImplementedException();
+            var processBuilder = new CSharpProcessBuilder();
+            var fileName = "app.exe";
+            return new CSharpRunner().Run(processBuilder, input);
         }
     }
 }
