@@ -1,6 +1,6 @@
 using AttributeRouting;
 using Microsoft.AspNetCore.Mvc;
-using Service.Compilation.Interfaces;
+using Service.Runner.Compilation.Interfaces;
 using Service.Tester.Data;
 
 namespace Service.Tester.Controllers

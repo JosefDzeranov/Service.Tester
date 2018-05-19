@@ -1,12 +1,11 @@
-﻿using System.IO;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
-using Service.Compilation.Interfaces;
-using Service.Compilation.Roslyn;
+using Service.Runner.Compilation.Interfaces;
+using Service.Runner.Compilation.Roslyn;
 
 namespace Service.Tester
 {

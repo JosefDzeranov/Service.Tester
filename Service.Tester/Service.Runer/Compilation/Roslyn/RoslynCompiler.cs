@@ -23,7 +23,7 @@ namespace Service.Runner.Compilation.Roslyn
         private static readonly CSharpCompilationOptions Options = new CSharpCompilationOptions(
                  OutputKind.ConsoleApplication)
              .WithOverflowChecks(true)
-             .WithOptimizationLevel(OptimizationLevel.Release)
+             .WithOptimizationLevel(OptimizationLevel.Debug)
              .WithUsings(DefaultValues.SystemNamespaces);
 
         /// <inheritdoc />

@@ -2,7 +2,7 @@
 using System.Linq;
 using Newtonsoft.Json;
 using ProblemProcessor.Restore.Models;
-using Service.Runner;
+using Service.Runner.Interfaces;
 using Service.Storage.Context;
 using Service.Storage.Entities;
 using Service.Storage.ExtraModels;
@@ -12,10 +12,12 @@ namespace ProblemProcessor.Restore
     public class RestoreDataService : IRestoreDataService
     {
         private readonly DatabaseContext _dbContext;
+        private readonly IRunner _runner;
 
-        public RestoreDataService(DatabaseContext dbContext)
+        public RestoreDataService(DatabaseContext dbContext, IRunner runner)
         {
             _dbContext = dbContext;
+            _runner = runner;
         }
 
         public void Save(RestoreData data)
@@ -59,9 +61,7 @@ namespace ProblemProcessor.Restore
         }
         private string CalculateOutputData(string sourceCode, string input)
         {
-            var processBuilder = new CSharpProcessBuilder();
-            var fileName = "app.exe";
-            return new CSharpRunner().Run(processBuilder, input);
+            return _runner.Run(sourceCode, input);
         }
     }
 }

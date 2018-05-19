@@ -6,7 +6,7 @@ namespace Service.Common
     /// <summary>
     /// Класс для хранения статических данных.
     /// </summary>
-    public sealed class DefaultValues
+    public static class DefaultValues
     {
         /// <summary>
         /// Путь расположения все откомпилированных файлов.
