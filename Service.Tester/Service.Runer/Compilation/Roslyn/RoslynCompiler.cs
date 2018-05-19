@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using Service.Compilation.Interfaces;
-using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis;
 using System.Linq;
+using System.Text;
+using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
-using Service.Compilation.Helpers;
 using Service.Common;
+using Service.Runner.Compilation.Helpers;
+using Service.Runner.Compilation.Interfaces;
 
-namespace Service.Compilation.Roslyn
+namespace Service.Runner.Compilation.Roslyn
 {
     /// <inheritdoc />
     /// <summary>

@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Service.Compilation\Service.Compilation.csproj" />
     <ProjectReference Include="..\Service.Runer\Service.Runner.csproj" />
   </ItemGroup>
 

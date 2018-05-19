@@ -1,4 +1,4 @@
-﻿namespace Service.Compilation
+﻿namespace Service.Runner.Compilation
 {
     public class Error
     {

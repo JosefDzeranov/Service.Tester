@@ -2,7 +2,7 @@
 using Microsoft.CodeAnalysis.Emit;
 using Service.Common;
 
-namespace Service.Compilation.Helpers
+namespace Service.Runner.Compilation.Helpers
 {
     internal static class MappingHelper
     {

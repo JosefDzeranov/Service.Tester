@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Service.Compilation
+namespace Service.Runner.Compilation
 {
 
     public sealed class CompileResult

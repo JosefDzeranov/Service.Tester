@@ -24,6 +24,14 @@ namespace ProblemProcessor.Restore
                 data.Output = CalculateOutputData(data.SourceCode, data.Input);
             }
 
+            var problem = CreateProblem(data);
+
+            _dbContext.Problems.Add(problem);
+            _dbContext.SaveChanges();
+        }
+
+        private Problem CreateProblem(RestoreData data)
+        {
             var problem = new Problem
             {
                 Description = data.Description,
@@ -39,8 +47,7 @@ namespace ProblemProcessor.Restore
                 data.Output
             };
             problem.SpecificData = JsonConvert.SerializeObject(additioanalData);
-            _dbContext.Problems.Add(problem);
-            _dbContext.SaveChanges();
+            return problem;
         }
 
         private void SetProblemType(Problem problem, ProblemTypes type)

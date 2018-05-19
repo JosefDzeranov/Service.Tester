@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Service.Compilation.Interfaces
+namespace Service.Runner.Compilation.Interfaces
 {
     /// <summary>
     /// Интерфейс для компиляции.
