@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Service.Runner.Compilation.Interfaces;
 using Service.Runner.Interfaces;
 
@@ -14,32 +15,26 @@ namespace Service.Runner
             _compiler = compiler;
         }
 
-        public string Run(IBuilderProcessor builderProcessor)
+        private string Run(Process process, string input)
         {
-            var process = builderProcessor.GetProcess();
             process.Start();
+            process.StandardInput.WriteLine(input);
             process.WaitForExit(TimeOut);
-            return process.StandardOutput.ReadToEnd();
-        }
+            var readToEnd = process.StandardOutput.ReadToEnd();
+            process.Close();
 
-        public string Run(IBuilderProcessor builderProcessor, string input)
-        {
-            var process = builderProcessor.GetProcess();
-            process.Start();
-            process.StandardInput.Write(input);
-            process.WaitForExit(TimeOut);
-            return process.StandardOutput.ReadToEnd();
+            return readToEnd;
         }
 
         public string Run(string sourceCode, string input)
         {
-            var fileName = Guid.NewGuid().ToString();
+            var fileName = $"{Guid.NewGuid()}.exe";
             var result = _compiler.Compile(sourceCode, fileName);
             if (!result.IsCompile)
                 throw new Exception(result.ToString());
-            var builder = new CSharpProcessBuilder();
-            builder.BuildProcess(fileName);
-            return Run(builder, input);
+
+            var process = CSharpProcessBuilder.BuildProcess(fileName);
+            return Run(process, input);
         }
     }
 }

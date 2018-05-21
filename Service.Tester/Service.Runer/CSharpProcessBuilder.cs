@@ -1,48 +1,23 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.IO;
 using Service.Common;
-using Service.Runner.Interfaces;
 
 namespace Service.Runner
 {
-    public class CSharpProcessBuilder : IBuilderProcessor
+    public static class CSharpProcessBuilder
     {
-        private readonly Process _process;
-
-        public CSharpProcessBuilder()
+        public static Process BuildProcess(string fileName)
         {
-            _process = new Process();
-        }
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.UseShellExecute = false;
+            startInfo.RedirectStandardInput = true;
+            startInfo.RedirectStandardOutput = true;
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.FileName = Path.Combine(DefaultValues.CompilePath, fileName);
 
-        public void BuildProcessWithRedirectStandartInput(string workingDirectory, string fileName)
-        {
-            _process.StartInfo.RedirectStandardInput = true;
-            BuildProcessWithoutRedirectStandartInput(workingDirectory, fileName);
-        }
-
-        public void BuildProcessWithoutRedirectStandartInput(string workingDirectory, string fileName)
-        {
-            _process.StartInfo.WorkingDirectory = workingDirectory;
-            _process.StartInfo.FileName = Path.Combine(workingDirectory, fileName);
-            _process.StartInfo.RedirectStandardOutput = true;
-        }
-
-        public void BuildProcess(string fileName)
-        {
-            var workingDirectory = DefaultValues.CompilePath;
-            BuildProcessWithRedirectStandartInput(workingDirectory, fileName);
-        }
-
-        public Process GetProcess()
-        {
-            return _process;
-        }
-
-        public void AddProcessExitEventHandler(EventHandler exitHandler)
-        {
-            _process.EnableRaisingEvents = true;
-            _process.Exited += exitHandler;
+            Process process = new Process();
+            process.StartInfo = startInfo;
+            return process;
         }
     }
 }

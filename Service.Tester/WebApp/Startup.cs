@@ -43,7 +43,6 @@ namespace WebApp
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IRestoreDataService, RestoreDataService>();
             services.AddTransient<IRunner, CSharpRunner>();
-            services.AddTransient<IBuilderProcessor, CSharpProcessBuilder>();
             services.AddTransient<ICompiler, RoslynCompiler>();
             services.AddMvc();
         }

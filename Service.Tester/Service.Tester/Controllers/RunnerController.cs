@@ -29,10 +29,11 @@ namespace Service.Tester.Controllers
             if (!compileResult.IsCompile)
                 return new TesterApiResult<string>(compileResult.ToString());
 
-            IBuilderProcessor builderProcessor = new CSharpProcessBuilder();
-            builderProcessor.BuildProcess(filename);
-            var resulRun = _runnerService.Run(source, input);
-            return new TesterApiResult<string>(resulRun);
+            //IBuilderProcessor builderProcessor = CSharpProcessBuilder();
+            //builderProcessor.BuildProcess(filename);
+            //var resulRun = _runnerService.Run(source, input);
+            //return new TesterApiResult<string>(resulRun)
+            return null;
         }
     }
 }

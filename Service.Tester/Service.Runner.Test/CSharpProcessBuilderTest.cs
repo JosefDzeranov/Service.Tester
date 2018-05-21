@@ -9,9 +9,7 @@ namespace Service.Runner.Test
         [Test]
         public void GetProcess_GetValue_NotNull()
         {
-            var processBuilder = new CSharpProcessBuilder();
-
-            var process = processBuilder.GetProcess();
+            var process = CSharpProcessBuilder.BuildProcess("qweqwe");
 
             Assert.IsNotNull(process);
         }
@@ -29,18 +27,6 @@ namespace Service.Runner.Test
             //Assert.IsNotNull(process);
             //Assert.AreEqual(workingDirectory, process.StartInfo.WorkingDirectory);
             //Assert.AreEqual(Path.Combine(workingDirectory, fileName), process.StartInfo.FileName);
-        }
-
-        [Test]
-        public void AddProcessExitEventHandler_SetDelegate_EnableRaisingEventsIsTrue()
-        {
-            var processBuilder = new CSharpProcessBuilder();
-
-            processBuilder.AddProcessExitEventHandler(delegate { });
-            var process = processBuilder.GetProcess();
-
-            Assert.IsNotNull(process);
-            Assert.AreEqual(true, process.EnableRaisingEvents);
         }
     }
 }
