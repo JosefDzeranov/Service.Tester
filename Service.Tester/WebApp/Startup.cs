@@ -5,6 +5,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProblemProcessor.Restore;
+using Service.Runner;
+using Service.Runner.Compilation.Interfaces;
+using Service.Runner.Compilation.Roslyn;
+using Service.Runner.Interfaces;
 using Service.Storage.Context;
 using WebApp.Models;
 using WebApp.Services;
@@ -37,8 +41,10 @@ namespace WebApp
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-            services.AddSingleton<IRestoreDataService, RestoreDataService>();
-
+            services.AddTransient<IRestoreDataService, RestoreDataService>();
+            services.AddTransient<IRunner, CSharpRunner>();
+            services.AddTransient<IBuilderProcessor, CSharpProcessBuilder>();
+            services.AddTransient<ICompiler, RoslynCompiler>();
             services.AddMvc();
         }
 

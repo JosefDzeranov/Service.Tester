@@ -22,7 +22,7 @@ namespace ProblemProcessor.Restore
 
         public void Save(RestoreData data)
         {
-            if (data.Output != null)
+            if (data.Output == null)
             {
                 data.Output = CalculateOutputData(data.SourceCode, data.Input);
             }

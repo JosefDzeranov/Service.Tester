@@ -31,7 +31,7 @@ namespace Service.Tester.Controllers
 
             IBuilderProcessor builderProcessor = new CSharpProcessBuilder();
             builderProcessor.BuildProcess(filename);
-            var resulRun = _runnerService.Run(builderProcessor, input);
+            var resulRun = _runnerService.Run(source, input);
             return new TesterApiResult<string>(resulRun);
         }
     }

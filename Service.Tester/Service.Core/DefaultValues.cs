@@ -11,7 +11,7 @@ namespace Service.Common
         /// <summary>
         /// Путь расположения все откомпилированных файлов.
         /// </summary>
-        public const string CompilePath = @"D:\\Compilers\\";
+        public const string CompilePath = @"D:\Compilers\";
 
         /// <summary>
         /// Стандартные пространства имен необходимые для компиляции кода.
