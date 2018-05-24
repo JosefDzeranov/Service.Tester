@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +16,8 @@ using Service.Storage.Context;
 using WebApp.Models;
 using WebApp.Services;
 using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
+using Service.InputDataGenerator;
+using Service.InputDataGenerator.Generators;
 
 namespace WebApp
 {
@@ -44,6 +49,25 @@ namespace WebApp
             services.AddTransient<IRestoreDataService, RestoreDataService>();
             services.AddTransient<IRunner, CSharpRunner>();
             services.AddTransient<ICompiler, RoslynCompiler>();
+
+            var numberGenerator = new NumberGenerator(1, Int32.MaxValue);
+            var charGenerator = new CharacterGenerator(0, 26);
+
+            var types = new Dictionary<DataGeneratorType, IDataCreator>
+            {
+                {DataGeneratorType.OneNumber, new OneObjectCreator<int>(numberGenerator) },
+                {DataGeneratorType.OneString, new OneObjectCreator<char>(charGenerator) },
+
+                {DataGeneratorType.TwoNumbersOnLineCreator, new TwoObjectsOnLineCreator<int,int>(numberGenerator,numberGenerator) },
+                {DataGeneratorType.TwoStringsOnLineCreator, new TwoObjectsOnLineCreator<char, char>(charGenerator, charGenerator) },
+
+                { DataGeneratorType.OneNumberAndMoreNumbersOnEchLineCreator, new OneNumberAndMoreObjectsOnEchLineCreator<int>(numberGenerator,numberGenerator) },
+                {DataGeneratorType.OneNumberAndMoreStringsOnEchLineCreator, new OneNumberAndMoreObjectsOnEchLineCreator<char>(numberGenerator, charGenerator) },
+
+                { DataGeneratorType.OneNumberInLineAndMoreNumbersInSecondLineCreator, new OneNumberInLineAndMoreObjectsInSecondLineCreator<int>(numberGenerator, numberGenerator) },
+                {DataGeneratorType.OneNumberInLineAndMoreStringsInSecondLineCreator, new OneNumberInLineAndMoreObjectsInSecondLineCreator<char>(numberGenerator, charGenerator) },
+            };
+            services.AddSingleton(x => types);
             services.AddMvc();
         }
 
