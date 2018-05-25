@@ -31,14 +31,14 @@ namespace WebApp.Controllers
         // POST: TraceTable/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(TraceTableViewModel traceTableViewModel)
+        public ActionResult Create(CreateTraceTableViewModel createTraceTableViewModel)
         {
             try
             {
-                var problem = traceTableViewModel.Adapt<TraceTableData>();
+                var problem = createTraceTableViewModel.Adapt<TraceTableData>();
                 _traceTableService.Save(problem);
 
-                return RedirectToAction("Index", "Problems");
+                return RedirectToAction("Index", "Problemset");
             }
             catch
             {

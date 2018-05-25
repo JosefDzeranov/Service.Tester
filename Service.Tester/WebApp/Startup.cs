@@ -7,7 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProblemProcessor.CodeCorrector;
 using ProblemProcessor.Restore;
+using ProblemProcessor.TraceTable;
 using Service.Runner;
 using Service.Runner.Compilation.Interfaces;
 using Service.Runner.Compilation.Roslyn;
@@ -47,6 +49,8 @@ namespace WebApp
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IRestoreDataService, RestoreDataService>();
+            services.AddTransient<ICodeCorrectorService, CodeCorrectorService>();
+            services.AddTransient<ITraceTableService, TraceTableService>();
             services.AddTransient<IRunner, CSharpRunner>();
             services.AddTransient<ICompiler, RoslynCompiler>();
 

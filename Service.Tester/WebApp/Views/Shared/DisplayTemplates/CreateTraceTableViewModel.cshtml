@@ -1,7 +1,7 @@
-﻿@model WebApp.Models.TraceTable.TraceTableViewModel
+﻿@model WebApp.Models.TraceTable.CreateTraceTableViewModel
 
 @{
-    ViewData["Title"] = "TraceTableViewModel";
+    ViewData["Title"] = "CreateTraceTableViewModel";
 }
 
 <h2>Создание задания трассировочная таблица</h2>
@@ -22,15 +22,11 @@
             </div>
             <div class="form-group">
                 <label asp-for="SourceCode" class="control-label"></label>
-                <textarea asp-for="SourceCode" class="form-control source-code-input" ></textarea>
+                <textarea asp-for="SourceCode" class="form-control source-code-input"></textarea>
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <div class="source-code-output"></div>
-            </div>
-            <div class="form-group">
-                <input asp-for="BreakPointLine" class="form-control breakpoint-line" type="hidden" />
-                <span asp-validation-for="BreakPointLine" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />

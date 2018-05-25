@@ -7,7 +7,7 @@ using Service.Storage.ExtraModels;
 
 namespace ProblemProcessor.CodeCorrector
 {
-    public class CodeCorrectorService:ICodeCorrectorService
+    public class CodeCorrectorService : ICodeCorrectorService
     {
         private readonly DatabaseContext _dbContext;
 
@@ -35,6 +35,8 @@ namespace ProblemProcessor.CodeCorrector
             var additioanalData = new
             {
                 data.SourceCode,
+                data.CorrectSourceCode,
+                data.IncorrectSourceCode,
                 data.GeneratorType
             };
             problem.SpecificData = JsonConvert.SerializeObject(additioanalData);

@@ -1,7 +1,9 @@
-﻿using Mapster;
+﻿using System;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using ProblemProcessor.CodeCorrector;
 using ProblemProcessor.CodeCorrector.Models;
+using WebApp.Models;
 using WebApp.Models.CodeCorrector;
 
 namespace WebApp.Controllers
@@ -28,11 +30,12 @@ namespace WebApp.Controllers
             {
                 var problem = model.Adapt<CodeCorrectorData>();
                 _codeCorrectorService.Save(problem);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Problemset");
             }
-            catch
+            catch (Exception e)
             {
-                return View();
+                ViewBag.Error = e.Message;
+                return View("Error");
             }
         }
     }
