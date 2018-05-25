@@ -7,13 +7,8 @@ using Microsoft.Azure.KeyVault.Models;
 using Microsoft.EntityFrameworkCore;
 using Service.Storage.Context;
 using Service.Storage.Entities;
-using Service.Storage.ExtraModels;
 using WebApp.Extensions;
-using WebApp.Models.BlackBox;
-using WebApp.Models.CodeCorrector;
-using WebApp.Models.Problems;
-using WebApp.Models.RestoreData;
-using WebApp.Models.TraceTable;
+using WebApp.Models.Problemset;
 
 namespace WebApp.Controllers
 {
@@ -127,17 +122,9 @@ namespace WebApp.Controllers
         {
             if (problemTypeId == null)
                 throw new ArgumentNullException(nameof(problemTypeId));
+            
             var problemType = _dbContext.ProblemTypes.SingleOrDefault(x => x.Id == problemTypeId);
-
-            switch (problemType?.Name)
-            {
-                case ProblemTypes.TraceTable: return new CreateTraceTableViewModel();
-                case ProblemTypes.BlackBox: return new CreateBlackBoxViewModel();
-                case ProblemTypes.RestoreData: return new CreateRestoreDataViewModel();
-                case ProblemTypes.CodeCorrector: return new CreateCodeCorrectorViewModel();
-
-                default: throw new Exception($"{problemTypeId} is not found");
-            }
+            return ProblemTypeExtensions.Mapping(problemType.Name);
         }
 
         #region Selecting problem type

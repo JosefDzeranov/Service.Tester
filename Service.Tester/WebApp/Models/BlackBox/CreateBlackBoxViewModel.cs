@@ -1,5 +1,5 @@
 ﻿using System;
-using WebApp.Models.Problems;
+using WebApp.Models.Problemset;
 
 namespace WebApp.Models.BlackBox
 {

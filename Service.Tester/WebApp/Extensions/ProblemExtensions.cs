@@ -1,6 +1,6 @@
 ﻿using System;
 using Service.Storage.Entities;
-using WebApp.Models.Problems;
+using WebApp.Models.Problemset;
 using WebApp.Models.TraceTable;
 
 namespace WebApp.Extensions

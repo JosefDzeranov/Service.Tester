@@ -1,13 +1,5 @@
-﻿@model WebApp.Models.CodeCorrector.CreateCodeCorrectorViewModel
+﻿@model WebApp.Models.CodeCorrector.DescCodeCorrectorViewModel
 
-@{
-    ViewData["Title"] = "CreateCodeCorrectorViewModel";
-}
-
-<h2>CreateCodeCorrectorViewModel</h2>
-
-<h4>CreateCodeCorrectorViewModel</h4>
-<hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create" asp-controller="CodeCorrector">
@@ -48,11 +40,3 @@
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index" asp-controller="Home">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

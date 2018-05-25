@@ -1,4 +1,4 @@
-﻿namespace WebApp.Models.Problems
+﻿namespace WebApp.Models.Problemset
 {
     public class DataGeneratorTypeViewModel
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Service.Storage.Entities;
 
-namespace WebApp.Models.Problems
+namespace WebApp.Models.Problemset
 {
     public class ProblemViewModel
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WebApp.Models.Problems
+namespace WebApp.Models.Problemset
 {
     public interface ICreateProblemViewModel
     {
