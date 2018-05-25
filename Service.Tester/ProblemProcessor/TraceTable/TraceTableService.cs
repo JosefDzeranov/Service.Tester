@@ -1,27 +1,46 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using ProblemProcessor.TraceTable.Models;
+using Service.Storage.Context;
+using Service.Storage.Entities;
 using Service.Storage.ExtraModels;
 
 namespace ProblemProcessor.TraceTable
 {
-    public class TraceTableService:ITraceTableService
+    public class TraceTableService : ITraceTableService
     {
+        private readonly DatabaseContext _dbContext;
+
+        public TraceTableService(DatabaseContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
         public void Save(TraceTableData data)
         {
-            var problem = traceTableViewModel.ToBo();
-            SetProblemType(problem, ProblemTypes.TraceTable);
-            var additioanalData = new
-            {
-                traceTableViewModel.BreakPointLine,
-                traceTableViewModel.SourceCode,
-                traceTableViewModel.GeneratorType
-            };
-            problem.SpecificData = JsonConvert.SerializeObject(additioanalData);
-
+            var problem = CreateProblem(data);
             _dbContext.Problems.Add(problem);
             _dbContext.SaveChanges();
+        }
 
-            throw new System.NotImplementedException();
+
+        private Problem CreateProblem(TraceTableData data)
+        {
+            var problem = new Problem
+            {
+                Description = data.Description,
+                LastModifiedTime = DateTime.UtcNow,
+                Name = data.Name
+            };
+            ProblemTypesHelper.SetProblemType(_dbContext, problem, ProblemTypes.RestoreData);
+
+            var additioanalData = new
+            {
+                data.SourceCode,
+                data.GeneratorType
+            };
+            problem.SpecificData = JsonConvert.SerializeObject(additioanalData);
+            return problem;
         }
     }
 }

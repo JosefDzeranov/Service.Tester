@@ -1,23 +1,19 @@
-﻿using System;
-using System.Linq;
+﻿using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Service.Storage.Context;
-using Service.Storage.Entities;
-using Service.Storage.ExtraModels;
-using WebApp.Extensions;
+using ProblemProcessor.TraceTable;
+using ProblemProcessor.TraceTable.Models;
 using WebApp.Models.TraceTable;
 
 namespace WebApp.Controllers
 {
     public class TraceTableController : Controller
     {
-        private readonly DatabaseContext _dbContext;
+        private readonly ITraceTableService _traceTableService;
 
-        public TraceTableController(DatabaseContext dbContext)
+        public TraceTableController(ITraceTableService traceTableService)
         {
-            _dbContext = dbContext;
+            _traceTableService = traceTableService;
         }
 
         // GET: TraceTable
@@ -39,18 +35,8 @@ namespace WebApp.Controllers
         {
             try
             {
-                var problem = traceTableViewModel.ToBo();
-                SetProblemType(problem, ProblemTypes.TraceTable);
-                var additioanalData = new
-                {
-                    traceTableViewModel.BreakPointLine,
-                    traceTableViewModel.SourceCode,
-                    traceTableViewModel.GeneratorType
-                };
-                problem.SpecificData = JsonConvert.SerializeObject(additioanalData);
-
-                _dbContext.Problems.Add(problem);
-                _dbContext.SaveChanges();
+                var problem = traceTableViewModel.Adapt<TraceTableData>();
+                _traceTableService.Save(problem);
 
                 return RedirectToAction("Index", "Problems");
             }
@@ -105,15 +91,5 @@ namespace WebApp.Controllers
                 return View();
             }
         }
-
-
-        private void SetProblemType(Problem problem, ProblemTypes type)
-        {
-            var problemType = _dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
-            problem.Type = problemType ?? throw new InvalidOperationException();
-            problem.TypeId = problemType.Id;
-        }
-
-
     }
 }
