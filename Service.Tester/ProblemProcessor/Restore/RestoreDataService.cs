@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using Newtonsoft.Json;
 using ProblemProcessor.Restore.Models;
 using Service.Runner.Interfaces;
@@ -22,11 +21,6 @@ namespace ProblemProcessor.Restore
 
         public void Save(RestoreData data)
         {
-            if (data.Output == null)
-            {
-                data.Output = CalculateOutputData(data.SourceCode, data.Input);
-            }
-
             var problem = CreateProblem(data);
 
             _dbContext.Problems.Add(problem);
@@ -39,29 +33,17 @@ namespace ProblemProcessor.Restore
             {
                 Description = data.Description,
                 LastModifiedTime = DateTime.UtcNow,
-                Name = data.Name,
+                Name = data.Name
             };
-            SetProblemType(problem, ProblemTypes.RestoreData);
+            ProblemTypesHelper.SetProblemType(_dbContext, problem, ProblemTypes.RestoreData);
 
             var additioanalData = new
             {
                 data.SourceCode,
-                data.Input,
-                data.Output
+                data.GeneratorType
             };
             problem.SpecificData = JsonConvert.SerializeObject(additioanalData);
             return problem;
-        }
-
-        private void SetProblemType(Problem problem, ProblemTypes type)
-        {
-            var problemType = _dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
-            problem.Type = problemType ?? throw new InvalidOperationException();
-            problem.TypeId = problemType.Id;
-        }
-        private string CalculateOutputData(string sourceCode, string input)
-        {
-            return _runner.Run(sourceCode, input);
         }
     }
 }

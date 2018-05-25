@@ -9,7 +9,6 @@ namespace ProblemProcessor.Restore.Models
         public string Description { get; set; }
 
         public string SourceCode { get; set; }
-        public string Input { get; set; }
-        public string Output { get; set; }
+        public string GeneratorType { get; set; }
     }
 }
