@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebApp.Models.CodeCorrector;
 
 namespace WebApp.Controllers
 {
@@ -11,8 +12,9 @@ namespace WebApp.Controllers
             View();
         }
 
-        public IActionResult Create()
+        public IActionResult Create(CreateCodeCorrectorViewModel model)
         {
+
             return View();
         }
     }

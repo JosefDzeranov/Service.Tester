@@ -9,7 +9,7 @@
         TraceTable = 1,
         BlackBox = 2,
         RestoreData = 3,
-        Type4 = 4,
+        CodeCorrector = 4,
         Type5 = 5,
     }
 }

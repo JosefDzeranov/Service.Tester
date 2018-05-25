@@ -1,6 +1,6 @@
 ﻿namespace WebApp.Models
 {
-    enum DataGeneratorType
+    public enum DataGeneratorType
     {
         OneNumber,
         OneString,

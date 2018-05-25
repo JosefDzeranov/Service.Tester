@@ -57,6 +57,7 @@ namespace WebApp.Controllers
                 new ProblemType {Name = ProblemTypes.TraceTable, FullName = "Трассировочная таблица"},
                 new ProblemType {Name = ProblemTypes.BlackBox, FullName = "Черный ящик"},
                 new ProblemType {Name = ProblemTypes.RestoreData, FullName = "Восстановление данных"},
+                new ProblemType {Name = ProblemTypes.CodeCorrector, FullName = "Исправление кода"},
             };
         }
     }

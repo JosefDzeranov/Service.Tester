@@ -45,6 +45,7 @@ namespace WebApp.Controllers
                 {
                     traceTableViewModel.BreakPointLine,
                     traceTableViewModel.SourceCode,
+                    traceTableViewModel.GeneratorType
                 };
                 problem.SpecificData = JsonConvert.SerializeObject(additioanalData);
 

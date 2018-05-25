@@ -9,7 +9,9 @@ using Service.Storage.Context;
 using Service.Storage.Entities;
 using Service.Storage.ExtraModels;
 using WebApp.Extensions;
+using WebApp.Models;
 using WebApp.Models.BlackBox;
+using WebApp.Models.CodeCorrector;
 using WebApp.Models.Problems;
 using WebApp.Models.RestoreData;
 using WebApp.Models.TraceTable;
@@ -116,6 +118,9 @@ namespace WebApp.Controllers
         [HttpPost]
         public ActionResult Create(Guid id)
         {
+            var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
+            ViewBag.GeneratorType = new SelectList(generatorTypes, nameof(DataGeneratorTypeViewModel.Name),
+                nameof(DataGeneratorTypeViewModel.Description));
             return View(GetProblemViewModel(id));
         }
 
@@ -129,7 +134,10 @@ namespace WebApp.Controllers
             {
                 case ProblemTypes.TraceTable: return new TraceTableViewModel();
                 case ProblemTypes.BlackBox: return new CreateBlackBoxViewModel();
-                default: return new CreateRestoreDataViewModel();
+                case ProblemTypes.RestoreData: return new CreateRestoreDataViewModel();
+                case ProblemTypes.CodeCorrector: return new CreateCodeCorrectorViewModel();
+
+                default: throw new Exception($"{problemTypeId} is not found");
             }
         }
 

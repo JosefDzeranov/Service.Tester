@@ -11,5 +11,6 @@ namespace WebApp.Models.RestoreData
 
         public string SourceCode { get; set; }
         public string Input { get; set; }
+        public DataGeneratorType GeneratorType { get; set; }
     }
 }
