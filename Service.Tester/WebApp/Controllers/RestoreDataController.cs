@@ -43,7 +43,7 @@ namespace WebApp.Controllers
             {
                 var problem = model.Adapt<RestoreData>();
                 _problemService.Create(problem);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Problemset");
             }
             catch
             {

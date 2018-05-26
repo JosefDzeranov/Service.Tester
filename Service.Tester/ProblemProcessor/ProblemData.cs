@@ -2,7 +2,7 @@
 
 namespace ProblemProcessor
 {
-    public abstract class ProblemData
+    public class ProblemData
     {
         public Guid Id { get; set; }
 
@@ -14,6 +14,10 @@ namespace ProblemProcessor
         public string SourceCode { get; set; }
 
         public string GeneratorType { get; set; }
-        public abstract object GetAdditionalData();
+
+        public virtual object GetAdditionalData()
+        {
+            return new { };
+        }
     }
 }

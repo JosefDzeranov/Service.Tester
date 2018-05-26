@@ -1,4 +1,5 @@
-﻿@model WebApp.Models.RestoreData.CreateRestoreDataViewModel
+﻿@using ProblemProcessor
+@model WebApp.Models.RestoreData.CreateRestoreDataViewModel
 
 @{
     ViewData["Title"] = "CreateRestoreDataViewModel";
@@ -31,6 +32,9 @@
                 <label asp-for="GeneratorType" class="control-label"></label>
                 <select asp-for="GeneratorType" class="form-control" asp-items="ViewBag.GeneratorType"></select>
                 <span asp-validation-for="GeneratorType" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="Type" value="@ProblemTypes.RestoreData" type="hidden" />
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-default" />

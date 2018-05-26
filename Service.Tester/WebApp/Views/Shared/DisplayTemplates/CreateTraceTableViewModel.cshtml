@@ -1,4 +1,5 @@
-﻿@model WebApp.Models.TraceTable.CreateTraceTableViewModel
+﻿@using ProblemProcessor
+@model WebApp.Models.TraceTable.CreateTraceTableViewModel
 
 @{
     ViewData["Title"] = "CreateTraceTableViewModel";
@@ -24,6 +25,9 @@
                 <label asp-for="SourceCode" class="control-label"></label>
                 <textarea asp-for="SourceCode" class="form-control source-code-input"></textarea>
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
+            </div>
+            <div>
+                <input asp-for="Type" value="@ProblemTypes.TraceTable" type="hidden" />
             </div>
             <div class="form-group">
                 <div class="source-code-output"></div>

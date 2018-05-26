@@ -3,8 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using Mapster;
 using Newtonsoft.Json;
+using ProblemProcessor.CodeCorrector.Models;
+using ProblemProcessor.Restore.Models;
+using ProblemProcessor.TraceTable.Models;
 using Service.Storage;
 using Service.Storage.Entities;
+
+using StorageProblemTypes = Service.Storage.ExtraModels.ProblemTypes;
 
 namespace ProblemProcessor
 {
@@ -29,7 +34,12 @@ namespace ProblemProcessor
         public IEnumerable<ProblemData> GetAll()
         {
             var problems = _problemRepository.GetAll();
-            return problems.Select(p => p.Adapt<ProblemData>());
+            return problems.Select(p => new ProblemData
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Type = p.Type.Type.Adapt<ProblemTypes>(),
+            });
         }
 
         private Problem ToStorageEntity(ProblemData data)
