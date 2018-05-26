@@ -2,6 +2,7 @@
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using ProblemProcessor;
+using WebApp.Models.CodeCorrector;
 using WebApp.Models.Problemset;
 
 namespace WebApp.Controllers
@@ -16,10 +17,14 @@ namespace WebApp.Controllers
         }
 
         // GET
-        public IActionResult Description(Guid Id)
+        public IActionResult Description(Guid id)
         {
-
-            return View();
+            var problem = _problemService.Get(id);
+            var descProblem = new DescCodeCorrectorViewModel();
+            
+            if (problem.Type == ProblemTypes.CodeCorrector)
+                descProblem = problem.Adapt<DescCodeCorrectorViewModel>();
+            return View(descProblem);
         }
 
 

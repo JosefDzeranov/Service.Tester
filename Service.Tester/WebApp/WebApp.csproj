@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <Folder Include="Views\Shared\DisplayTemplates\CreateProblemsViews\" />
+    <Folder Include="Views\Shared\DisplayTemplates\DescProblemsViews\" />
   </ItemGroup>
 
 </Project>

@@ -40,6 +40,9 @@ namespace WebApp.Controllers
             }
         }
 
-        //public IActionResult Check()
+        public IActionResult Check(DescCodeCorrectorViewModel viewModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

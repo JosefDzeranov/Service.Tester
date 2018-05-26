@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mapster;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProblemProcessor;
 using ProblemProcessor.CodeCorrector;
+using ProblemProcessor.CodeCorrector.Models;
 using ProblemProcessor.Restore;
 using ProblemProcessor.TraceTable;
 using Service.Runner;
@@ -22,6 +24,8 @@ using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
 using Service.InputDataGenerator;
 using Service.InputDataGenerator.Generators;
 using Service.Storage;
+using StackExchange.Redis;
+using WebApp.Models.CodeCorrector;
 
 namespace WebApp
 {
@@ -52,10 +56,10 @@ namespace WebApp
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IRunner, CSharpRunner>();
             services.AddTransient<ICompiler, RoslynCompiler>();
-            
+
             services.AddTransient<IProblemRepository, ProblemRepository>();
             services.AddTransient<IProblemTypeRepository, ProblemTypeRepository>();
-            
+
             services.AddTransient<IProblemService, ProblemService>();
             services.AddTransient<IProblemTypeService, ProblemTypeService>();
 
@@ -80,6 +84,16 @@ namespace WebApp
             };
             services.AddSingleton(x => types);
 
+            TypeAdapterConfig<CreateCodeCorrectorViewModel, CodeCorrectorData>.NewConfig()
+                .Map(d => d.AdditionalData,
+                    s => new CodeCorrectorAdditionalData
+                    {
+                        SourceCode = s.SourceCode,
+                        IncorrectSourceCode = s.IncorrectSourceCode
+                    });
+
+            TypeAdapterConfig<CodeCorrectorData, DescCodeCorrectorViewModel>.NewConfig()
+                .Map(d => d.IncorrectSourceCode, s => s.AdditionalData.IncorrectSourceCode);
             services.AddMvc();
         }
 

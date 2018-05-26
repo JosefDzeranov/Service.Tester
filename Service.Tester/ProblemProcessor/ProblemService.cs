@@ -42,13 +42,37 @@ namespace ProblemProcessor
             });
         }
 
+        public ProblemData Get(Guid id)
+        {
+            var problem = _problemRepository.Get(id);
+            switch (problem.Type.Type)
+            {
+                case StorageProblemTypes.CodeCorrector:
+                    {
+                        var additionalData = JsonConvert.DeserializeObject<CodeCorrectorAdditionalData>(problem.SpecificData);
+                        return new CodeCorrectorData
+                        {
+                            Id = problem.Id,
+                            Name = problem.Name,
+                            Description = problem.Description,
+                            Type = problem.Type.Type.Adapt<ProblemTypes>(),
+                            GeneratorType = problem.GeneratorType,
+                            AdditionalData = additionalData
+                        };
+                    }
+            }
+
+            return null;
+        }
+
         private Problem ToStorageEntity(ProblemData data)
         {
             var problem = new Problem
             {
                 Description = data.Description,
                 LastModifiedTime = DateTime.UtcNow,
-                Name = data.Name
+                Name = data.Name,
+                GeneratorType = data.GeneratorType
             };
             problem.Type = _problemTypeRepository.Get(x => x.Type.ToString() == data.Type.ToString());
             problem.SpecificData = JsonConvert.SerializeObject(data.GetAdditionalData());

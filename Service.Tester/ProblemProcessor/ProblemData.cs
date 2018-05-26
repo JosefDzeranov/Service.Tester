@@ -11,8 +11,6 @@ namespace ProblemProcessor
         public string Description { get; set; }
         public ProblemTypes Type { get; set; }
 
-        public string SourceCode { get; set; }
-
         public string GeneratorType { get; set; }
 
         public virtual object GetAdditionalData()

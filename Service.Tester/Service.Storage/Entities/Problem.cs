@@ -54,6 +54,11 @@ namespace Service.Storage.Entities
         /// </summary>
         public string SpecificData { get; set; }
 
+        /// <summary>
+        /// Тип генератора входных данных
+        /// </summary>
+        public string GeneratorType { get; set; }
+
         public Problem()
         {
             Tags = new List<ProblemTag>();

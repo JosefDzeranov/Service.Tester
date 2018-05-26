@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ProblemProcessor
 {
@@ -6,5 +7,7 @@ namespace ProblemProcessor
     {
         void Create(ProblemData problem);
         IEnumerable<ProblemData> GetAll();
+
+        ProblemData Get(Guid id);
     }
 }
