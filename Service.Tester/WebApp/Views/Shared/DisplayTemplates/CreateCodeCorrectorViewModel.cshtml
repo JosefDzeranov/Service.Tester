@@ -10,7 +10,7 @@
 <h4>CreateCodeCorrectorViewModel</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create" asp-controller="CodeCorrector">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -31,13 +31,13 @@
 
             <div class="form-group">
                 <label asp-for="SourceCode" class="control-label"></label>
-                <input asp-for="SourceCode" class="form-control" />
+                <textarea asp-for="SourceCode" class="form-control"></textarea>
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="IncorrectSourceCode" class="control-label"></label>
-                <input asp-for="IncorrectSourceCode" class="form-control" />
+                <textarea asp-for="IncorrectSourceCode" class="form-control"></textarea>
                 <span asp-validation-for="IncorrectSourceCode" class="text-danger"></span>
             </div>
             <div>
