@@ -1,4 +1,4 @@
-﻿namespace WebApp.Models
+﻿namespace ProblemProcessor
 {
     public enum DataGeneratorType
     {

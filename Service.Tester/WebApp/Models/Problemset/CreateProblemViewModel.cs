@@ -1,4 +1,6 @@
 ﻿using System;
+using ProblemProcessor;
+
 namespace WebApp.Models.Problemset
 {
     public interface CreateProblemViewModel

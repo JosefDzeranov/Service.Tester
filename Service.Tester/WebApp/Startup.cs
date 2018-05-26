@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using Mapster;
 using Microsoft.AspNetCore.Builder;
@@ -9,10 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProblemProcessor;
-using ProblemProcessor.CodeCorrector;
 using ProblemProcessor.CodeCorrector.Models;
-using ProblemProcessor.Restore;
-using ProblemProcessor.TraceTable;
 using Service.Runner;
 using Service.Runner.Compilation.Interfaces;
 using Service.Runner.Compilation.Roslyn;
@@ -24,7 +20,6 @@ using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
 using Service.InputDataGenerator;
 using Service.InputDataGenerator.Generators;
 using Service.Storage;
-using StackExchange.Redis;
 using WebApp.Models.CodeCorrector;
 
 namespace WebApp
@@ -65,7 +60,7 @@ namespace WebApp
 
 
 
-            var numberGenerator = new NumberGenerator(1, Int32.MaxValue);
+            var numberGenerator = new NumberGenerator(1, 20);
             var charGenerator = new CharacterGenerator(0, 26);
 
             var types = new Dictionary<DataGeneratorType, IDataCreator>
@@ -93,7 +88,8 @@ namespace WebApp
                     });
 
             TypeAdapterConfig<CodeCorrectorData, DescCodeCorrectorViewModel>.NewConfig()
-                .Map(d => d.IncorrectSourceCode, s => s.AdditionalData.IncorrectSourceCode);
+                .Map(d => d.IncorrectSourceCode, s => s.AdditionalData.IncorrectSourceCode)
+                .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
             services.AddMvc();
         }
 

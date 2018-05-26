@@ -1,4 +1,5 @@
 ﻿using System;
+using ProblemProcessor;
 
 namespace WebApp.Models.Problems
 {
@@ -9,5 +10,6 @@ namespace WebApp.Models.Problems
         string Name { get; set; }
 
         string Description { get; set; }
+        DataGeneratorType Type { get; set; }
     }
 }

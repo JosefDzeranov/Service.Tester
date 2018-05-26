@@ -16,7 +16,7 @@ namespace Service.InputDataGenerator.Generators
         public char Generate()
         {
             var random = new Random();
-            return Convert.ToChar(random.Next(From, To + 1));
+            return Convert.ToChar(random.Next(From, To));
         }
     }
 }

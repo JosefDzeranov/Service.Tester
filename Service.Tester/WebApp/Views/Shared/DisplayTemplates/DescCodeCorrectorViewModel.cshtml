@@ -1,6 +1,6 @@
 ﻿@model WebApp.Models.CodeCorrector.DescCodeCorrectorViewModel
 
-<div class="row">
+<div style="margin-top: 50px" class="row">
     <div class="col-md-6">
         <form asp-action="Check" asp-controller="CodeCorrector">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -17,12 +17,13 @@
 
             <div class="form-group">
                 <label asp-for="IncorrectSourceCode" class="control-label"></label>
-                <textarea style ="height: 500px" asp-for="IncorrectSourceCode" class="form-control"></textarea>
+                <textarea style="height: 500px" asp-for="IncorrectSourceCode" class="form-control"></textarea>
                 <span asp-validation-for="IncorrectSourceCode" class="text-danger"></span>
             </div>
+            <input asp-for="SourceCode" type="hidden" />
 
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Проверить" class="btn btn-default" />
             </div>
         </form>
     </div>
