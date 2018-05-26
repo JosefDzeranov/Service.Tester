@@ -1,7 +1,7 @@
 ﻿using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ProblemProcessor.TraceTable;
+using ProblemProcessor;
 using ProblemProcessor.TraceTable.Models;
 using WebApp.Models.TraceTable;
 
@@ -9,11 +9,11 @@ namespace WebApp.Controllers
 {
     public class TraceTableController : Controller
     {
-        private readonly ITraceTableService _traceTableService;
+        private readonly IProblemService _problemService;
 
-        public TraceTableController(ITraceTableService traceTableService)
+        public TraceTableController(IProblemService problemService)
         {
-            _traceTableService = traceTableService;
+            _problemService = problemService;
         }
 
         // GET: TraceTable
@@ -36,7 +36,7 @@ namespace WebApp.Controllers
             try
             {
                 var problem = createTraceTableViewModel.Adapt<TraceTableData>();
-                _traceTableService.Save(problem);
+                _problemService.Create(problem);
 
                 return RedirectToAction("Index", "Problemset");
             }

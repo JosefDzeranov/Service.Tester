@@ -21,7 +21,10 @@
   <ItemGroup>
     <ProjectReference Include="..\ProblemProcessor\ProblemProcessor.csproj" />
     <ProjectReference Include="..\Service.InputDataGenerator\Service.InputDataGenerator.csproj" />
-    <ProjectReference Include="..\Service.Storage\Service.Storage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\DisplayTemplates\CreateProblemsViews\" />
   </ItemGroup>
 
 </Project>

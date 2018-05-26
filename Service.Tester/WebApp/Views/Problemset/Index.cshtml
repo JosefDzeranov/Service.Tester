@@ -19,10 +19,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Type)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LastModifiedTime)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -30,13 +26,10 @@
         {
             <tr>
                 <td>
-                    @Html.ActionLink(item.Name, "Description", "Problems", item.Id)
+                    @Html.ActionLink(item.Name, "Description", "Problems", new { item.Id })
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Type)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.LastModifiedTime)
                 </td>
                 <td>
 

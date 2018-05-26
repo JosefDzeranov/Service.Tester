@@ -12,10 +12,10 @@ namespace WebApp.Extensions
             return new ProblemViewModel
             {
                 Id = problem.Id,
-                Type = problem.Type.FullName,
+                Type = problem.Type.Name,
                 Name = problem.Name,
                 Description = problem.Description,
-                LastModifiedTime = problem.LastModifiedTime,
+                //LastModifiedTime = problem.LastModifiedTime,
                 Tags = problem.Tags
             };
         }

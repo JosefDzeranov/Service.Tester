@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProblemProcessor;
 using ProblemProcessor.CodeCorrector;
 using ProblemProcessor.Restore;
 using ProblemProcessor.TraceTable;
@@ -20,6 +21,7 @@ using WebApp.Services;
 using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
 using Service.InputDataGenerator;
 using Service.InputDataGenerator.Generators;
+using Service.Storage;
 
 namespace WebApp
 {
@@ -48,11 +50,16 @@ namespace WebApp
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-            services.AddTransient<IRestoreDataService, RestoreDataService>();
-            services.AddTransient<ICodeCorrectorService, CodeCorrectorService>();
-            services.AddTransient<ITraceTableService, TraceTableService>();
             services.AddTransient<IRunner, CSharpRunner>();
             services.AddTransient<ICompiler, RoslynCompiler>();
+            
+            services.AddTransient<IProblemRepository, ProblemRepository>();
+            services.AddTransient<IProblemTypeRepository, ProblemTypeRepository>();
+            
+            services.AddTransient<IProblemService, ProblemService>();
+            services.AddTransient<IProblemTypeService, ProblemTypeService>();
+
+
 
             var numberGenerator = new NumberGenerator(1, Int32.MaxValue);
             var charGenerator = new CharacterGenerator(0, 26);
@@ -72,6 +79,7 @@ namespace WebApp
                 {DataGeneratorType.OneNumberInLineAndMoreStringsInSecondLineCreator, new OneNumberInLineAndMoreObjectsInSecondLineCreator<char>(numberGenerator, charGenerator) },
             };
             services.AddSingleton(x => types);
+
             services.AddMvc();
         }
 

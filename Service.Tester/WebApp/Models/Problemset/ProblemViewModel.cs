@@ -21,11 +21,6 @@ namespace WebApp.Models.Problemset
         public string Type { get; set; }
 
         /// <summary>
-        /// Последняя дата изменения
-        /// </summary>
-        public DateTime LastModifiedTime { get; set; }
-
-        /// <summary>
         /// Теги к задаче 
         /// </summary>
         public List<ProblemTag> Tags { get; set; }

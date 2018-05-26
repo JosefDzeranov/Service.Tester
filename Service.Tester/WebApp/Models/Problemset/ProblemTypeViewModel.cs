@@ -1,4 +1,5 @@
 ﻿using System;
+using ProblemProcessor;
 
 namespace WebApp.Models.Problemset
 {
@@ -6,7 +7,8 @@ namespace WebApp.Models.Problemset
     {
         public Guid Id { get; set; }
 
-        public string Name { get; set; }
+        public ProblemTypes Type { get; set; }
 
+        public string Name { get; set; }
     }
 }

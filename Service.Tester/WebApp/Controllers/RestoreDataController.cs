@@ -1,7 +1,7 @@
 ﻿using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ProblemProcessor.Restore;
+using ProblemProcessor;
 using ProblemProcessor.Restore.Models;
 using WebApp.Models.RestoreData;
 
@@ -9,11 +9,11 @@ namespace WebApp.Controllers
 {
     public class RestoreDataController : Controller
     {
-        private readonly IRestoreDataService _restoreDataService;
+        private readonly IProblemService _problemService;
 
-        public RestoreDataController(IRestoreDataService restoreDataService)
+        public RestoreDataController(IProblemService problemService)
         {
-            _restoreDataService = restoreDataService;
+            _problemService = problemService;
         }
 
         // GET: RestoreData
@@ -42,7 +42,7 @@ namespace WebApp.Controllers
             try
             {
                 var problem = model.Adapt<RestoreData>();
-                _restoreDataService.Save(problem);
+                _problemService.Create(problem);
                 return RedirectToAction(nameof(Index));
             }
             catch

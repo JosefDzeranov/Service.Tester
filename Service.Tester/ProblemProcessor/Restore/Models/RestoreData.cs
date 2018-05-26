@@ -2,5 +2,9 @@
 {
     public class RestoreData : ProblemData
     {
+        public override object GetAdditionalData()
+        {
+            return new { };
+        }
     }
 }

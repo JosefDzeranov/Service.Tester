@@ -45,7 +45,7 @@ namespace WebApp.Controllers
         public IActionResult Create()
         {
             // var names = EnumUtil.GetValues<ProblemTypes>();
-            // ViewBag.Names = new SelectList(names, "Name", "FullName");
+            // ViewBag.Names = new SelectList(names, "Type", "Name");
             return View();
         }
 
@@ -54,7 +54,7 @@ namespace WebApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name,FullName,Id")] ProblemType problemType)
+        public async Task<IActionResult> Create([Bind("Type,Name,Id")] ProblemType problemType)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace WebApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Name,FullName,Id")] ProblemType problemType)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Type,Name,Id")] ProblemType problemType)
         {
             if (id != problemType.Id)
             {

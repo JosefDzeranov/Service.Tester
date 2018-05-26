@@ -2,5 +2,9 @@
 {
     public class TraceTableData : ProblemData
     {
+        public override object GetAdditionalData()
+        {
+            return new { };
+        }
     }
 }

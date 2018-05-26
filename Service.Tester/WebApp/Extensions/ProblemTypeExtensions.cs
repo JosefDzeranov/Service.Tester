@@ -1,7 +1,6 @@
-﻿using System;
+﻿using ProblemProcessor;
+using System;
 using System.Collections.Generic;
-using Service.Storage.Entities;
-using Service.Storage.ExtraModels;
 using WebApp.Models.BlackBox;
 using WebApp.Models.CodeCorrector;
 using WebApp.Models.Problemset;
@@ -12,8 +11,8 @@ namespace WebApp.Extensions
 {
     public static class ProblemTypeExtensions
     {
-        private static Dictionary<ProblemTypes, ICreateProblemViewModel> _mapping =
-            new Dictionary<ProblemTypes, ICreateProblemViewModel>()
+        private static Dictionary<ProblemTypes, CreateProblemViewModel> _mapping =
+            new Dictionary<ProblemTypes, CreateProblemViewModel>()
             {
                 {ProblemTypes.TraceTable, new CreateTraceTableViewModel()},
                 {ProblemTypes.BlackBox, new CreateBlackBoxViewModel()},
@@ -21,16 +20,7 @@ namespace WebApp.Extensions
                 {ProblemTypes.CodeCorrector, new CreateCodeCorrectorViewModel()}
             };
 
-        public static ProblemTypeViewModel ToViewModel(this ProblemType type)
-        {
-            return new ProblemTypeViewModel
-            {
-                Id = type.Id,
-                Name = type.FullName
-            };
-        }
-
-        public static ICreateProblemViewModel Mapping(ProblemTypes problemType)
+        public static CreateProblemViewModel GetProblemByType(ProblemTypes problemType)
         {
             if (!_mapping.ContainsKey(problemType))
                 throw new Exception($"{problemType} is not found");

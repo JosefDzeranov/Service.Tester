@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Linq;
-using Service.Storage.Context;
+using Service.Storage;
 using Service.Storage.Entities;
 using Service.Storage.ExtraModels;
 
@@ -8,11 +7,22 @@ namespace ProblemProcessor
 {
     public class ProblemTypesHelper
     {
-        public static void SetProblemType(DatabaseContext dbContext, Problem problem, ProblemTypes type)
+        private readonly IProblemTypeRepository _repository;
+
+        public ProblemTypesHelper(IProblemTypeRepository repository)
         {
-            var problemType = dbContext.ProblemTypes.FirstOrDefault(x => x.Name == type);
-            problem.Type = problemType ?? throw new InvalidOperationException();
-            problem.TypeId = problemType.Id;
+            this._repository = repository;
         }
+
+        //public static void SetProblemType(Problem problem, ProblemType type)
+        //{
+        //    problem.Type = type ?? throw new InvalidOperationException();
+        //    problem.TypeId = type.Id;
+        //}
+
+        //public static ProblemType GetProblemType( ProblemTypes type)
+        //{
+        //    return _repository.Get(x => x.Type == type);
+        //}
     }
 }

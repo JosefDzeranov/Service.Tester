@@ -53,11 +53,11 @@ namespace WebApp.Controllers
         {
             return new List<ProblemType>
             {
-                new ProblemType {Name = ProblemTypes.None, FullName = "Неизвестно"},
-                new ProblemType {Name = ProblemTypes.TraceTable, FullName = "Трассировочная таблица"},
-                new ProblemType {Name = ProblemTypes.BlackBox, FullName = "Черный ящик"},
-                new ProblemType {Name = ProblemTypes.RestoreData, FullName = "Восстановление данных"},
-                new ProblemType {Name = ProblemTypes.CodeCorrector, FullName = "Исправление кода"},
+                new ProblemType {Type = ProblemTypes.None, Name = "Неизвестно"},
+                new ProblemType {Type = ProblemTypes.TraceTable, Name = "Трассировочная таблица"},
+                new ProblemType {Type = ProblemTypes.BlackBox, Name = "Черный ящик"},
+                new ProblemType {Type = ProblemTypes.RestoreData, Name = "Восстановление данных"},
+                new ProblemType {Type = ProblemTypes.CodeCorrector, Name = "Исправление кода"},
             };
         }
     }

@@ -1,12 +1,11 @@
-﻿using Service.Storage.ExtraModels;
+﻿using System;
 
-namespace Service.Storage.Entities
+namespace ProblemProcessor
 {
-    /// <summary>
-    /// Тип задания
-    /// </summary>
-    public class ProblemType : EntityModel
+    public class ProblemType
     {
+        public Guid Id { get; set; }
+        
         /// <summary>
         /// Имя типа задания
         /// </summary>
@@ -16,5 +15,6 @@ namespace Service.Storage.Entities
         /// Полное название типа задания
         /// </summary>
         public string Name { get; set; }
+        
     }
 }

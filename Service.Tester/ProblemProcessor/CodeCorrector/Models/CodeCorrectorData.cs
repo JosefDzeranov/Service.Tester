@@ -2,7 +2,11 @@
 {
     public class CodeCorrectorData : ProblemData
     {
-        public string CorrectSourceCode { get; set; }
         public string IncorrectSourceCode { get; set; }
+
+        public override object GetAdditionalData()
+        {
+            return new { IncorrectSourceCode };
+        }
     }
 }
