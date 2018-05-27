@@ -2,8 +2,13 @@
 {
     public enum TestResults
     {
-        Ok,
+        // ReSharper disable once InconsistentNaming
+        OK,
+        // ReSharper disable once InconsistentNaming
         WA,
-        TL
+        // ReSharper disable once InconsistentNaming
+        TL,
+        // ReSharper disable once InconsistentNaming
+        CE
     }
 }

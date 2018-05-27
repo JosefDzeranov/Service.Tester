@@ -16,10 +16,11 @@ using Service.Runner.Interfaces;
 using Service.Storage.Context;
 using WebApp.Models;
 using WebApp.Services;
-using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
+using ApplicationDbContext = Service.Storage.Context.ApplicationDbContext;
 using Service.InputDataGenerator;
 using Service.InputDataGenerator.Generators;
 using Service.Storage;
+using Service.Storage.Entities;
 using WebApp.Models.CodeCorrector;
 
 namespace WebApp
