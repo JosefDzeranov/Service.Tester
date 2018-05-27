@@ -1,5 +1,4 @@
-﻿@using Service.Storage.Entities
-@using WebApp.Views.Manage
+﻿@using WebApp.Views.Manage
 @inject SignInManager<ApplicationUser> SignInManager
 @{
     var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();

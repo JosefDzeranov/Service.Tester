@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Service.Storage.Entities
 {
@@ -10,6 +12,8 @@ namespace Service.Storage.Entities
         /// <summary>
         /// У всех сущностей есть УИд в качестве первичного ключа с автогенерированием 
         /// </summary>
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
     }
 }

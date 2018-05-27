@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Mapster;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ProblemProcessor;
@@ -22,7 +21,7 @@ namespace WebApp.Controllers
             _problemTypeService = problemTypeService;
         }
 
-        [Authorize]
+        // GET: Problems
         public ActionResult Index()
         {
             var problems = _problemService.GetAll().Select(x => new ProblemViewModel
@@ -108,7 +107,7 @@ namespace WebApp.Controllers
         //    }
         //}
 
-        [Authorize(Roles = "Admin")]
+
         [HttpPost]
         public IActionResult CreateProblem(CreateProblemViewModel problemViewModel)
         {
@@ -117,7 +116,6 @@ namespace WebApp.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public ActionResult Create(Guid id)
         {
             var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
@@ -139,7 +137,6 @@ namespace WebApp.Controllers
         }
 
         #region Selecting problem type
-        [Authorize(Roles = "Admin")]
         [HttpGet]
         public IActionResult SelectProblemType()
         {

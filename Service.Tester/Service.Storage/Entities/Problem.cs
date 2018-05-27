@@ -18,6 +18,7 @@ namespace Service.Storage.Entities
         /// </summary>
         public string Description { get; set; }
 
+        public Guid? TypeId { get; set; }
         /// <summary>
         /// Тип задания
         /// </summary>
