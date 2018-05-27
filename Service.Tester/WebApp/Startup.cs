@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProblemProcessor;
 using ProblemProcessor.CodeCorrector.Models;
+using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
 using Service.Runner;
 using Service.Runner.Compilation.Interfaces;
@@ -22,6 +23,7 @@ using Service.InputDataGenerator;
 using Service.InputDataGenerator.Generators;
 using Service.Storage;
 using WebApp.Models.CodeCorrector;
+using WebApp.Models.RestoreData;
 
 namespace WebApp
 {
@@ -89,6 +91,7 @@ namespace WebApp
             };
             services.AddSingleton(x => types);
 
+            #region CodeCorrector
             TypeAdapterConfig<CreateCodeCorrectorViewModel, CodeCorrectorData>.NewConfig()
                 .Map(d => d.AdditionalData,
                     s => new CodeCorrectorAdditionalData
@@ -100,6 +103,20 @@ namespace WebApp
             TypeAdapterConfig<CodeCorrectorData, DescCodeCorrectorViewModel>.NewConfig()
                 .Map(d => d.IncorrectSourceCode, s => s.AdditionalData.IncorrectSourceCode)
                 .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
+            #endregion
+
+            #region RestoreData
+            TypeAdapterConfig<CreateRestoreDataViewModel, RestoreData>.NewConfig()
+                .Map(d => d.AdditionalData,
+                    s => new RestoreDataAdditionalData
+                    {
+                        SourceCode = s.SourceCode,
+                    });
+
+            TypeAdapterConfig<RestoreData, DescRestoreDataViewModel>.NewConfig()
+                .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
+            #endregion
+            
             services.AddMvc();
         }
 

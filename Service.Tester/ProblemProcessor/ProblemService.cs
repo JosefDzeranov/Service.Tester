@@ -60,6 +60,19 @@ namespace ProblemProcessor
                             AdditionalData = additionalData
                         };
                     }
+                case StorageProblemTypes.RestoreData:
+                    {
+                        var additionalData = JsonConvert.DeserializeObject<RestoreDataAdditionalData>(problem.SpecificData);
+                        return new RestoreData
+                        {
+                            Id = problem.Id,
+                            Name = problem.Name,
+                            Description = problem.Description,
+                            Type = problem.Type.Type.Adapt<ProblemTypes>(),
+                            GeneratorType = problem.GeneratorType,
+                            AdditionalData = additionalData
+                        };
+                    }
             }
 
             return null;

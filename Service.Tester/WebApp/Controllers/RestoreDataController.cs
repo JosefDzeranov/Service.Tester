@@ -1,8 +1,15 @@
-﻿using Mapster;
-using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Collections.Generic;
+using System.Security.Claims;
+using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProblemProcessor;
 using ProblemProcessor.Restore.Models;
+using ProblemProcessor.Solutions;
+using Service.InputDataGenerator;
+using Service.Runner.Interfaces;
+using WebApp.Models;
 using WebApp.Models.RestoreData;
 
 namespace WebApp.Controllers
@@ -10,33 +17,22 @@ namespace WebApp.Controllers
     public class RestoreDataController : Controller
     {
         private readonly IProblemService _problemService;
+        private readonly Dictionary<DataGeneratorType, IDataCreator> _generators;
+        private readonly IRunner _runner;
+        private readonly ISolutionsService _solutionsService;
 
-        public RestoreDataController(IProblemService problemService)
+        public RestoreDataController(IProblemService problemService, Dictionary<DataGeneratorType, IDataCreator> generators, IRunner runner, ISolutionsService solutionsService)
         {
             _problemService = problemService;
+            _generators = generators;
+            _runner = runner;
+            _solutionsService = solutionsService;
         }
 
-        // GET: RestoreData
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        // GET: RestoreData/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: RestoreData/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
 
         // POST: RestoreData/Create
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public ActionResult Create(CreateRestoreDataViewModel model)
         {
             try
@@ -51,49 +47,39 @@ namespace WebApp.Controllers
             }
         }
 
-        // GET: RestoreData/Edit/5
-        public ActionResult Edit(int id)
+        [Authorize]
+        public IActionResult Check(DescRestoreDataViewModel viewModel)
         {
-            return View();
-        }
-
-        // POST: RestoreData/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
+            var input = viewModel.InputData;
             try
             {
-                // TODO: Add update logic here
+                var problemId = viewModel.Id;
+                Guid.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var userId);
 
-                return RedirectToAction(nameof(Index));
+                var outPutRight = _runner.Run(viewModel.SourceCode, input).Trim('\n', '\r');
+                var result = TestResults.WA;
+                var outPutUser = viewModel.OutputData;
+
+                if (outPutRight == outPutUser)
+                {
+                    result = TestResults.Ok;
+                }
+
+                var solution = new Solution
+                {
+                    Result = result,
+                    UserId = userId,
+                    Input = input,
+                    ProblemId = problemId,
+                    SendTime = DateTime.Now
+                };
+                _solutionsService.Save(solution);
+
+                return RedirectToAction("Description", "Problems", new { viewModel.Id });
             }
-            catch
+            catch (Exception e)
             {
-                return View();
-            }
-        }
-
-        // GET: RestoreData/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: RestoreData/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
+                return View("Error", new ErrorViewModel() { RequestId = e.Message });
             }
         }
     }

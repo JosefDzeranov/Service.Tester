@@ -11,7 +11,7 @@ namespace WebApp.Models.Problems
         string Name { get; set; }
 
         string Description { get; set; }
-        DataGeneratorType Type { get; set; }
+        DataGeneratorType GeneratorType { get; set; }
         List<Submission> Submissions { get; set; }
     }
 }

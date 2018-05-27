@@ -59,7 +59,7 @@ namespace WebApp.Controllers
         [Authorize]
         public IActionResult Check(DescCodeCorrectorViewModel viewModel)
         {
-            var generator = _generators[viewModel.Type];
+            var generator = _generators[viewModel.GeneratorType];
             var input = generator.CreateData();
             try
             {
@@ -89,7 +89,7 @@ namespace WebApp.Controllers
                     UserId = userId,
                     Input = input,
                     ProblemId = problemId,
-                    SendTime = DateTime.UtcNow
+                    SendTime = DateTime.Now
                 };
                 _solutionsService.Save(solution);
 
