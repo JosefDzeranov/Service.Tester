@@ -6,6 +6,7 @@ using ProblemProcessor;
 using ProblemProcessor.CodeCorrector.Models;
 using Service.InputDataGenerator;
 using Service.Runner.Interfaces;
+using WebApp.Models;
 using WebApp.Models.CodeCorrector;
 
 namespace WebApp.Controllers
@@ -49,15 +50,20 @@ namespace WebApp.Controllers
         {
             var generator = _generators[viewModel.Type];
             var input = generator.CreateData();
+            try
+            {
+                var outPutUser = _runner.Run(viewModel.IncorrectSourceCode, input).Trim('\n', '\r');
+                var outPutRight = _runner.Run(viewModel.SourceCode, input).Trim('\n', '\r');
 
-            var outPutUser = _runner.Run(viewModel.IncorrectSourceCode, input).Trim('\n', '\r');
-            var outPutRight = _runner.Run(viewModel.SourceCode, input).Trim('\n', '\r');
-
-            ViewBag.Input = input;
-            ViewBag.outPutUser = outPutUser;
-            ViewBag.outPutRight = outPutRight;
-
-            return View();
+                ViewBag.Input = input;
+                ViewBag.outPutUser = outPutUser;
+                ViewBag.outPutRight = outPutRight;
+                return View();
+            }
+            catch (Exception e)
+            {
+                return View("Error", new ErrorViewModel() {RequestId = e.Message});
+            }
         }
     }
 }

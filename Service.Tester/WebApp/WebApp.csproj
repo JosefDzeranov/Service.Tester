@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-WebApp-B43E62C1-322E-43D6-866E-8853BAD506B6</UserSecretsId>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
 
 

@@ -40,7 +40,14 @@ namespace WebApp
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(connectionStringName)));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole>(opts =>
+            {
+                opts.Password.RequiredLength = 5;   // минимальная длина
+                opts.Password.RequireNonAlphanumeric = false;   // требуются ли не алфавитно-цифровые символы
+                opts.Password.RequireLowercase = false; // требуются ли символы в нижнем регистре
+                opts.Password.RequireUppercase = false; // требуются ли символы в верхнем регистре
+                opts.Password.RequireDigit = false; // требуются ли цифры
+            })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
@@ -94,7 +101,7 @@ namespace WebApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -117,6 +124,43 @@ namespace WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            CreateRoles(serviceProvider);
         }
+
+        private void CreateRoles(IServiceProvider serviceProvider)
+        {
+            //initializing custom roles 
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+            string admin = "Admin";
+
+            var roleExist = roleManager.RoleExistsAsync(admin).Result;
+            if (!roleExist)
+            {
+                //create the roles and seed them to the database: Question 1
+                var _ = roleManager.CreateAsync(new IdentityRole(admin)).Result;
+            }
+
+            var adminEmail = Configuration["Admin:UserEmail"];
+            var adminPassword = Configuration["Admin:UserPassword"];
+
+            var poweruser = new ApplicationUser
+            {
+
+                UserName = adminEmail,
+                Email = adminEmail,
+            };
+
+            var user = userManager.FindByEmailAsync(adminEmail).Result;
+            if (user == null)
+            {
+                var createPowerUser = userManager.CreateAsync(poweruser, adminPassword).Result;
+                if (createPowerUser.Succeeded)
+                {
+                    var _ = userManager.AddToRoleAsync(poweruser, admin).Result;
+                }
+            }
+        }
+
     }
 }
