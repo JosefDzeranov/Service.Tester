@@ -59,6 +59,8 @@ namespace Service.Storage.Entities
         /// </summary>
         public string GeneratorType { get; set; }
 
+        public List<Solution> Solutions { get; set; }
+
         public Problem()
         {
             Tags = new List<ProblemTag>();

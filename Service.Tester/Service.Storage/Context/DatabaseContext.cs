@@ -9,6 +9,8 @@ namespace Service.Storage.Context
         public DbSet<Problem> Problems { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ProblemType> ProblemTypes { get; set; }
+        public DbSet<Solution> Solutions { get; set; }
+
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options)
             : base(options)
