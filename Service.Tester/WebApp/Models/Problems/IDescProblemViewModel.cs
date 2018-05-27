@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using ProblemProcessor;
 
 namespace WebApp.Models.Problems
@@ -11,5 +12,6 @@ namespace WebApp.Models.Problems
 
         string Description { get; set; }
         DataGeneratorType Type { get; set; }
+        List<Submission> Submissions { get; set; }
     }
 }

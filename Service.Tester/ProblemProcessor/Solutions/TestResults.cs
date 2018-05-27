@@ -1,4 +1,4 @@
-﻿namespace Service.Storage.ExtraModels
+﻿namespace ProblemProcessor.Solutions
 {
     public enum TestResults
     {

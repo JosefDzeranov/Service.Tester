@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProblemProcessor;
 using ProblemProcessor.CodeCorrector.Models;
+using ProblemProcessor.Solutions;
 using Service.Runner;
 using Service.Runner.Compilation.Interfaces;
 using Service.Runner.Compilation.Roslyn;
@@ -61,10 +62,12 @@ namespace WebApp
 
             services.AddTransient<IProblemRepository, ProblemRepository>();
             services.AddTransient<IProblemTypeRepository, ProblemTypeRepository>();
+            services.AddTransient<ISolutionRepository, SolutionRepository>();
+
 
             services.AddTransient<IProblemService, ProblemService>();
             services.AddTransient<IProblemTypeService, ProblemTypeService>();
-
+            services.AddTransient<ISolutionsService, SolutionsService>();
 
 
             var numberGenerator = new NumberGenerator(1, 20);
@@ -124,7 +127,7 @@ namespace WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-           CreateRoles(serviceProvider);
+            CreateRoles(serviceProvider);
         }
 
         private void CreateRoles(IServiceProvider serviceProvider)

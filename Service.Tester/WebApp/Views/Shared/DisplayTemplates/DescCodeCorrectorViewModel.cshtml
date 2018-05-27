@@ -4,6 +4,7 @@
     <div class="col-md-6">
         <form asp-action="Check" asp-controller="CodeCorrector">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" type="hidden" />
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
@@ -26,5 +27,36 @@
                 <input type="submit" value="Проверить" class="btn btn-default" />
             </div>
         </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Номер отправки
+                    </th>
+                    <th>
+                        Статус
+                    </th>
+                    <th>
+                        Время отправки
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (var i = 0; i < Model.Submissions.Count; i++)
+                {
+                    var item = Model.Submissions[i];
+                    <tr>
+                        <td>@(i+1)</td>
+                        <td>
+                            @Html.DisplayFor(x => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SendTime)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>
