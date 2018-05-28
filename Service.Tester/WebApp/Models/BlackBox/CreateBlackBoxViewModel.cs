@@ -4,7 +4,7 @@ using WebApp.Models.Problemset;
 
 namespace WebApp.Models.BlackBox
 {
-    public class CreateBlackBoxViewModel : CreateProblemViewModel
+    public class CreateBlackBoxViewModel : ICreateProblemViewModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

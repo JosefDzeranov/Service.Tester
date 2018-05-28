@@ -4,7 +4,7 @@ using WebApp.Models.Problemset;
 
 namespace WebApp.Models.TraceTable
 {
-    public class CreateTraceTableViewModel : CreateProblemViewModel
+    public class CreateTraceTableViewModel : ICreateProblemViewModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

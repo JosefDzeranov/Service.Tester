@@ -1,17 +1,20 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using ProblemProcessor;
 
 namespace WebApp.Models.Problemset
 {
-    public interface CreateProblemViewModel
+    public interface ICreateProblemViewModel
     {
         Guid Id { get; set; }
 
+        [Required]
         string Name { get; set; }
 
+        [Required]
         string Description { get; set; }
         DataGeneratorType GeneratorType { get; set; }
 
-        ProblemProcessor.ProblemTypes Type { get; set; }
+        ProblemTypes Type { get; set; }
     }
 }

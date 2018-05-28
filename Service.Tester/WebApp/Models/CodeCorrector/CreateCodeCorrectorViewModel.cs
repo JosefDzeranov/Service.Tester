@@ -4,7 +4,7 @@ using WebApp.Models.Problemset;
 
 namespace WebApp.Models.CodeCorrector
 {
-    public class CreateCodeCorrectorViewModel : CreateProblemViewModel
+    public class CreateCodeCorrectorViewModel : ICreateProblemViewModel
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

@@ -112,6 +112,7 @@ namespace WebApp
                     s => new RestoreDataAdditionalData
                     {
                         SourceCode = s.SourceCode,
+                        IsInput = s.IsInput
                     });
 
             TypeAdapterConfig<RestoreData, DescRestoreDataViewModel>.NewConfig()

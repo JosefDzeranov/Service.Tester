@@ -33,6 +33,16 @@
                 <select asp-for="GeneratorType" class="form-control" asp-items="ViewBag.GeneratorType"></select>
                 <span asp-validation-for="GeneratorType" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label asp-for="IsInput" class="control-label"></label>
+                <select name="IsInput" class="form-control">
+                    <option value="@true" selected="selected">Генерировать входные данные</option>
+                    <option value="@false">Генерировать выходные данные </option>
+                </select>
+                <span asp-validation-for="IsInput" class="text-danger"></span>
+            </div>
+
             <div>
                 <input asp-for="Type" value="@ProblemTypes.RestoreData" type="hidden" />
             </div>

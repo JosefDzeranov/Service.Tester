@@ -4,12 +4,15 @@ using System.Security.Claims;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProblemProcessor;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
 using Service.InputDataGenerator;
 using Service.Runner.Interfaces;
+using WebApp.Extensions;
 using WebApp.Models;
+using WebApp.Models.Problemset;
 using WebApp.Models.RestoreData;
 
 namespace WebApp.Controllers
@@ -35,36 +38,45 @@ namespace WebApp.Controllers
         [Authorize(Roles = "Admin")]
         public ActionResult Create(CreateRestoreDataViewModel model)
         {
-            try
+            if (ModelState.IsValid)
             {
-                var problem = model.Adapt<RestoreData>();
-                _problemService.Create(problem);
-                return RedirectToAction("Index", "Problemset");
+                try
+                {
+
+                    var problem = model.Adapt<RestoreData>();
+                    _problemService.Create(problem);
+                    return RedirectToAction("Index", "Problemset");
+
+                }
+                catch
+                {
+                    return View("Error");
+                }
             }
-            catch
-            {
-                return View();
-            }
+            var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
+            ViewBag.GeneratorType = new SelectList(generatorTypes, nameof(DataGeneratorTypeViewModel.Name),
+                nameof(DataGeneratorTypeViewModel.Description));
+            return View("DisplayTemplates/CreateRestoreDataViewModel", model);
         }
 
         [Authorize]
         public IActionResult Check(DescRestoreDataViewModel viewModel)
         {
-            var input = viewModel.InputData;
             try
             {
                 var problemId = viewModel.Id;
                 Guid.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var userId);
-
-                var outPutRight = _runner.Run(viewModel.SourceCode, input).Trim('\n', '\r');
                 var result = TestResults.WA;
+
+                var input = viewModel.InputData;
+                var outPutRight = _runner.Run(viewModel.SourceCode, input).Trim('\n', '\r');
+
                 var outPutUser = viewModel.OutputData;
 
                 if (outPutRight == outPutUser)
                 {
                     result = TestResults.Ok;
                 }
-
                 var solution = new Solution
                 {
                     Result = result,

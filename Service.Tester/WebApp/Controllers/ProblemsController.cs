@@ -5,8 +5,10 @@ using System.Security.Claims;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using ProblemProcessor;
+using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
 using Service.InputDataGenerator;
+using Service.Runner.Interfaces;
 using WebApp.Models;
 using WebApp.Models.CodeCorrector;
 using WebApp.Models.Problems;
@@ -19,13 +21,15 @@ namespace WebApp.Controllers
     {
         private readonly IProblemService _problemService;
         private readonly ISolutionsService _solutionsService;
+        private readonly IRunner _runner;
         private readonly Dictionary<DataGeneratorType, IDataCreator> _generators;
 
-        public ProblemsController(IProblemService problemService, ISolutionsService solutionsService, Dictionary<DataGeneratorType, IDataCreator> generators)
+        public ProblemsController(IProblemService problemService, ISolutionsService solutionsService, Dictionary<DataGeneratorType, IDataCreator> generators, IRunner runner)
         {
             _problemService = problemService;
             _solutionsService = solutionsService;
             _generators = generators;
+            _runner = runner;
         }
 
         // GET
@@ -45,13 +49,22 @@ namespace WebApp.Controllers
                 case ProblemTypes.RestoreData:
                     {
                         var viewModel = BuildRestoreDataViewModel(id, problem, userId);
-
+                        var descRestoreDataViewModel = new DescRestoreDataViewModel();
                         var generator = _generators[viewModel.GeneratorType];
-                        var input = generator.CreateData();
 
-                        var descRestoreDataViewModel = viewModel as DescRestoreDataViewModel;
-                        if (descRestoreDataViewModel != null)
-                            descRestoreDataViewModel.InputData = input;
+                        var generatedData = generator.CreateData();
+
+                        if (problem is RestoreData data && viewModel is DescRestoreDataViewModel temp)
+                        {
+                            if (data.AdditionalData.IsInput)
+                                temp.InputData = generatedData;
+                            else
+                            {
+                                var output = _runner.Run(temp.SourceCode, generatedData).Trim('\n', '\r');
+                                temp.OutputData = output;
+                            }
+                            descRestoreDataViewModel = temp;
+                        }
 
                         return View(descRestoreDataViewModel);
                     }
@@ -60,7 +73,7 @@ namespace WebApp.Controllers
             return View("Error", new ErrorViewModel { RequestId = "Такого типа задания не нашлось. УПССССС" });
         }
 
-        public IActionResult Create(CreateProblemViewModel problemViewModel)
+        public IActionResult Create(ICreateProblemViewModel problemViewModel)
         {
             _problemService.Create(problemViewModel.Adapt<ProblemData>());
             return RedirectToAction("Index", "Problemset");

@@ -11,8 +11,8 @@ namespace WebApp.Extensions
 {
     public static class ProblemTypeExtensions
     {
-        private static Dictionary<ProblemTypes, CreateProblemViewModel> _mapping =
-            new Dictionary<ProblemTypes, CreateProblemViewModel>()
+        private static Dictionary<ProblemTypes, ICreateProblemViewModel> _mapping =
+            new Dictionary<ProblemTypes, ICreateProblemViewModel>()
             {
                 {ProblemTypes.TraceTable, new CreateTraceTableViewModel()},
                 {ProblemTypes.BlackBox, new CreateBlackBoxViewModel()},
@@ -20,7 +20,7 @@ namespace WebApp.Extensions
                 {ProblemTypes.CodeCorrector, new CreateCodeCorrectorViewModel()}
             };
 
-        public static CreateProblemViewModel GetProblemByType(ProblemTypes problemType)
+        public static ICreateProblemViewModel GetProblemByType(ProblemTypes problemType)
         {
             if (!_mapping.ContainsKey(problemType))
                 throw new Exception($"{problemType} is not found");

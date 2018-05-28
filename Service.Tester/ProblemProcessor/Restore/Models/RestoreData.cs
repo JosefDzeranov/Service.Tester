@@ -7,11 +7,12 @@
 
         public override object GetAdditionalData()
         {
-            return new { AdditionalData.SourceCode };
+            return new { AdditionalData.SourceCode, AdditionalData.IsInput };
         }
     }
     public class RestoreDataAdditionalData
     {
         public string SourceCode { get; set; }
+        public bool IsInput { get; set; }
     }
 }

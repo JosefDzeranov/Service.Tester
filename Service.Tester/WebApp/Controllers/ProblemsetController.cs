@@ -111,7 +111,7 @@ namespace WebApp.Controllers
 
 
         [HttpPost]
-        public IActionResult CreateProblem(CreateProblemViewModel problemViewModel)
+        public IActionResult CreateProblem(ICreateProblemViewModel problemViewModel)
         {
             _problemService.Create(problemViewModel.Adapt<ProblemData>());
             return RedirectToAction("Index");
@@ -123,12 +123,12 @@ namespace WebApp.Controllers
             var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
             ViewBag.GeneratorType = new SelectList(generatorTypes, nameof(DataGeneratorTypeViewModel.Name),
                 nameof(DataGeneratorTypeViewModel.Description));
-
+            
             return View(GetProblemViewModel(id));
 
         }
 
-        private CreateProblemViewModel GetProblemViewModel(Guid problemTypeId)
+        private ICreateProblemViewModel GetProblemViewModel(Guid problemTypeId)
         {
             if (problemTypeId == null)
                 throw new ArgumentNullException(nameof(problemTypeId));
