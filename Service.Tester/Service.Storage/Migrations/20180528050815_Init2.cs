@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Service.Storage.Migrations
 {
-    public partial class initModels : Migration
+    public partial class Init2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -84,6 +84,28 @@ namespace Service.Storage.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Solutions",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(nullable: false),
+                    CreatedOn = table.Column<DateTime>(nullable: false),
+                    Input = table.Column<string>(nullable: true),
+                    ProblemId = table.Column<Guid>(nullable: true),
+                    TestResult = table.Column<int>(nullable: false),
+                    UserId = table.Column<Guid>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Solutions", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Solutions_Problems_ProblemId",
+                        column: x => x.ProblemId,
+                        principalTable: "Problems",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Problems_TypeId",
                 table: "Problems",
@@ -93,6 +115,11 @@ namespace Service.Storage.Migrations
                 name: "IX_ProblemTag_ProblemId",
                 table: "ProblemTag",
                 column: "ProblemId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Solutions_ProblemId",
+                table: "Solutions",
+                column: "ProblemId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -101,10 +128,13 @@ namespace Service.Storage.Migrations
                 name: "ProblemTag");
 
             migrationBuilder.DropTable(
-                name: "Problems");
+                name: "Solutions");
 
             migrationBuilder.DropTable(
                 name: "Tags");
+
+            migrationBuilder.DropTable(
+                name: "Problems");
 
             migrationBuilder.DropTable(
                 name: "ProblemTypes");

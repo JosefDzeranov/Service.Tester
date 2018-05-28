@@ -12,8 +12,8 @@ using System;
 namespace Service.Storage.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20180527104604_initModels")]
-    partial class initModels
+    [Migration("20180528050815_Init2")]
+    partial class Init2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -82,6 +82,28 @@ namespace Service.Storage.Migrations
                     b.ToTable("ProblemTypes");
                 });
 
+            modelBuilder.Entity("Service.Storage.Entities.Solution", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("CreatedOn");
+
+                    b.Property<string>("Input");
+
+                    b.Property<Guid?>("ProblemId");
+
+                    b.Property<int>("TestResult");
+
+                    b.Property<Guid>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProblemId");
+
+                    b.ToTable("Solutions");
+                });
+
             modelBuilder.Entity("Service.Storage.Entities.Tag", b =>
                 {
                     b.Property<Guid>("Id")
@@ -112,6 +134,13 @@ namespace Service.Storage.Migrations
                         .WithMany("Problems")
                         .HasForeignKey("ProblemId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Service.Storage.Entities.Solution", b =>
+                {
+                    b.HasOne("Service.Storage.Entities.Problem", "Problem")
+                        .WithMany("Solutions")
+                        .HasForeignKey("ProblemId");
                 });
 #pragma warning restore 612, 618
         }

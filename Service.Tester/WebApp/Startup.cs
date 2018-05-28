@@ -57,6 +57,7 @@ namespace WebApp
             services.AddDbContext<DatabaseContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(connectionStringName)));
 
+
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IRunner, CSharpRunner>();
@@ -116,7 +117,8 @@ namespace WebApp
             TypeAdapterConfig<RestoreData, DescRestoreDataViewModel>.NewConfig()
                 .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
             #endregion
-            
+
+
             services.AddMvc();
         }
 
@@ -144,43 +146,6 @@ namespace WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            CreateRoles(serviceProvider);
         }
-
-        private void CreateRoles(IServiceProvider serviceProvider)
-        {
-            //initializing custom roles 
-            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-            var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-            string admin = "Admin";
-
-            var roleExist = roleManager.RoleExistsAsync(admin).Result;
-            if (!roleExist)
-            {
-                //create the roles and seed them to the database: Question 1
-                var _ = roleManager.CreateAsync(new IdentityRole(admin)).Result;
-            }
-
-            var adminEmail = Configuration["Admin:UserEmail"];
-            var adminPassword = Configuration["Admin:UserPassword"];
-
-            var poweruser = new ApplicationUser
-            {
-
-                UserName = adminEmail,
-                Email = adminEmail,
-            };
-
-            var user = userManager.FindByEmailAsync(adminEmail).Result;
-            if (user == null)
-            {
-                var createPowerUser = userManager.CreateAsync(poweruser, adminPassword).Result;
-                if (createPowerUser.Succeeded)
-                {
-                    var _ = userManager.AddToRoleAsync(poweruser, admin).Result;
-                }
-            }
-        }
-
     }
 }

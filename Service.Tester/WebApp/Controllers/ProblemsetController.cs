@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ProblemProcessor;
@@ -22,6 +23,7 @@ namespace WebApp.Controllers
         }
 
         // GET: Problems
+        [Authorize]
         public ActionResult Index()
         {
             var problems = _problemService.GetAll().Select(x => new ProblemViewModel
