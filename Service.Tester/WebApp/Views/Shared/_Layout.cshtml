@@ -54,8 +54,34 @@
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
         <script src="~/js/sourceCodeGen.js" asp-append-version="true"></script>
+        <script>
+            $(document).ready(function () {
+                $("#square").click(function () {
+                    var inputData = document.getElementById("input-data").value;
+                    if (isEmpty(inputData)) {
+                        alert("Введите входные данные");
+                        return;
+                    }
+                    var sourceCode = document.getElementById("SourceCode").value;
+                    var url = "http://localhost:52405/Problems/Check?input=" + inputData + "&sourceCode=" + sourceCode;
+                    $.get(url, function (data, status) {
+                        if (status == "success") {
+                            $("#output-data").val(data);
+                        }
+                        else {
+                            alert("Произошла какая то ошибка");
+                        }
+                    });
+                });
+            });
+
+            function isEmpty(str) {
+                return (str == null) || (str.length == 0);
+            }
+        </script>
     </environment>
     <environment exclude="Development">
+
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
