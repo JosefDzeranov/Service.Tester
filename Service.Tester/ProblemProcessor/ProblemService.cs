@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Mapster;
 using Newtonsoft.Json;
+using ProblemProcessor.BlackBox.Models;
 using ProblemProcessor.CodeCorrector.Models;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.TraceTable.Models;
@@ -64,6 +65,20 @@ namespace ProblemProcessor
                     {
                         var additionalData = JsonConvert.DeserializeObject<RestoreDataAdditionalData>(problem.SpecificData);
                         return new RestoreData
+                        {
+                            Id = problem.Id,
+                            Name = problem.Name,
+                            Description = problem.Description,
+                            Type = problem.Type.Type.Adapt<ProblemTypes>(),
+                            GeneratorType = problem.GeneratorType,
+                            AdditionalData = additionalData
+                        };
+                    }
+
+                case StorageProblemTypes.BlackBox:
+                    {
+                        var additionalData = JsonConvert.DeserializeObject<BlackBoxAdditionalData>(problem.SpecificData);
+                        return new BlackBoxData
                         {
                             Id = problem.Id,
                             Name = problem.Name,

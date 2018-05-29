@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProblemProcessor;
+using ProblemProcessor.BlackBox.Models;
 using ProblemProcessor.CodeCorrector.Models;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
@@ -22,6 +23,7 @@ using ApplicationDbContext = WebApp.Data.ApplicationDbContext;
 using Service.InputDataGenerator;
 using Service.InputDataGenerator.Generators;
 using Service.Storage;
+using WebApp.Models.BlackBox;
 using WebApp.Models.CodeCorrector;
 using WebApp.Models.RestoreData;
 
@@ -119,6 +121,14 @@ namespace WebApp
                 .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
             #endregion
 
+            #region BlackBox
+            TypeAdapterConfig<CreateBlackBoxViewModel, BlackBoxData>.NewConfig()
+                .Map(d => d.AdditionalData,
+                    s => new BlackBoxAdditionalData { SourceCode = s.SourceCode });
+
+            TypeAdapterConfig<BlackBoxData, DescBlackBoxViewModel>.NewConfig()
+               .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
+            #endregion
 
             services.AddMvc();
         }
@@ -145,7 +155,7 @@ namespace WebApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}/{id2?}");
             });
         }
     }

@@ -10,6 +10,7 @@ using ProblemProcessor.Solutions;
 using Service.InputDataGenerator;
 using Service.Runner.Interfaces;
 using WebApp.Models;
+using WebApp.Models.BlackBox;
 using WebApp.Models.CodeCorrector;
 using WebApp.Models.Problems;
 using WebApp.Models.Problemset;
@@ -68,6 +69,11 @@ namespace WebApp.Controllers
 
                         return View(descRestoreDataViewModel);
                     }
+                case ProblemTypes.BlackBox:
+                    {
+                        var viewModel = BuildBlackBoxViewModel(id, problem, userId);
+                        return View(viewModel);
+                    }
             }
 
             return View("Error", new ErrorViewModel { RequestId = "Такого типа задания не нашлось. УПССССС" });
@@ -79,6 +85,17 @@ namespace WebApp.Controllers
             return RedirectToAction("Index", "Problemset");
         }
 
+        [HttpGet]
+        public string Check(string sourceCode, string input)
+        {
+            return _runner.Run(sourceCode, input);
+        }
+
+        private IDescProblemViewModel BuildBlackBoxViewModel(Guid id, ProblemData problem, Guid userId)
+        {
+            var viewModel = problem.Adapt<DescBlackBoxViewModel>();
+            return BuildSubmissions(id, userId, viewModel);
+        }
 
         private IDescProblemViewModel BuildDescCodeCorrectorViewModel(Guid id, ProblemData problem, Guid userId)
         {

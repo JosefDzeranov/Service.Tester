@@ -73,7 +73,7 @@ namespace WebApp.Controllers
                 {
                     outPutUser = _runner.Run(viewModel.IncorrectSourceCode, input).Trim('\n', '\r');
                 }
-                catch (Exception e)
+                catch
                 {
                     result = TestResults.CE;
                 }

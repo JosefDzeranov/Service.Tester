@@ -1,0 +1,92 @@
+﻿
+@model WebApp.Models.BlackBox.DescBlackBoxViewModel
+
+<div style="margin-top: 50px" class="row">
+    <div class="col-md-6">
+        <form asp-action="Check" asp-controller="RestoreData">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" type="hidden" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Входные данные </label>
+                <input id="input-data" class="form-control" />
+            </div>
+
+            <div style="height: 50px; width: 50px; background: black" id="square" onclick="ChecInput"></div>
+
+            <div class="form-group">
+                <label class="control-label">Выходные данные </label>
+                <input class="form-control" id="output-data" />
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Проверить" class="btn btn-default" />
+            </div>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Номер отправки
+                    </th>
+                    <th>
+                        Статус
+                    </th>
+                    <th>
+                        Время отправки
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (var i = 0; i < Model.Submissions.Count; i++)
+                {
+                    var item = Model.Submissions[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>
+                            @Html.DisplayFor(x => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SendTime)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function ChecInput() {
+        var inputData = document.getElementById("input-data").value;
+        if (isEmpty(inputData)) return;
+        var sourceCode = document.getElementById("SourceCode");
+
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("output-data").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "http://localhost:63100/Problems/Check?input=" + inputData + "&sourceCode=" + sourceCode, true);
+        xmlhttp.send();
+    }
+    function isEmpty(str) {
+        return (str == null) || (str.length == 0);
+    }
+</script>
+<div class="form-group">
+    <input asp-for="SourceCode" type="hidden" />
+</div>
