@@ -14,5 +14,7 @@ namespace WebApp.Models.BlackBox
         public List<Submission> Submissions { get; set; }
 
         public string SourceCode { get; set; }
+
+        public string Answer { get; set; }
     }
 }

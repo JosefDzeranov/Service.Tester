@@ -78,7 +78,7 @@ namespace WebApp.Controllers
                     result = TestResults.CE;
                 }
 
-                if (outPutRight == outPutUser)
+                if (result != TestResults.CE && outPutRight == outPutUser)
                 {
                     result = TestResults.Ok;
                 }
@@ -87,7 +87,7 @@ namespace WebApp.Controllers
                 {
                     Result = result,
                     UserId = userId,
-                    Input = input,
+                    Input = viewModel.IncorrectSourceCode,
                     ProblemId = problemId,
                     SendTime = DateTime.Now
                 };

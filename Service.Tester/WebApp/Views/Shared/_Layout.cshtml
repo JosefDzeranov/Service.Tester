@@ -63,7 +63,7 @@
                         return;
                     }
                     var sourceCode = document.getElementById("SourceCode").value;
-                    var url = "http://localhost:52405/Problems/Check?input=" + inputData + "&sourceCode=" + sourceCode;
+                    var url = "http://localhost:63100/Problems/Check?input=" + inputData + "&sourceCode=" + sourceCode;
                     $.get(url, function (data, status) {
                         if (status == "success") {
                             $("#output-data").val(data);
