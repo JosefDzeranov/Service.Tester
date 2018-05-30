@@ -57,21 +57,25 @@
         <script>
             $(document).ready(function () {
                 $("#square").click(function () {
-                    var inputData = document.getElementById("input-data").value;
+                    var inputData = $("#input-data").val();
                     if (isEmpty(inputData)) {
                         alert("Введите входные данные");
                         return;
                     }
-                    var sourceCode = document.getElementById("SourceCode").value;
-                    var url = "http://localhost:63100/Problems/Check?input=" + inputData + "&sourceCode=" + sourceCode;
-                    $.get(url, function (data, status) {
-                        if (status == "success") {
+                    var sourceCode = $("#SourceCode").val();
+                    var url = "http://localhost:52405/Problems/Check";
+                    $.ajax({
+                        type: 'POST',
+                        url: url,
+                        data: JSON.stringify({ sourceCode: sourceCode, input: inputData }),
+                        contentType: 'application/json; charset=utf-8',
+                        'dataType': 'json',
+                        success: function(data) {
+                            console.log(data);
                             $("#output-data").val(data);
                         }
-                        else {
-                            alert("Произошла какая то ошибка");
-                        }
                     });
+                
                 });
             });
 

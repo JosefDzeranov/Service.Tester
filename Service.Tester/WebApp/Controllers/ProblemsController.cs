@@ -85,10 +85,11 @@ namespace WebApp.Controllers
             return RedirectToAction("Index", "Problemset");
         }
 
-        [HttpGet]
-        public string Check(string sourceCode, string input)
+        [HttpPost]
+        public string Check([FromBody]UserAnswer answer)
         {
-            return _runner.Run(sourceCode, input);
+
+            return _runner.Run(answer.SourceCode, answer.Input);
         }
 
         private IDescProblemViewModel BuildBlackBoxViewModel(Guid id, ProblemData problem, Guid userId)
@@ -120,6 +121,12 @@ namespace WebApp.Controllers
                     Status = x.Result.ToString()
                 }).ToList();
             return viewModel;
+        }
+
+        public class UserAnswer
+        {
+            public string SourceCode { get; set; }
+            public string Input { get; set; }
         }
     }
 }
