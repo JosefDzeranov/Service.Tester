@@ -70,14 +70,47 @@
                         data: JSON.stringify({ sourceCode: sourceCode, input: inputData }),
                         contentType: 'application/json; charset=utf-8',
                         'dataType': 'json',
-                        success: function(data) {
+                        success: function (data) {
                             console.log(data);
                             $("#output-data").val(data);
                         }
                     });
-                
+
+                });
+
+                $("#SourceCodeForCheck").focusout(function () {
+                    var url = "http://localhost:63100/Problems/ParseCode";
+                    var sourceCodeForCheck = $("#SourceCodeForCheck").val();
+                    $.ajax({
+                        type: 'POST',
+                        url: url,
+                        data: JSON.stringify({ sourceCode: sourceCodeForCheck }),
+                        contentType: 'application/json; charset=utf-8',
+                        'dataType': 'json',
+                        success: function (response) {
+                            console.log(response);
+                            var htmlHead = '<thead><tr>';
+                            var htmlBody = "<tbody><tr>";
+
+                            jQuery.each(response,
+                                function (i, data) {
+                                    htmlHead += "<td>" + data + "</td>";
+                                    htmlBody += "<td><input type ='text'/></td>";
+                                });
+
+                            htmlHead += "</tr></thead>";
+                            htmlBody += "</tr></tbody>";
+                            console.log(htmlHead);
+                            console.log(htmlBody);
+                            console.log(htmlHead + htmlBody);
+                            var html = htmlHead + htmlBody;
+                            $('.trace-table').append(html);
+                        }
+                    });
                 });
             });
+
+
 
             function isEmpty(str) {
                 return (str == null) || (str.length == 0);

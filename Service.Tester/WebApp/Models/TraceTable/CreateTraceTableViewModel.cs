@@ -12,5 +12,6 @@ namespace WebApp.Models.TraceTable
         public DataGeneratorType GeneratorType { get; set; }
         public ProblemTypes Type { get; set; }
         public string SourceCode { get; set; }
+        public string SourceCodeForCheck { get; set; }
     }
 }

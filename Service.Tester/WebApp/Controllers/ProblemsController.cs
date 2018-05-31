@@ -4,6 +4,8 @@ using System.Linq;
 using System.Security.Claims;
 using Mapster;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using ProblemProcessor;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
@@ -91,6 +93,19 @@ namespace WebApp.Controllers
 
             return _runner.Run(answer.SourceCode, answer.Input);
         }
+
+        [HttpPost]
+        public string[] ParseCode([FromBody] UserAnswer answer)
+        {
+            var syntaxTree = CSharpSyntaxTree.ParseText(answer.SourceCode);
+
+            var identifierNames = syntaxTree.GetRoot().DescendantNodes()
+                .OfType<VariableDeclaratorSyntax>().Select(v => v.Identifier.Text)
+                .Concat(syntaxTree.GetRoot().DescendantNodes().OfType<ParameterSyntax>().Select(p => p.Identifier.Text))
+                .ToArray();
+            return identifierNames;
+        }
+
 
         private IDescProblemViewModel BuildBlackBoxViewModel(Guid id, ProblemData problem, Guid userId)
         {
