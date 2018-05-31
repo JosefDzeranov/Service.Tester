@@ -90,7 +90,6 @@ namespace WebApp.Controllers
         [HttpPost]
         public string Check([FromBody]UserAnswer answer)
         {
-
             return _runner.Run(answer.SourceCode, answer.Input);
         }
 

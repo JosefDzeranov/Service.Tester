@@ -79,7 +79,7 @@
                 });
 
                 $("#SourceCodeForCheck").focusout(function () {
-                    var url = "http://localhost:63100/Problems/ParseCode";
+                    var url = "http://localhost:52405/Problems/ParseCode";
                     var sourceCodeForCheck = $("#SourceCodeForCheck").val();
                     $.ajax({
                         type: 'POST',
@@ -94,8 +94,8 @@
 
                             jQuery.each(response,
                                 function (i, data) {
-                                    htmlHead += "<td>" + data + "</td>";
-                                    htmlBody += "<td><input type ='text'/></td>";
+                                    htmlHead += "<td> <input name=Variables["+i+"] type=text value=" + data +" readonly/></td>";
+                                    htmlBody += "<td><input type = text name=Row["+i+"] /></td>";
                                 });
 
                             htmlHead += "</tr></thead>";

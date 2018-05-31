@@ -36,7 +36,7 @@ namespace WebApp.Controllers
             try
             {
                 var problem = createTraceTableViewModel.Adapt<TraceTableData>();
-                _problemService.Create(problem);
+               // _problemService.Create(problem);
 
                 return RedirectToAction("Index", "Problemset");
             }
