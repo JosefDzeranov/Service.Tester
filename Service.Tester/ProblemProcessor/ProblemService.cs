@@ -88,6 +88,19 @@ namespace ProblemProcessor
                             AdditionalData = additionalData
                         };
                     }
+                case StorageProblemTypes.TraceTable:
+                    {
+                        var additionalData = JsonConvert.DeserializeObject<TraceTableAdditionalData>(problem.SpecificData);
+                        return new TraceTableData()
+                        {
+                            Id = problem.Id,
+                            Name = problem.Name,
+                            Description = problem.Description,
+                            Type = problem.Type.Type.Adapt<ProblemTypes>(),
+                            GeneratorType = problem.GeneratorType,
+                            AdditionalData = additionalData
+                        };
+                    }
             }
 
             return null;

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Mapster;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -12,6 +13,7 @@ using ProblemProcessor.BlackBox.Models;
 using ProblemProcessor.CodeCorrector.Models;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
+using ProblemProcessor.TraceTable.Models;
 using Service.Runner;
 using Service.Runner.Compilation.Interfaces;
 using Service.Runner.Compilation.Roslyn;
@@ -26,6 +28,7 @@ using Service.Storage;
 using WebApp.Models.BlackBox;
 using WebApp.Models.CodeCorrector;
 using WebApp.Models.RestoreData;
+using WebApp.Models.TraceTable;
 
 namespace WebApp
 {
@@ -128,6 +131,23 @@ namespace WebApp
 
             TypeAdapterConfig<BlackBoxData, DescBlackBoxViewModel>.NewConfig()
                .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode);
+            #endregion
+
+            #region TraceTable
+            TypeAdapterConfig<CreateTraceTableViewModel, TraceTableData>.NewConfig()
+                .Map(d => d.AdditionalData,
+                    s => new TraceTableAdditionalData
+                    {
+                        SourceCode = s.SourceCode,
+                        SourceCodeForCheck = s.SourceCodeForCheck,
+                        Row = s.Row,
+                        Variables = s.Variables
+                    });
+            TypeAdapterConfig<TraceTableData, DescTraceTableViewModel>.NewConfig()
+                .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode)
+                .Map(d => d.Variables, s => s.AdditionalData.Variables)
+                .Map(d => d.Row, s => s.AdditionalData.Row);
+
             #endregion
 
             services.AddMvc();

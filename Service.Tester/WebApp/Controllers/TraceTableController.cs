@@ -31,19 +31,24 @@ namespace WebApp.Controllers
         // POST: TraceTable/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(CreateTraceTableViewModel createTraceTableViewModel)
+        public ActionResult Create(CreateTraceTableViewModel model)
         {
-            try
+            if (ModelState.IsValid)
             {
-                var problem = createTraceTableViewModel.Adapt<TraceTableData>();
-               // _problemService.Create(problem);
+                try
+                {
+                    var problem = model.Adapt<TraceTableData>();
+                    _problemService.Create(problem);
 
-                return RedirectToAction("Index", "Problemset");
+                    return RedirectToAction("Index", "Problemset");
+                }
+                catch
+                {
+                    return View("Error");
+                }
             }
-            catch
-            {
-                return View("Error");
-            }
+
+            return View("DisplayTemplates/CreateTraceTableViewModel", model);
         }
 
         // GET: TraceTable/Edit/5
