@@ -123,6 +123,10 @@ namespace WebApp.Controllers
         private IDescProblemViewModel BuildTraceTableViewModel(Guid id, ProblemData problem, Guid userId)
         {
             var viewModel = problem.Adapt<DescTraceTableViewModel>();
+            for (var i = 0; i < 10; i++)
+                for (var j = 0; j < viewModel.Variables.Count; j++)
+                    viewModel.Row.Add("");
+
             return BuildSubmissions(id, userId, viewModel);
         }
 

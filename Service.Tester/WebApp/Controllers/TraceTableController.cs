@@ -1,4 +1,5 @@
-﻿using Mapster;
+﻿using System.Linq;
+using Mapster;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProblemProcessor;
@@ -95,6 +96,13 @@ namespace WebApp.Controllers
             {
                 return View();
             }
+        }
+
+        public IActionResult Check(DescTraceTableViewModel viewModel)
+        {
+            viewModel.Variables = viewModel.Variables.Where(x => !string.IsNullOrEmpty(x)).ToList();
+
+            throw new System.NotImplementedException();
         }
     }
 }

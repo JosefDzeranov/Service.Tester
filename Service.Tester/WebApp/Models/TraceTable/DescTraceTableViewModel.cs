@@ -13,6 +13,8 @@ namespace WebApp.Models.TraceTable
         public DataGeneratorType GeneratorType { get; set; }
         public List<Submission> Submissions { get; set; }
         public string SourceCode { get; set; }
+        public string SourceCodeForCheck { get; set; }
+
 
         public IList<string> Variables { get; set; }
         public IList<string> Row { get; set; }
