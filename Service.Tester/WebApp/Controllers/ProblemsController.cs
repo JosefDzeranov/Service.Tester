@@ -151,7 +151,7 @@ namespace WebApp.Controllers
                     Solution = x.Input,
                     SendTime = x.SendTime,
                     Status = x.Result.ToString()
-                }).ToList();
+                }).OrderByDescending(x => x.SendTime).ToList();
             return viewModel;
         }
 

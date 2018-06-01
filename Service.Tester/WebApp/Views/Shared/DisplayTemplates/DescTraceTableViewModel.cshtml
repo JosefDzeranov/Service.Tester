@@ -22,6 +22,8 @@
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
             </div>
 
+            <input asp-for="SourceCodeForCheck" type="hidden" />
+
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -29,7 +31,7 @@
                         {
                             var variable = Model.Variables[index];
                             <td style="margin: 0; padding: 0;">
-                                <input style="width: 100%; padding: 0; margin: 0; border: 0;" name="Variables[@index]" value="@variable" readonly/>
+                                <input style="width: 100%; padding: 0; margin: 0; border: 0;" name="Variables[@index]" value="@variable" readonly />
                             </td>
                         }
                     </tr>

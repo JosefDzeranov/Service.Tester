@@ -145,6 +145,7 @@ namespace WebApp
                     });
             TypeAdapterConfig<TraceTableData, DescTraceTableViewModel>.NewConfig()
                 .Map(d => d.SourceCode, s => s.AdditionalData.SourceCode)
+                .Map(d => d.SourceCodeForCheck, s => s.AdditionalData.SourceCodeForCheck)
                 .Map(d => d.Variables, s => s.AdditionalData.Variables)
                 .Map(d => d.Row, s => s.AdditionalData.Row);
 

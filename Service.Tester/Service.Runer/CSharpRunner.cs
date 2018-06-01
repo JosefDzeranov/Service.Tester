@@ -15,6 +15,43 @@ namespace Service.Runner
             _compiler = compiler;
         }
 
+        public string Run(string sourceCode, string input)
+        {
+            string fileName = Compile(sourceCode);
+
+            var process = CSharpProcessBuilder.BuildProcess(fileName);
+
+            return Run(process, input);
+        }
+
+        public string Run(string sourceCode)
+        {
+            string fileName = Compile(sourceCode);
+
+            var process = CSharpProcessBuilder.BuildProcess(fileName, false);
+
+            return Run(process);
+        }
+
+        private string Compile(string sourceCode)
+        {
+            var fileName = $"{Guid.NewGuid()}.exe";
+            var result = _compiler.Compile(sourceCode, fileName);
+            if (!result.IsCompile)
+                throw new Exception(result.ToString());
+            return fileName;
+        }
+
+        private string Run(Process process)
+        {
+            process.Start();
+            process.WaitForExit(TimeOut);
+            var readToEnd = process.StandardOutput.ReadToEnd();
+            process.Close();
+
+            return readToEnd;
+        }
+
         private string Run(Process process, string input)
         {
             process.Start();
@@ -24,17 +61,6 @@ namespace Service.Runner
             process.Close();
 
             return readToEnd;
-        }
-
-        public string Run(string sourceCode, string input)
-        {
-            var fileName = $"{Guid.NewGuid()}.exe";
-            var result = _compiler.Compile(sourceCode, fileName);
-            if (!result.IsCompile)
-                throw new Exception(result.ToString());
-
-            var process = CSharpProcessBuilder.BuildProcess(fileName);
-            return Run(process, input);
         }
     }
 }
