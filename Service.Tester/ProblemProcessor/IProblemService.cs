@@ -9,5 +9,7 @@ namespace ProblemProcessor
         IEnumerable<ProblemData> GetAll();
 
         ProblemData Get(Guid id);
+
+        void Delete(Guid id);
     }
 }

@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using Mapster;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using ProblemProcessor;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
 using Service.InputDataGenerator;
 using Service.Runner.Interfaces;
-using WebApp.Extensions;
+using Service.Storage.Entities;
 using WebApp.Models;
 using WebApp.Models.BlackBox;
 using WebApp.Models.CodeCorrector;
@@ -115,7 +117,39 @@ namespace WebApp.Controllers
             return identifierNames;
         }
 
-        
+        [ActionName("Delete")]
+        [HttpGet]
+        [Authorize]
+        public ActionResult ConfirmDelete(Guid? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var findProblem = _problemService.Get(id.Value);
+
+            var model = findProblem.Adapt<DeleteProblemViewModel>();
+
+            return View("Delete", model);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public ActionResult Delete(Guid? id)
+        {
+            try
+            {
+                if (id == null)
+                    return NotFound();
+                _problemService.Delete(id.Value);
+
+                return RedirectToAction("Index", "Problemset");
+            }
+            catch (Exception e)
+            {
+                return View("Error", new ErrorViewModel { RequestId = e.Message });
+            }
+        }
+
 
         private IDescProblemViewModel BuildBlackBoxViewModel(Guid id, ProblemData problem, Guid userId)
         {

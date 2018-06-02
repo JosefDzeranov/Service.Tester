@@ -42,7 +42,10 @@ namespace Service.Storage
         {
             var problem = Get(id);
             if (problem != null)
+            {
                 _dbContext.Problems.Remove(problem);
+                _dbContext.SaveChanges();
+            }
         }
 
         public IEnumerable<Problem> Find(Expression<Func<Problem, bool>> predicate)

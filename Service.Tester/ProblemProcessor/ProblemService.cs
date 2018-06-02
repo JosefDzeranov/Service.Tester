@@ -106,6 +106,11 @@ namespace ProblemProcessor
             return null;
         }
 
+        public void Delete(Guid id)
+        {
+            _problemRepository.Delete(id);
+        }
+
         private Problem ToStorageEntity(ProblemData data)
         {
             var problem = new Problem
@@ -118,11 +123,6 @@ namespace ProblemProcessor
             problem.Type = _problemTypeRepository.Get(x => x.Type.ToString() == data.Type.ToString());
             problem.SpecificData = JsonConvert.SerializeObject(data.GetAdditionalData());
             return problem;
-        }
-
-        public void GetDescription(Guid id)
-        {
-            throw new NotImplementedException();
         }
     }
 }

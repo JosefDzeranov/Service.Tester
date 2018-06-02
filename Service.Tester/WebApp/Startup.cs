@@ -150,7 +150,7 @@ namespace WebApp
                 .Map(d => d.Row, s => s.AdditionalData.Row);
 
             #endregion
-
+            
             services.AddMvc();
         }
 
