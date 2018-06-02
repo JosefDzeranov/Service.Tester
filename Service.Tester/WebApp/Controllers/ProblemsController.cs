@@ -17,6 +17,7 @@ using WebApp.Models.CodeCorrector;
 using WebApp.Models.Problems;
 using WebApp.Models.Problemset;
 using WebApp.Models.RestoreData;
+using WebApp.Models.TraceTable;
 
 namespace WebApp.Controllers
 {
@@ -76,6 +77,13 @@ namespace WebApp.Controllers
                         var viewModel = BuildBlackBoxViewModel(id, problem, userId);
                         return View(viewModel);
                     }
+
+                case ProblemTypes.TraceTable:
+                    {
+                        var viewModel = BuildTraceTableViewModel(id, problem, userId);
+                        return View(viewModel);
+                    }
+
             }
 
             return View("Error", new ErrorViewModel { RequestId = "Такого типа задания не нашлось. УПССССС" });
@@ -112,6 +120,16 @@ namespace WebApp.Controllers
             return BuildSubmissions(id, userId, viewModel);
         }
 
+        private IDescProblemViewModel BuildTraceTableViewModel(Guid id, ProblemData problem, Guid userId)
+        {
+            var viewModel = problem.Adapt<DescTraceTableViewModel>();
+            for (var i = 0; i < 10; i++)
+                for (var j = 0; j < viewModel.Variables.Count; j++)
+                    viewModel.Row.Add("");
+
+            return BuildSubmissions(id, userId, viewModel);
+        }
+
         private IDescProblemViewModel BuildDescCodeCorrectorViewModel(Guid id, ProblemData problem, Guid userId)
         {
             var viewModel = problem.Adapt<DescCodeCorrectorViewModel>();
@@ -133,7 +151,7 @@ namespace WebApp.Controllers
                     Solution = x.Input,
                     SendTime = x.SendTime,
                     Status = x.Result.ToString()
-                }).ToList();
+                }).OrderByDescending(x => x.SendTime).ToList();
             return viewModel;
         }
 

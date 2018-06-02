@@ -1,0 +1,107 @@
+﻿@model WebApp.Models.TraceTable.DescTraceTableViewModel
+
+<div style="margin-top: 50px" class="row">
+    <div class="col-md-6">
+        <form asp-action="Check" asp-controller="TraceTable">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Id" type="hidden" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SourceCode" class="control-label"></label>
+                <textarea style="height: 500px" asp-for="SourceCode" class="form-control"></textarea>
+                <span asp-validation-for="SourceCode" class="text-danger"></span>
+            </div>
+
+            <input asp-for="SourceCodeForCheck" type="hidden" />
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        @for (var index = 0; index < Model.Variables.Count; index++)
+                        {
+                            var variable = Model.Variables[index];
+                            <td style="margin: 0; padding: 0;">
+                                <input style="width: 100%; padding: 0; margin: 0; border: 0;" name="Variables[@index]" value="@variable" readonly />
+                            </td>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @for (var row = 0; row < Model.Row.Count / Model.Variables.Count; row++)
+                    {
+                        <tr>
+                            @{
+                                for (int i = 0; i < Model.Variables.Count; i++)
+                                {
+                                    var index = row * Model.Variables.Count + i;
+
+                                    var value = Model.Row[index];
+
+                                    <td style="margin: 0; padding: 0;">
+                                        @{
+                                            if (row > 0)
+                                            {
+                                                <input style="width: 100%; padding: 0; margin: 0; border: 0;" name=Row[@index] value="@value" />
+                                            }
+                                            else
+                                            {
+                                                <input style="width: 100%; padding: 0; margin: 0; border: 0;" name=Row[@index] value="@value" readonly />
+                                            }
+                                        }
+                                    </td>
+                                }
+                            }
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+            <div class="form-group">
+                <input type="submit" value="Проверить" class="btn btn-default" />
+            </div>
+        </form>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        Номер отправки
+                    </th>
+                    <th>
+                        Статус
+                    </th>
+                    <th>
+                        Время отправки
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (var i = 0; i < Model.Submissions.Count; i++)
+                {
+                    var item = Model.Submissions[i];
+                    <tr>
+                        <td>@(i + 1)</td>
+                        <td>
+                            @Html.DisplayFor(x => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.SendTime)
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

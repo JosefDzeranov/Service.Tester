@@ -1,8 +1,12 @@
-﻿using Mapster;
-using Microsoft.AspNetCore.Http;
+﻿using System;
+using System.Linq;
+using System.Security.Claims;
+using Mapster;
 using Microsoft.AspNetCore.Mvc;
 using ProblemProcessor;
+using ProblemProcessor.Solutions;
 using ProblemProcessor.TraceTable.Models;
+using Service.Runner.Interfaces;
 using WebApp.Models.TraceTable;
 
 namespace WebApp.Controllers
@@ -10,86 +14,67 @@ namespace WebApp.Controllers
     public class TraceTableController : Controller
     {
         private readonly IProblemService _problemService;
-
-        public TraceTableController(IProblemService problemService)
+        private readonly IRunner _runner;
+        private readonly ISolutionsService _solutionsService;
+        public TraceTableController(IProblemService problemService, IRunner runner, ISolutionsService solutionsService)
         {
             _problemService = problemService;
+            _runner = runner;
+            _solutionsService = solutionsService;
         }
 
-        // GET: TraceTable
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        // GET: TraceTable/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // POST: TraceTable/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(CreateTraceTableViewModel createTraceTableViewModel)
+        public ActionResult Create(CreateTraceTableViewModel model)
         {
-            try
+            if (ModelState.IsValid)
             {
-                var problem = createTraceTableViewModel.Adapt<TraceTableData>();
-               // _problemService.Create(problem);
+                try
+                {
+                    var problem = model.Adapt<TraceTableData>();
+                    _problemService.Create(problem);
 
-                return RedirectToAction("Index", "Problemset");
+                    return RedirectToAction("Index", "Problemset");
+                }
+                catch
+                {
+                    return View("Error");
+                }
             }
-            catch
-            {
-                return View("Error");
-            }
+
+            return View("DisplayTemplates/CreateTraceTableViewModel", model);
         }
 
-        // GET: TraceTable/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: TraceTable/Edit/5
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public IActionResult Check(DescTraceTableViewModel viewModel)
         {
-            try
-            {
-                // TODO: Add update logic here
+            viewModel.Row = viewModel.Row.Where(x => !string.IsNullOrEmpty(x)).ToList();
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+            var answer = _runner.Run(viewModel.SourceCodeForCheck);
+            answer = answer.Replace("\r\n", " ").Trim();
 
-        // GET: TraceTable/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
+            var userResult = string.Join(" ", viewModel.Row.Skip(viewModel.Variables.Count)).Trim();
 
-        // POST: TraceTable/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
+            var result = TestResults.WA;
 
-                return RedirectToAction(nameof(Index));
-            }
-            catch
+            if (answer == userResult)
             {
-                return View();
+                result = TestResults.Ok;
             }
+
+            Guid.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var userId);
+
+            var solution = new Solution
+            {
+                Result = result,
+                UserId = userId,
+                Input = userResult,
+                ProblemId = viewModel.Id,
+                SendTime = DateTime.Now
+            };
+            _solutionsService.Save(solution);
+
+            return RedirectToAction("Description", "Problems", new { viewModel.Id });
         }
     }
 }

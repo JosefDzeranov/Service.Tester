@@ -6,11 +6,11 @@ namespace Service.Runner
 {
     public static class CSharpProcessBuilder
     {
-        public static Process BuildProcess(string fileName)
+        public static Process BuildProcess(string fileName, bool redirectStandardInput = true)
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.UseShellExecute = false;
-            startInfo.RedirectStandardInput = true;
+            startInfo.RedirectStandardInput = redirectStandardInput;
             startInfo.RedirectStandardOutput = true;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.FileName = Path.Combine(DefaultValues.CompilePath, fileName);
