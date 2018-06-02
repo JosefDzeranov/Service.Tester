@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Tester", "Service.Tester\Service.Tester.csproj", "{5E3FD25E-439C-4A6E-94BE-71B49ED905C0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{11C520F7-55ED-4C89-A224-926B32353499}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Runner", "Service.Runer\Service.Runner.csproj", "{5092CE32-AFEB-4E4C-AA13-32B185D4ECF2}"
@@ -23,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemProcessor", "Problem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Storage", "Service.Storage\Service.Storage.csproj", "{6FA74021-D518-47BD-9BEC-6884CA75DD48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.InputDataGenerator", "Service.InputDataGenerator\Service.InputDataGenerator.csproj", "{334B2123-62EA-43B9-B1CD-FEB0D649113D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.InputDataGenerator", "Service.InputDataGenerator\Service.InputDataGenerator.csproj", "{334B2123-62EA-43B9-B1CD-FEB0D649113D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5E3FD25E-439C-4A6E-94BE-71B49ED905C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E3FD25E-439C-4A6E-94BE-71B49ED905C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E3FD25E-439C-4A6E-94BE-71B49ED905C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E3FD25E-439C-4A6E-94BE-71B49ED905C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5092CE32-AFEB-4E4C-AA13-32B185D4ECF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5092CE32-AFEB-4E4C-AA13-32B185D4ECF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5092CE32-AFEB-4E4C-AA13-32B185D4ECF2}.Release|Any CPU.ActiveCfg = Release|Any CPU

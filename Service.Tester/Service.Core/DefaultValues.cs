@@ -2,19 +2,18 @@
 
 namespace Service.Common
 {
-
     /// <summary>
-    /// Класс для хранения статических данных.
+    ///     Класс для хранения статических данных.
     /// </summary>
     public static class DefaultValues
     {
         /// <summary>
-        /// Путь расположения все откомпилированных файлов.
+        ///     Путь расположения все откомпилированных файлов.
         /// </summary>
         public const string CompilePath = @"D:\Compilers\";
 
         /// <summary>
-        /// Стандартные пространства имен необходимые для компиляции кода.
+        ///     Стандартные пространства имен необходимые для компиляции кода.
         /// </summary>
         public static readonly IEnumerable<string> SystemNamespaces =
             new[]
@@ -29,7 +28,7 @@ namespace Service.Common
             };
 
         /// <summary>
-        /// Стнадартные сборки необходимые для компиляции кода.
+        ///     Стнадартные сборки необходимые для компиляции кода.
         /// </summary>
         public static readonly List<string> DefaultAssemblies = new List<string>
         {
@@ -39,23 +38,9 @@ namespace Service.Common
         };
 
         /// <summary>
-        /// Путь, где лежат стандартные сборки.
+        ///     Путь, где лежат стандартные сборки.
         /// </summary>
         public static readonly string RuntimePath =
             @"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\{0}.dll";
-
-
-        public static string sourceCode = @"
-using System;
-namespace ConsoleApp3
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine(""Hello world"");
-        }
-    }
-}";
     }
 }
