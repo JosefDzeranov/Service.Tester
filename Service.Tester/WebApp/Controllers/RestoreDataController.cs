@@ -20,14 +20,12 @@ namespace WebApp.Controllers
     public class RestoreDataController : Controller
     {
         private readonly IProblemService _problemService;
-        private readonly Dictionary<DataGeneratorType, IDataCreator> _generators;
         private readonly IRunner _runner;
         private readonly ISolutionsService _solutionsService;
 
         public RestoreDataController(IProblemService problemService, Dictionary<DataGeneratorType, IDataCreator> generators, IRunner runner, ISolutionsService solutionsService)
         {
             _problemService = problemService;
-            _generators = generators;
             _runner = runner;
             _solutionsService = solutionsService;
         }
@@ -42,22 +40,20 @@ namespace WebApp.Controllers
             {
                 try
                 {
-
                     var problem = model.Adapt<RestoreData>();
                     _problemService.Create(problem);
                     return RedirectToAction("Index", "Problemset");
-
                 }
                 catch
                 {
                     return View("Error");
                 }
             }
-            var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
-            ViewBag.GeneratorType = new SelectList(generatorTypes, nameof(DataGeneratorTypeViewModel.Name),
-                nameof(DataGeneratorTypeViewModel.Description));
+            ViewBag.GeneratorType = DataGeneratorTypeExtensions.GetGenerateTypes();
             return View("DisplayTemplates/CreateRestoreDataViewModel", model);
         }
+
+
 
         [Authorize]
         public IActionResult Check(DescRestoreDataViewModel viewModel)

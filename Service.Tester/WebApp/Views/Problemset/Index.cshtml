@@ -41,7 +41,7 @@
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(item.Name, "Description", "Problems", new { item.Id })
+                        @Html.ActionLink(item?.Name??"Кто то не задал название", "Description", "Problems", new { item.Id })
                     </td>
                     <td>
                         @Html.DisplayFor(modelItem => item.Type)

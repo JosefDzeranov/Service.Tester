@@ -47,10 +47,9 @@ namespace WebApp.Controllers
                     return View("Error");
                 }
             }
-            var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
-            ViewBag.GeneratorType = new SelectList(generatorTypes, nameof(DataGeneratorTypeViewModel.Name),
-                nameof(DataGeneratorTypeViewModel.Description));
-            return View("DisplayTemplates/CreateRestoreDataViewModel", model);
+
+            ViewBag.GeneratorType = DataGeneratorTypeExtensions.GetGenerateTypes();
+            return View("DisplayTemplates/CreateBlackBoxViewModel", model);
         }
 
         public IActionResult Check(DescBlackBoxViewModel model)

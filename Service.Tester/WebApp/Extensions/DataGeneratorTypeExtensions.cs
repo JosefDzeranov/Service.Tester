@@ -1,14 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProblemProcessor;
-using WebApp.Models;
 using WebApp.Models.Problemset;
 
 namespace WebApp.Extensions
 {
     public static class DataGeneratorTypeExtensions
     {
+        public static SelectList GetGenerateTypes()
+        {
+            var generatorTypes = DataGeneratorTypeExtensions.ToViewModel();
+            return new SelectList(generatorTypes, nameof(DataGeneratorTypeViewModel.Name),
+                nameof(DataGeneratorTypeViewModel.Description));
+        }
+
         public static ICollection<DataGeneratorTypeViewModel> ToViewModel()
         {
             var name = Enum.GetNames(typeof(DataGeneratorType));

@@ -9,6 +9,7 @@ using ProblemProcessor.CodeCorrector.Models;
 using ProblemProcessor.Solutions;
 using Service.InputDataGenerator;
 using Service.Runner.Interfaces;
+using WebApp.Extensions;
 using WebApp.Models;
 using WebApp.Models.CodeCorrector;
 
@@ -34,26 +35,25 @@ namespace WebApp.Controllers
         }
 
 
-        public IActionResult Index()
-        {
-            return
-            View();
-        }
-
         [Authorize(Roles = "Admin")]
         public IActionResult Create(CreateCodeCorrectorViewModel model)
         {
-            try
+            if (ModelState.IsValid)
             {
-                var problem = model.Adapt<CodeCorrectorData>();
-                _problemService.Create(problem);
-                return RedirectToAction("Index", "Problemset");
+                try
+                {
+                    var problem = model.Adapt<CodeCorrectorData>();
+                    _problemService.Create(problem);
+                    return RedirectToAction("Index", "Problemset");
+                }
+                catch (Exception e)
+                {
+                    ViewBag.Error = e.Message;
+                    return View("Error");
+                }
             }
-            catch (Exception e)
-            {
-                ViewBag.Error = e.Message;
-                return View("Error");
-            }
+            ViewBag.GeneratorType = DataGeneratorTypeExtensions.GetGenerateTypes();
+            return View("DisplayTemplates/CreateCodeCorrectorViewModel", model);
         }
 
         [Authorize]
