@@ -8,12 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using ProblemProcessor;
 using ProblemProcessor.BlackBox.Models;
 using ProblemProcessor.CodeCorrector.Models;
 using ProblemProcessor.Restore.Models;
 using ProblemProcessor.Solutions;
 using ProblemProcessor.TraceTable.Models;
+using Serilog;
 using Service.Runner;
 using Service.Runner.Compilation.Interfaces;
 using Service.Runner.Compilation.Roslyn;
@@ -34,9 +36,10 @@ namespace WebApp
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+
         }
 
         public IConfiguration Configuration { get; }
@@ -155,7 +158,7 @@ namespace WebApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {

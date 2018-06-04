@@ -1,0 +1,1878 @@
+2018-06-04 20:28:15.630 +03:00 [Information] User profile is available. Using '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-04 20:28:15.716 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06.xml"'.
+2018-06-04 20:28:15.736 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-5906c74d-83b0-4f59-ad89-182e4b752ed3.xml"'.
+2018-06-04 20:28:15.743 +03:00 [Debug] Found key {0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06}.
+2018-06-04 20:28:15.770 +03:00 [Debug] Found key {5906c74d-83b0-4f59-ad89-182e4b752ed3}.
+2018-06-04 20:28:15.782 +03:00 [Debug] Considering key {5906c74d-83b0-4f59-ad89-182e4b752ed3} with expiration date 2018-06-24 18:49:31Z as default key.
+2018-06-04 20:28:15.787 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:28:15.789 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-04 20:28:15.791 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:28:15.793 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-04 20:28:15.798 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-04 20:28:15.803 +03:00 [Debug] Using key {5906c74d-83b0-4f59-ad89-182e4b752ed3} as the default key.
+2018-06-04 20:28:15.806 +03:00 [Debug] Key ring with default key {5906c74d-83b0-4f59-ad89-182e4b752ed3} was loaded during application startup.
+2018-06-04 20:28:16.483 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-04 20:28:16.748 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:28:16.816 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:16.822 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.003 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.004 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.007 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.014 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.016 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.026 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.117 +03:00 [Information] Executed DbCommand ("95"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.119 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.120 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.121 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.122 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.123 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.124 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.125 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.126 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.126 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.139 +03:00 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.141 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.142 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.145 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.147 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.148 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:17.164 +03:00 [Information] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:17.167 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:17.167 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.168 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.175 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:28:17.232 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:28:17.243 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.244 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.245 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.246 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.248 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.249 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.250 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.251 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.273 +03:00 [Information] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.275 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.276 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.277 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.278 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.279 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.281 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.282 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.283 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.284 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.295 +03:00 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:17.298 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.299 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.300 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.301 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.302 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:17.311 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:17.313 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:17.314 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.315 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.322 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:28:17.372 +03:00 [Debug] Compiling query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:28:17.387 +03:00 [Debug] Optimized query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:28:17.421 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ProblemTypes] AS [p])
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:28:17.428 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.429 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.451 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:28:17.468 +03:00 [Information] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:28:17.477 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:17.478 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.479 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.501 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:28:17.507 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:28:17.534 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:28:17.550 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.552 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.557 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:28:17.641 +03:00 [Information] Executed DbCommand ("84"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:28:17.656 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:17.657 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.658 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.666 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:28:17.667 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:28:17.677 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedEmail] = @__normalizedEmail_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:28:17.681 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.682 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.684 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:28:17.712 +03:00 [Information] Executed DbCommand ("28"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:28:17.725 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:17.726 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.727 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:17.737 +03:00 [Debug] Hosting starting
+2018-06-04 20:28:17.876 +03:00 [Debug] Hosting started
+2018-06-04 20:28:17.876 +03:00 [Debug] Loaded hosting startup assembly "WebApp"
+2018-06-04 20:28:17.877 +03:00 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-04 20:28:17.885 +03:00 [Debug] Connection id ""0HLEA827PKF5H"" started.
+2018-06-04 20:28:17.924 +03:00 [Debug] Connection id ""0HLEA827PKF5H"" received FIN.
+2018-06-04 20:28:17.925 +03:00 [Debug] Connection id ""0HLEA827PKF5H"" disconnecting.
+2018-06-04 20:28:17.927 +03:00 [Debug] Connection id ""0HLEA827PKF5H"" sending FIN.
+2018-06-04 20:28:17.931 +03:00 [Debug] Connection id ""0HLEA827PKF5H"" stopped.
+2018-06-04 20:28:32.670 +03:00 [Information] User profile is available. Using '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-04 20:28:32.755 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06.xml"'.
+2018-06-04 20:28:32.764 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-5906c74d-83b0-4f59-ad89-182e4b752ed3.xml"'.
+2018-06-04 20:28:32.767 +03:00 [Debug] Found key {0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06}.
+2018-06-04 20:28:32.772 +03:00 [Debug] Found key {5906c74d-83b0-4f59-ad89-182e4b752ed3}.
+2018-06-04 20:28:32.780 +03:00 [Debug] Considering key {5906c74d-83b0-4f59-ad89-182e4b752ed3} with expiration date 2018-06-24 18:49:31Z as default key.
+2018-06-04 20:28:32.783 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:28:32.785 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-04 20:28:32.786 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:28:32.789 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-04 20:28:32.792 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-04 20:28:32.796 +03:00 [Debug] Using key {5906c74d-83b0-4f59-ad89-182e4b752ed3} as the default key.
+2018-06-04 20:28:32.797 +03:00 [Debug] Key ring with default key {5906c74d-83b0-4f59-ad89-182e4b752ed3} was loaded during application startup.
+2018-06-04 20:28:33.143 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-04 20:28:33.342 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:28:33.389 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.393 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.484 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.485 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.487 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.489 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.491 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.496 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.535 +03:00 [Information] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.537 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.538 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.539 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.540 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.540 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.541 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.542 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.543 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.544 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.552 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.554 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.556 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.559 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.560 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.562 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:33.575 +03:00 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:33.578 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:33.578 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.579 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.584 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:28:33.633 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:28:33.642 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.643 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.644 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.645 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.646 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.646 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.648 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.648 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.657 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.659 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.660 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.661 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.661 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.662 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.663 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.663 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.664 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.665 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.673 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:28:33.675 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.676 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.677 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.678 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.678 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:33.689 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:28:33.691 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:33.692 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.693 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.697 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:28:33.727 +03:00 [Debug] Compiling query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:28:33.737 +03:00 [Debug] Optimized query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:28:33.761 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ProblemTypes] AS [p])
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:28:33.768 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.770 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.784 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:28:33.798 +03:00 [Information] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:28:33.806 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:33.806 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.807 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.829 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:28:33.832 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:28:33.858 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:28:33.871 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.873 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.879 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:28:33.929 +03:00 [Information] Executed DbCommand ("51"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:28:33.944 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:33.945 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.946 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.955 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:28:33.957 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:28:33.964 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedEmail] = @__normalizedEmail_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:28:33.967 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.968 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:33.969 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:28:33.992 +03:00 [Information] Executed DbCommand ("23"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:28:34.004 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:28:34.005 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:34.006 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:28:34.013 +03:00 [Debug] Hosting starting
+2018-06-04 20:28:34.115 +03:00 [Debug] Hosting started
+2018-06-04 20:28:34.115 +03:00 [Debug] Loaded hosting startup assembly "WebApp"
+2018-06-04 20:28:34.116 +03:00 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-04 20:28:34.318 +03:00 [Debug] Connection id ""0HLEA82CMB794"" started.
+2018-06-04 20:28:34.351 +03:00 [Debug] Connection id ""0HLEA82CMB794"" received FIN.
+2018-06-04 20:28:34.352 +03:00 [Debug] Connection id ""0HLEA82CMB794"" disconnecting.
+2018-06-04 20:28:34.354 +03:00 [Debug] Connection id ""0HLEA82CMB794"" sending FIN.
+2018-06-04 20:28:34.358 +03:00 [Debug] Connection id ""0HLEA82CMB794"" stopped.
+2018-06-04 20:29:01.964 +03:00 [Information] User profile is available. Using '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-04 20:29:02.025 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06.xml"'.
+2018-06-04 20:29:02.032 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-5906c74d-83b0-4f59-ad89-182e4b752ed3.xml"'.
+2018-06-04 20:29:02.037 +03:00 [Debug] Found key {0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06}.
+2018-06-04 20:29:02.044 +03:00 [Debug] Found key {5906c74d-83b0-4f59-ad89-182e4b752ed3}.
+2018-06-04 20:29:02.051 +03:00 [Debug] Considering key {5906c74d-83b0-4f59-ad89-182e4b752ed3} with expiration date 2018-06-24 18:49:31Z as default key.
+2018-06-04 20:29:02.054 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:29:02.055 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-04 20:29:02.056 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:29:02.058 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-04 20:29:02.060 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-04 20:29:02.063 +03:00 [Debug] Using key {5906c74d-83b0-4f59-ad89-182e4b752ed3} as the default key.
+2018-06-04 20:29:02.064 +03:00 [Debug] Key ring with default key {5906c74d-83b0-4f59-ad89-182e4b752ed3} was loaded during application startup.
+2018-06-04 20:29:02.417 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-04 20:29:02.582 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:29:02.618 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.622 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.740 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.740 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.742 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.743 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.744 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.748 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.791 +03:00 [Information] Executed DbCommand ("43"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.792 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.792 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.792 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.792 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.793 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.793 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.793 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.793 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.793 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.802 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.802 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.802 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.805 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.805 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.805 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:29:02.817 +03:00 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:29:02.818 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:29:02.818 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.818 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.823 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:29:02.904 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:29:02.905 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.905 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.906 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.906 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.909 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.909 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.909 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.909 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.916 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.917 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.917 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.926 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:29:02.926 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.926 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.927 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.927 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.927 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:29:02.935 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:29:02.935 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:29:02.935 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.935 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:29:02.940 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:31:06.014 +03:00 [Information] User profile is available. Using '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-04 20:31:06.082 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06.xml"'.
+2018-06-04 20:31:06.090 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-5906c74d-83b0-4f59-ad89-182e4b752ed3.xml"'.
+2018-06-04 20:31:06.094 +03:00 [Debug] Found key {0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06}.
+2018-06-04 20:31:06.099 +03:00 [Debug] Found key {5906c74d-83b0-4f59-ad89-182e4b752ed3}.
+2018-06-04 20:31:06.108 +03:00 [Debug] Considering key {5906c74d-83b0-4f59-ad89-182e4b752ed3} with expiration date 2018-06-24 18:49:31Z as default key.
+2018-06-04 20:31:06.112 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:31:06.113 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-04 20:31:06.114 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:31:06.116 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-04 20:31:06.120 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-04 20:31:06.124 +03:00 [Debug] Using key {5906c74d-83b0-4f59-ad89-182e4b752ed3} as the default key.
+2018-06-04 20:31:06.126 +03:00 [Debug] Key ring with default key {5906c74d-83b0-4f59-ad89-182e4b752ed3} was loaded during application startup.
+2018-06-04 20:31:06.474 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-04 20:31:06.645 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:31:06.705 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.709 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.806 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.807 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.810 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.811 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.813 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.818 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:06.862 +03:00 [Information] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:06.864 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.865 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.866 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.868 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.868 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.870 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.870 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.871 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.872 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:06.882 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:06.885 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.885 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.888 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.889 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.890 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:31:06.902 +03:00 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:31:06.904 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:31:06.905 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.906 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.910 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:31:06.969 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:31:06.972 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.973 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.974 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.975 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.976 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.977 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.978 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.979 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:06.988 +03:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:06.990 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.991 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.992 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.993 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.994 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.995 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.996 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.996 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:06.997 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:07.004 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:31:07.006 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.007 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.008 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.009 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.009 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:31:07.017 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:31:07.018 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:31:07.019 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.020 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.023 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:31:07.053 +03:00 [Debug] Compiling query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:31:07.064 +03:00 [Debug] Optimized query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:31:07.088 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ProblemTypes] AS [p])
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:31:07.094 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.095 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.106 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:31:07.117 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:31:07.124 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:31:07.125 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.125 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.142 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:31:07.146 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:31:07.166 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:31:07.177 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.179 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.183 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:31:07.228 +03:00 [Information] Executed DbCommand ("45"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:31:07.242 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:31:07.243 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.243 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.251 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:31:07.253 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:31:07.260 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedEmail] = @__normalizedEmail_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:31:07.263 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.264 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.265 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:31:07.285 +03:00 [Information] Executed DbCommand ("20"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:31:07.295 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:31:07.295 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.296 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:31:07.302 +03:00 [Debug] Hosting starting
+2018-06-04 20:31:07.397 +03:00 [Debug] Hosting started
+2018-06-04 20:31:07.397 +03:00 [Debug] Loaded hosting startup assembly "WebApp"
+2018-06-04 20:31:07.398 +03:00 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-04 20:31:07.739 +03:00 [Debug] Connection id ""0HLEA83QDG00P"" started.
+2018-06-04 20:31:07.769 +03:00 [Debug] Connection id ""0HLEA83QDG00P"" received FIN.
+2018-06-04 20:31:07.770 +03:00 [Debug] Connection id ""0HLEA83QDG00P"" disconnecting.
+2018-06-04 20:31:07.771 +03:00 [Debug] Connection id ""0HLEA83QDG00P"" sending FIN.
+2018-06-04 20:31:07.774 +03:00 [Debug] Connection id ""0HLEA83QDG00P"" stopped.
+2018-06-04 20:33:53.126 +03:00 [Information] User profile is available. Using '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-04 20:33:53.185 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06.xml"'.
+2018-06-04 20:33:53.193 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-5906c74d-83b0-4f59-ad89-182e4b752ed3.xml"'.
+2018-06-04 20:33:53.196 +03:00 [Debug] Found key {0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06}.
+2018-06-04 20:33:53.201 +03:00 [Debug] Found key {5906c74d-83b0-4f59-ad89-182e4b752ed3}.
+2018-06-04 20:33:53.208 +03:00 [Debug] Considering key {5906c74d-83b0-4f59-ad89-182e4b752ed3} with expiration date 2018-06-24 18:49:31Z as default key.
+2018-06-04 20:33:53.211 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:33:53.212 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-04 20:33:53.213 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:33:53.214 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-04 20:33:53.217 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-04 20:33:53.221 +03:00 [Debug] Using key {5906c74d-83b0-4f59-ad89-182e4b752ed3} as the default key.
+2018-06-04 20:33:53.223 +03:00 [Debug] Key ring with default key {5906c74d-83b0-4f59-ad89-182e4b752ed3} was loaded during application startup.
+2018-06-04 20:33:53.529 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-04 20:33:53.693 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:33:53.730 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.734 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.821 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.822 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.824 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.826 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.827 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.832 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.872 +03:00 [Information] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.874 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.875 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.876 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.877 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.878 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.878 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.879 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.880 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.880 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.888 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.890 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.891 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.893 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.894 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.895 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:33:53.905 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:33:53.908 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:33:53.909 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.909 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.914 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:33:53.957 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:33:53.959 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.960 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.961 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.962 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.963 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.964 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.965 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.966 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.975 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.977 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.978 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.979 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.981 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.982 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.982 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.983 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.984 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.984 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.992 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:33:53.994 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.995 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.996 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.997 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:53.998 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:33:54.005 +03:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:33:54.007 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:33:54.008 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.009 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.012 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:33:54.041 +03:00 [Debug] Compiling query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:33:54.051 +03:00 [Debug] Optimized query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:33:54.074 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ProblemTypes] AS [p])
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:33:54.080 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.081 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.090 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:33:54.103 +03:00 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:33:54.110 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:33:54.110 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.111 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.128 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:33:54.131 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:33:54.150 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:33:54.160 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.162 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.166 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:33:54.213 +03:00 [Information] Executed DbCommand ("48"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:33:54.226 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:33:54.227 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.228 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.234 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:33:54.236 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:33:54.242 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedEmail] = @__normalizedEmail_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:33:54.245 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.246 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.246 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:33:54.260 +03:00 [Information] Executed DbCommand ("13"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:33:54.270 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:33:54.272 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.272 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:33:54.278 +03:00 [Debug] Hosting starting
+2018-06-04 20:33:54.367 +03:00 [Debug] Hosting started
+2018-06-04 20:33:54.368 +03:00 [Debug] Loaded hosting startup assembly "WebApp"
+2018-06-04 20:33:54.368 +03:00 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-04 20:33:54.728 +03:00 [Debug] Connection id ""0HLEA85C5VMC0"" started.
+2018-06-04 20:33:54.728 +03:00 [Debug] Connection id ""0HLEA85C5VMBV"" started.
+2018-06-04 20:33:54.762 +03:00 [Debug] Connection id ""0HLEA85C5VMC0"" received FIN.
+2018-06-04 20:33:54.763 +03:00 [Debug] Connection id ""0HLEA85C5VMC0"" disconnecting.
+2018-06-04 20:33:54.762 +03:00 [Debug] Connection id ""0HLEA85C5VMBV"" received FIN.
+2018-06-04 20:33:54.766 +03:00 [Debug] Connection id ""0HLEA85C5VMBV"" disconnecting.
+2018-06-04 20:33:54.765 +03:00 [Debug] Connection id ""0HLEA85C5VMC0"" sending FIN.
+2018-06-04 20:33:54.767 +03:00 [Debug] Connection id ""0HLEA85C5VMBV"" sending FIN.
+2018-06-04 20:33:54.769 +03:00 [Debug] Connection id ""0HLEA85C5VMBV"" stopped.
+2018-06-04 20:33:54.769 +03:00 [Debug] Connection id ""0HLEA85C5VMC0"" stopped.
+2018-06-04 20:38:08.257 +03:00 [Information] User profile is available. Using '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-04 20:38:08.320 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06.xml"'.
+2018-06-04 20:38:08.326 +03:00 [Debug] Reading data from file '"C:\Users\idzeranov\AppData\Local\ASP.NET\DataProtection-Keys\key-5906c74d-83b0-4f59-ad89-182e4b752ed3.xml"'.
+2018-06-04 20:38:08.330 +03:00 [Debug] Found key {0c3b5b7d-83dc-4380-a4fc-b6ca0cc9af06}.
+2018-06-04 20:38:08.335 +03:00 [Debug] Found key {5906c74d-83b0-4f59-ad89-182e4b752ed3}.
+2018-06-04 20:38:08.342 +03:00 [Debug] Considering key {5906c74d-83b0-4f59-ad89-182e4b752ed3} with expiration date 2018-06-24 18:49:31Z as default key.
+2018-06-04 20:38:08.345 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:38:08.347 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-04 20:38:08.348 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-04 20:38:08.349 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-04 20:38:08.353 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-04 20:38:08.356 +03:00 [Debug] Using key {5906c74d-83b0-4f59-ad89-182e4b752ed3} as the default key.
+2018-06-04 20:38:08.358 +03:00 [Debug] Key ring with default key {5906c74d-83b0-4f59-ad89-182e4b752ed3} was loaded during application startup.
+2018-06-04 20:38:08.647 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-04 20:38:08.836 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:38:08.870 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.875 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.980 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.981 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.983 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.985 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.987 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:08.992 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.037 +03:00 [Information] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.039 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.041 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.042 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.043 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.044 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.044 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.046 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.046 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.047 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.056 +03:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.058 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.059 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.062 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.063 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.064 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:38:09.075 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:38:09.078 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:09.078 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.079 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.084 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:38:09.131 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:38:09.133 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.134 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.135 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.136 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.137 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.138 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.140 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.140 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.151 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.153 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.154 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.155 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.156 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.157 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.158 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.159 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.160 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.161 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.171 +03:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-04 20:38:09.173 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.174 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.176 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.177 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.178 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:38:09.186 +03:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-04 20:38:09.188 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:09.189 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.190 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.194 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-04 20:38:09.230 +03:00 [Debug] Compiling query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:38:09.240 +03:00 [Debug] Optimized query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-04 20:38:09.264 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ProblemTypes] AS [p])
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:09.269 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.270 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.279 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:38:09.290 +03:00 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-04 20:38:09.297 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:09.297 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.298 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.314 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:38:09.318 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-04 20:38:09.335 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:09.346 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.347 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.351 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:38:09.401 +03:00 [Information] Executed DbCommand ("50"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:38:09.414 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:09.415 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.416 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.423 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:38:09.425 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-04 20:38:09.433 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedEmail] = @__normalizedEmail_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:09.437 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.438 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.440 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:38:09.461 +03:00 [Information] Executed DbCommand ("21"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-04 20:38:09.471 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:09.472 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.473 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:09.478 +03:00 [Debug] Hosting starting
+2018-06-04 20:38:09.556 +03:00 [Debug] Hosting started
+2018-06-04 20:38:09.557 +03:00 [Debug] Loaded hosting startup assembly "WebApp"
+2018-06-04 20:38:09.557 +03:00 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-04 20:38:09.828 +03:00 [Debug] Connection id ""0HLEA87O6S66K"" started.
+2018-06-04 20:38:09.828 +03:00 [Debug] Connection id ""0HLEA87O6S66J"" started.
+2018-06-04 20:38:09.851 +03:00 [Debug] Connection id ""0HLEA87O6S66K"" received FIN.
+2018-06-04 20:38:09.852 +03:00 [Debug] Connection id ""0HLEA87O6S66K"" disconnecting.
+2018-06-04 20:38:09.851 +03:00 [Debug] Connection id ""0HLEA87O6S66J"" received FIN.
+2018-06-04 20:38:09.854 +03:00 [Debug] Connection id ""0HLEA87O6S66K"" sending FIN.
+2018-06-04 20:38:09.854 +03:00 [Debug] Connection id ""0HLEA87O6S66J"" disconnecting.
+2018-06-04 20:38:09.855 +03:00 [Debug] Connection id ""0HLEA87O6S66J"" sending FIN.
+2018-06-04 20:38:09.856 +03:00 [Debug] Connection id ""0HLEA87O6S66J"" stopped.
+2018-06-04 20:38:09.856 +03:00 [Debug] Connection id ""0HLEA87O6S66K"" stopped.
+2018-06-04 20:38:11.342 +03:00 [Debug] Connection id ""0HLEA87O6S66L"" started.
+2018-06-04 20:38:11.401 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/  
+2018-06-04 20:38:11.420 +03:00 [Debug] The request path "/" does not match a supported file type
+2018-06-04 20:38:11.453 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:38:11.457 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser e in DbSet<ApplicationUser>
+where Property([e], \"Id\") == __get_Item_0
+select [e]).FirstOrDefault()"'
+2018-06-04 20:38:11.460 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser e in DbSet<ApplicationUser>
+where Property([e], \"Id\") == __get_Item_0
+select [e]).FirstOrDefault()"'
+2018-06-04 20:38:11.467 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+                        FROM [AspNetUsers] AS [e]
+                        WHERE [e].[Id] = @__get_Item_0, 
+                    shaper: BufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:11.469 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.470 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.471 +03:00 [Debug] Executing DbCommand [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-06-04 20:38:11.502 +03:00 [Information] Executed DbCommand ("31"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-06-04 20:38:11.506 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:11.507 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.507 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.529 +03:00 [Debug] Compiling query model: "
+"'"from IdentityUserClaim<string> uc in DbSet<IdentityUserClaim<string>>
+where bool [uc].UserId.Equals(__user_Id_0)
+select Claim [uc].ToClaim()"'
+2018-06-04 20:38:11.531 +03:00 [Debug] Optimized query model: "
+"'"from IdentityUserClaim<string> uc in DbSet<IdentityUserClaim<string>>
+where bool [uc].UserId.Equals(__user_Id_0)
+select Claim [uc].ToClaim()"'
+2018-06-04 20:38:11.541 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<Claim> _InterceptExceptions(
+    source: IAsyncEnumerable<Claim> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+            FROM [AspNetUserClaims] AS [uc]
+            WHERE [uc].[UserId] = @__user_Id_0, 
+        shaper: TypedProjectionShaper<UnbufferedOffsetEntityShaper<IdentityUserClaim<string>>, IdentityUserClaim<string>, Claim>), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:11.543 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.544 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.545 +03:00 [Debug] Executing DbCommand [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-06-04 20:38:11.582 +03:00 [Information] Executed DbCommand ("37"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-06-04 20:38:11.584 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:11.584 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.585 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.599 +03:00 [Debug] Compiling query model: "
+"'"from IdentityUserRole<string> userRole in DbSet<IdentityUserRole<string>>
+join IdentityRole role in DbSet<IdentityRole>
+on [userRole].RoleId equals [role].Id
+where bool [userRole].UserId.Equals(__userId_0)
+select [role].Name"'
+2018-06-04 20:38:11.602 +03:00 [Debug] Optimized query model: "
+"'"from IdentityUserRole<string> userRole in DbSet<IdentityUserRole<string>>
+join IdentityRole role in DbSet<IdentityRole>
+on [userRole].RoleId equals [role].Id
+where bool [userRole].UserId.Equals(__userId_0)
+select [role].Name"'
+2018-06-04 20:38:11.613 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<string> _InterceptExceptions(
+    source: IAsyncEnumerable<string> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [role].[Name]
+            FROM [AspNetUserRoles] AS [userRole]
+            INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+            WHERE [userRole].[UserId] = @__userId_0, 
+        shaper: TypedProjectionShaper<TypedCompositeShaper<ValueBufferShaper, ValueBuffer, ValueBufferShaper, ValueBuffer, TransparentIdentifier<ValueBuffer, ValueBuffer>>, TransparentIdentifier<ValueBuffer, ValueBuffer>, string>), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:11.615 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.616 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.617 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-06-04 20:38:11.640 +03:00 [Information] Executed DbCommand ("23"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-06-04 20:38:11.642 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:11.643 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.644 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.646 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.647 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.653 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:38:11.678 +03:00 [Information] Executed DbCommand ("24"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-04 20:38:11.680 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:11.680 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.681 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.688 +03:00 [Debug] Compiling query model: "
+"'"from IdentityRoleClaim<string> rc in DbSet<IdentityRoleClaim<string>>
+where bool [rc].RoleId.Equals(__role_Id_0)
+select new Claim(
+    [rc].ClaimType, 
+    [rc].ClaimValue
+)"'
+2018-06-04 20:38:11.690 +03:00 [Debug] Optimized query model: "
+"'"from IdentityRoleClaim<string> rc in DbSet<IdentityRoleClaim<string>>
+where bool [rc].RoleId.Equals(__role_Id_0)
+select new Claim(
+    [rc].ClaimType, 
+    [rc].ClaimValue
+)"'
+2018-06-04 20:38:11.694 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<Claim> _InterceptExceptions(
+    source: IAsyncEnumerable<Claim> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [rc].[ClaimType], [rc].[ClaimValue]
+            FROM [AspNetRoleClaims] AS [rc]
+            WHERE [rc].[RoleId] = @__role_Id_0, 
+        shaper: TypedProjectionShaper<ValueBufferShaper, ValueBuffer, Claim>), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:11.696 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.696 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.697 +03:00 [Debug] Executing DbCommand [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-06-04 20:38:11.720 +03:00 [Information] Executed DbCommand ("22"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-06-04 20:38:11.722 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:11.722 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.723 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:11.724 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-04 20:38:11.875 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-04 20:38:11.918 +03:00 [Debug] Executing action "WebApp.Controllers.HomeController.Index (WebApp)"
+2018-06-04 20:38:12.005 +03:00 [Information] Executing action method "WebApp.Controllers.HomeController.Index (WebApp)" with arguments (null) - ModelState is Valid
+2018-06-04 20:38:12.009 +03:00 [Debug] Executed action method "WebApp.Controllers.HomeController.Index (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-04 20:38:12.018 +03:00 [Debug] View lookup cache miss for view '"Index"' in controller '"Home"'.
+2018-06-04 20:38:13.080 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Home\Index.cshtml"' started.
+2018-06-04 20:38:15.921 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Home\Index.cshtml"' completed in 2837.9486ms.
+2018-06-04 20:38:16.001 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\_ViewStart.cshtml"' started.
+2018-06-04 20:38:16.045 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\_ViewStart.cshtml"' completed in 42.8061ms.
+2018-06-04 20:38:16.051 +03:00 [Debug] The view '"Index"' was found.
+2018-06-04 20:38:16.052 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-06-04 20:38:16.087 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2018-06-04 20:38:16.155 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_Layout.cshtml"' started.
+2018-06-04 20:38:16.312 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_Layout.cshtml"' completed in 155.8381ms.
+2018-06-04 20:38:16.321 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-04 20:38:16.323 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-04 20:38:16.335 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-04 20:38:16.336 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-04 20:38:16.360 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Home"'.
+2018-06-04 20:38:16.424 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_LoginPartial.cshtml"' started.
+2018-06-04 20:38:16.483 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_LoginPartial.cshtml"' completed in 58.1379ms.
+2018-06-04 20:38:16.501 +03:00 [Debug] A new antiforgery cookie token was created.
+2018-06-04 20:38:16.532 +03:00 [Information] Executed action "WebApp.Controllers.HomeController.Index (WebApp)" in 4612.8353ms
+2018-06-04 20:38:16.537 +03:00 [Debug] Connection id ""0HLEA87O6S66L"" completed keep alive response.
+2018-06-04 20:38:16.539 +03:00 [Information] Request finished in 5140.6154ms 200 text/html; charset=utf-8
+2018-06-04 20:38:16.559 +03:00 [Debug] Connection id ""0HLEA87O6S66M"" started.
+2018-06-04 20:38:16.559 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" started.
+2018-06-04 20:38:16.562 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/css/sourceCodeGen.css  
+2018-06-04 20:38:16.562 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/css/site.css  
+2018-06-04 20:38:16.568 +03:00 [Information] The file "/css/site.css" was not modified
+2018-06-04 20:38:16.568 +03:00 [Information] The file "/css/sourceCodeGen.css" was not modified
+2018-06-04 20:38:16.573 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/lib/bootstrap/dist/css/bootstrap.css  
+2018-06-04 20:38:16.573 +03:00 [Debug] Handled. Status code: 304 File: "/css/site.css"
+2018-06-04 20:38:16.574 +03:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2018-06-04 20:38:16.573 +03:00 [Debug] Handled. Status code: 304 File: "/css/sourceCodeGen.css"
+2018-06-04 20:38:16.576 +03:00 [Debug] Connection id ""0HLEA87O6S66M"" completed keep alive response.
+2018-06-04 20:38:16.577 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" completed keep alive response.
+2018-06-04 20:38:16.578 +03:00 [Information] Request finished in 16.6687ms 304 text/css
+2018-06-04 20:38:16.579 +03:00 [Information] Request finished in 17.6606ms 304 text/css
+2018-06-04 20:38:16.576 +03:00 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/css/bootstrap.css"
+2018-06-04 20:38:16.605 +03:00 [Debug] Connection id ""0HLEA87O6S66L"" completed keep alive response.
+2018-06-04 20:38:16.606 +03:00 [Information] Request finished in 32.9848ms 304 text/css
+2018-06-04 20:38:16.605 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/lib/jquery/dist/jquery.js  
+2018-06-04 20:38:16.608 +03:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2018-06-04 20:38:16.609 +03:00 [Debug] Handled. Status code: 304 File: "/lib/jquery/dist/jquery.js"
+2018-06-04 20:38:16.610 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" completed keep alive response.
+2018-06-04 20:38:16.610 +03:00 [Information] Request finished in 5.5533ms 304 application/javascript
+2018-06-04 20:38:16.621 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/lib/bootstrap/dist/js/bootstrap.js  
+2018-06-04 20:38:16.622 +03:00 [Debug] Connection id ""0HLEA87O6S66O"" started.
+2018-06-04 20:38:16.622 +03:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified
+2018-06-04 20:38:16.623 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/js/sourceCodeGen.js?v=HDGTv6ZR6HL8UGa2bfruOGA-50HZdy9DEjqRUyKAE8I  
+2018-06-04 20:38:16.624 +03:00 [Information] The file "/js/sourceCodeGen.js" was not modified
+2018-06-04 20:38:16.627 +03:00 [Debug] Connection id ""0HLEA87O6S66Q"" started.
+2018-06-04 20:38:16.622 +03:00 [Debug] Connection id ""0HLEA87O6S66P"" started.
+2018-06-04 20:38:16.621 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+2018-06-04 20:38:16.628 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/images/banner3.svg  
+2018-06-04 20:38:16.629 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/images/banner2.svg  
+2018-06-04 20:38:16.623 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/images/banner1.svg  
+2018-06-04 20:38:16.624 +03:00 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/js/bootstrap.js"
+2018-06-04 20:38:16.630 +03:00 [Information] The file "/js/site.js" was not modified
+2018-06-04 20:38:16.631 +03:00 [Information] The file "/images/banner3.svg" was not modified
+2018-06-04 20:38:16.632 +03:00 [Information] The file "/images/banner1.svg" was not modified
+2018-06-04 20:38:16.627 +03:00 [Debug] Handled. Status code: 304 File: "/js/sourceCodeGen.js"
+2018-06-04 20:38:16.636 +03:00 [Debug] Handled. Status code: 304 File: "/images/banner1.svg"
+2018-06-04 20:38:16.636 +03:00 [Debug] Connection id ""0HLEA87O6S66M"" completed keep alive response.
+2018-06-04 20:38:16.633 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" completed keep alive response.
+2018-06-04 20:38:16.631 +03:00 [Information] The file "/images/banner2.svg" was not modified
+2018-06-04 20:38:16.641 +03:00 [Debug] Handled. Status code: 304 File: "/images/banner2.svg"
+2018-06-04 20:38:16.642 +03:00 [Debug] Connection id ""0HLEA87O6S66P"" completed keep alive response.
+2018-06-04 20:38:16.634 +03:00 [Debug] Handled. Status code: 304 File: "/js/site.js"
+2018-06-04 20:38:16.635 +03:00 [Debug] Handled. Status code: 304 File: "/images/banner3.svg"
+2018-06-04 20:38:16.648 +03:00 [Debug] Connection id ""0HLEA87O6S66Q"" completed keep alive response.
+2018-06-04 20:38:16.638 +03:00 [Debug] Connection id ""0HLEA87O6S66O"" completed keep alive response.
+2018-06-04 20:38:16.641 +03:00 [Information] Request finished in 19.5264ms 304 application/javascript
+2018-06-04 20:38:16.640 +03:00 [Information] Request finished in 17.0955ms 304 application/javascript
+2018-06-04 20:38:16.643 +03:00 [Information] Request finished in 13.948ms 304 image/svg+xml
+2018-06-04 20:38:16.650 +03:00 [Information] Request finished in 26.5585ms 304 image/svg+xml
+2018-06-04 20:38:16.649 +03:00 [Information] Request finished in 20.9007ms 304 image/svg+xml
+2018-06-04 20:38:16.645 +03:00 [Debug] Connection id ""0HLEA87O6S66L"" completed keep alive response.
+2018-06-04 20:38:16.682 +03:00 [Information] Request finished in 60.6472ms 304 application/javascript
+2018-06-04 20:38:16.652 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2018-06-04 20:38:16.684 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/images/banner4.svg  
+2018-06-04 20:38:16.685 +03:00 [Information] The file "/images/banner4.svg" was not modified
+2018-06-04 20:38:16.685 +03:00 [Debug] Handled. Status code: 304 File: "/images/banner4.svg"
+2018-06-04 20:38:16.686 +03:00 [Debug] Connection id ""0HLEA87O6S66L"" completed keep alive response.
+2018-06-04 20:38:16.687 +03:00 [Information] Request finished in 3.0373ms 304 image/svg+xml
+2018-06-04 20:38:16.684 +03:00 [Information] The file "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" was not modified
+2018-06-04 20:38:16.691 +03:00 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
+2018-06-04 20:38:16.692 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" completed keep alive response.
+2018-06-04 20:38:16.692 +03:00 [Information] Request finished in 40.1588ms 304 font/woff2
+2018-06-04 20:38:25.018 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/Problemset  
+2018-06-04 20:38:25.019 +03:00 [Debug] The request path "/Problemset" does not match a supported file type
+2018-06-04 20:38:25.021 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-04 20:38:25.023 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-04 20:38:25.028 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsetController.Index (WebApp)"
+2018-06-04 20:38:25.035 +03:00 [Information] Authorization was successful for user: "iodzeranov@mail.ru".
+2018-06-04 20:38:25.053 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsetController.Index (WebApp)" with arguments (null) - ModelState is Valid
+2018-06-04 20:38:25.057 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:38:25.063 +03:00 [Debug] Compiling query model: "
+"'"(from Problem x in DbSet<Problem>
+select [x]).Include(\"Type\")"'
+2018-06-04 20:38:25.066 +03:00 [Debug] Including navigation: '"[x].Type"'
+2018-06-04 20:38:25.074 +03:00 [Debug] Optimized query model: "
+"'"from Problem x in DbSet<Problem>
+join ProblemType x.Type in DbSet<ProblemType>
+on Property([x], \"TypeId\") equals (Nullable<Guid>)Property([x.Type], \"Id\") into x.Type_group
+from ProblemType x.Type in 
+    (from ProblemType x.Type_groupItem in [x.Type_group]
+    select [x.Type_groupItem]).DefaultIfEmpty()
+select Problem _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ [x.Type] }, 
+    fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: Problem)
+        return !(bool ReferenceEquals(included[0], null)) ? 
+        {
+            Void queryContext.QueryBuffer.StartTracking(
+                entity: included[0], 
+                entityType: EntityType: ProblemType)
+            return Void SetRelationshipSnapshotValue(
+                stateManager: queryContext.StateManager, 
+                navigation: Problem.Type, 
+                entity: entity, 
+                value: included[0])
+        }
+         : default(Void)
+    }
+)"'
+2018-06-04 20:38:25.100 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<Problem> _InterceptExceptions(
+    source: IEnumerable<Problem> _TrackEntities(
+        results: IEnumerable<Problem> _Select(
+            source: IEnumerable<TransparentIdentifier<Problem, ProblemType>> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+                    FROM [Problems] AS [x]
+                    LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id], 
+                shaper: TypedCompositeShaper<BufferedOffsetEntityShaper<Problem>, Problem, BufferedOffsetEntityShaper<ProblemType>, ProblemType, TransparentIdentifier<Problem, ProblemType>>), 
+            selector: (TransparentIdentifier<Problem, ProblemType> t1) => Problem _Include(
+                queryContext: queryContext, 
+                entity: t1.Outer, 
+                included: new object[]{ t1.Inner }, 
+                fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+                {
+                    Void queryContext.QueryBuffer.StartTracking(
+                        entity: entity, 
+                        entityType: EntityType: Problem)
+                    return !(bool ReferenceEquals(included[0], null)) ? 
+                    {
+                        Void queryContext.QueryBuffer.StartTracking(
+                            entity: included[0], 
+                            entityType: EntityType: ProblemType)
+                        return Void SetRelationshipSnapshotValue(
+                            stateManager: queryContext.StateManager, 
+                            navigation: Problem.Type, 
+                            entity: entity, 
+                            value: included[0])
+                    }
+                     : default(Void)
+                }
+            )), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: Problem }, 
+        entityAccessors: List<Func<Problem, object>> 
+        { 
+            Func<Problem, Problem>, 
+        }
+    ), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-06-04 20:38:25.109 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.110 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.111 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]"
+2018-06-04 20:38:25.135 +03:00 [Information] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]"
+2018-06-04 20:38:25.180 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:25.180 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.181 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.185 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsetController.Index (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-04 20:38:25.186 +03:00 [Debug] View lookup cache miss for view '"Index"' in controller '"Problemset"'.
+2018-06-04 20:38:25.253 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Problemset\Index.cshtml"' started.
+2018-06-04 20:38:25.808 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Problemset\Index.cshtml"' completed in 554.1055ms.
+2018-06-04 20:38:25.811 +03:00 [Debug] The view '"Index"' was found.
+2018-06-04 20:38:25.828 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problemset/Index.cshtml".
+2018-06-04 20:38:25.837 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:38:25.840 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.841 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.842 +03:00 [Debug] Executing DbCommand [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-06-04 20:38:25.869 +03:00 [Information] Executed DbCommand ("26"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-06-04 20:38:25.871 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:25.871 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.872 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.875 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedRoleName_0
+select [r]).SingleOrDefault()"'
+2018-06-04 20:38:25.877 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedRoleName_0
+select [r]).SingleOrDefault()"'
+2018-06-04 20:38:25.880 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> SingleOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedRoleName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:25.883 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.884 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.885 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-06-04 20:38:25.910 +03:00 [Information] Executed DbCommand ("25"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-06-04 20:38:25.912 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:25.913 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.913 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.916 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityUserRole<string> e in DbSet<IdentityUserRole<string>>
+where Property([e], \"UserId\") == __get_Item_0 && Property([e], \"RoleId\") == __get_Item_1
+select [e]).FirstOrDefault()"'
+2018-06-04 20:38:25.918 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityUserRole<string> e in DbSet<IdentityUserRole<string>>
+where Property([e], \"UserId\") == __get_Item_0 && Property([e], \"RoleId\") == __get_Item_1
+select [e]).FirstOrDefault()"'
+2018-06-04 20:38:25.922 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityUserRole<string>> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityUserRole<string>> _TrackEntities(
+        results: IAsyncEnumerable<IdentityUserRole<string>> _ToSequence(Task<IdentityUserRole<string>> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityUserRole<string>> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [e].[UserId], [e].[RoleId]
+                        FROM [AspNetUserRoles] AS [e]
+                        WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1), 
+                    shaper: BufferedEntityShaper<IdentityUserRole`1>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityUserRole`1 }, 
+        entityAccessors: List<Func<IdentityUserRole<string>, object>> 
+        { 
+            Func<IdentityUserRole<string>, IdentityUserRole<string>>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:38:25.924 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.925 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.926 +03:00 [Debug] Executing DbCommand [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-06-04 20:38:25.950 +03:00 [Information] Executed DbCommand ("23"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-06-04 20:38:25.953 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:38:25.954 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.955 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:38:25.996 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-04 20:38:26.000 +03:00 [Debug] View lookup cache hit for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-04 20:38:26.001 +03:00 [Debug] View lookup cache hit for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-04 20:38:26.003 +03:00 [Debug] View lookup cache hit for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-04 20:38:26.003 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Problemset"'.
+2018-06-04 20:38:26.005 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-04 20:38:26.006 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-04 20:38:26.006 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-04 20:38:26.007 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-04 20:38:26.008 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Problemset"'.
+2018-06-04 20:38:26.012 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-04 20:38:26.014 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsetController.Index (WebApp)" in 985.233ms
+2018-06-04 20:38:26.015 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" completed keep alive response.
+2018-06-04 20:38:26.016 +03:00 [Information] Request finished in 998.5063ms 200 text/html; charset=utf-8
+2018-06-04 20:39:07.730 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:52405/Problems/Description/20fe4f24-19b7-40f3-b604-08d5c587ce43  
+2018-06-04 20:39:07.731 +03:00 [Debug] The request path "/Problems/Description/20fe4f24-19b7-40f3-b604-08d5c587ce43" does not match a supported file type
+2018-06-04 20:39:07.732 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-04 20:39:07.734 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-04 20:39:07.746 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-04 20:39:07.786 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["20fe4f24-19b7-40f3-b604-08d5c587ce43"]) - ModelState is Valid
+2018-06-04 20:39:07.792 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-04 20:39:07.795 +03:00 [Debug] Compiling query model: "
+"'"(from Problem x in 
+    (from Problem x in DbSet<Problem>
+    select [x]).Include(\"Type\")
+where [x].Id == __id_0
+select [x]).SingleOrDefault()"'
+2018-06-04 20:39:07.797 +03:00 [Debug] Including navigation: '"[x].Type"'
+2018-06-04 20:39:07.799 +03:00 [Debug] Optimized query model: "
+"'"(from Problem x in DbSet<Problem>
+join ProblemType x.Type in DbSet<ProblemType>
+on Property([x], \"TypeId\") equals (Nullable<Guid>)Property([x.Type], \"Id\") into x.Type_group
+from ProblemType x.Type in 
+    (from ProblemType x.Type_groupItem in [x.Type_group]
+    select [x.Type_groupItem]).DefaultIfEmpty()
+where [x].Id == __id_0
+select Problem _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ [x.Type] }, 
+    fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: Problem)
+        return !(bool ReferenceEquals(included[0], null)) ? 
+        {
+            Void queryContext.QueryBuffer.StartTracking(
+                entity: included[0], 
+                entityType: EntityType: ProblemType)
+            return Void SetRelationshipSnapshotValue(
+                stateManager: queryContext.StateManager, 
+                navigation: Problem.Type, 
+                entity: entity, 
+                value: included[0])
+        }
+         : default(Void)
+    }
+)).SingleOrDefault()"'
+2018-06-04 20:39:07.807 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<Problem> _InterceptExceptions(
+    source: IEnumerable<Problem> _TrackEntities(
+        results: IEnumerable<Problem> _ToSequence(Problem SingleOrDefault(IEnumerable<Problem> _Select(
+                    source: IEnumerable<TransparentIdentifier<Problem, ProblemType>> _ShapedQuery(
+                        queryContext: queryContext, 
+                        shaperCommandContext: SelectExpression: 
+                            SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+                            FROM [Problems] AS [x]
+                            LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+                            WHERE [x].[Id] = @__id_0, 
+                        shaper: TypedCompositeShaper<BufferedOffsetEntityShaper<Problem>, Problem, BufferedOffsetEntityShaper<ProblemType>, ProblemType, TransparentIdentifier<Problem, ProblemType>>), 
+                    selector: (TransparentIdentifier<Problem, ProblemType> t1) => Problem _Include(
+                        queryContext: queryContext, 
+                        entity: t1.Outer, 
+                        included: new object[]{ t1.Inner }, 
+                        fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+                        {
+                            Void queryContext.QueryBuffer.StartTracking(
+                                entity: entity, 
+                                entityType: EntityType: Problem)
+                            return !(bool ReferenceEquals(included[0], null)) ? 
+                            {
+                                Void queryContext.QueryBuffer.StartTracking(
+                                    entity: included[0], 
+                                    entityType: EntityType: ProblemType)
+                                return Void SetRelationshipSnapshotValue(
+                                    stateManager: queryContext.StateManager, 
+                                    navigation: Problem.Type, 
+                                    entity: entity, 
+                                    value: included[0])
+                            }
+                             : default(Void)
+                        }
+                    )))), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: Problem }, 
+        entityAccessors: List<Func<Problem, object>> 
+        { 
+            Func<Problem, Problem>, 
+        }
+    ), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-06-04 20:39:07.812 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:07.813 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:07.816 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-04 20:39:07.839 +03:00 [Information] Executed DbCommand ("23"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-04 20:39:07.841 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:39:07.842 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:07.843 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:08.012 +03:00 [Debug] Compiling query model: "
+"'"from Solution x in DbSet<Solution>
+where [x].UserId == __userId_0 && [x].Problem.Id == __problemId_1
+select [x]"'
+2018-06-04 20:39:08.014 +03:00 [Debug] Optimized query model: "
+"'"from Solution x in DbSet<Solution>
+where [x].UserId == __userId_0 && Property([x], \"ProblemId\") == (Nullable<Guid>)__problemId_1
+select [x]"'
+2018-06-04 20:39:08.019 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<Solution> _InterceptExceptions(
+    source: IEnumerable<Solution> _TrackEntities(
+        results: IEnumerable<Solution> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+                FROM [Solutions] AS [x]
+                WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1), 
+            shaper: BufferedEntityShaper<Solution>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Solution }, 
+        entityAccessors: List<Func<Solution, object>> 
+        { 
+            Func<Solution, Solution>, 
+        }
+    ), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-04 20:39:08.021 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:08.022 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:08.023 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-04 20:39:08.048 +03:00 [Information] Executed DbCommand ("25"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-04 20:39:08.050 +03:00 [Debug] A data reader was disposed.
+2018-06-04 20:39:08.051 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:08.051 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '"."'.
+2018-06-04 20:39:08.052 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-04 20:39:08.053 +03:00 [Debug] View lookup cache miss for view '"Description"' in controller '"Problems"'.
+2018-06-04 20:39:08.118 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Problems\Description.cshtml"' started.
+2018-06-04 20:39:08.163 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Problems\Description.cshtml"' completed in 43.8877ms.
+2018-06-04 20:39:08.165 +03:00 [Debug] The view '"Description"' was found.
+2018-06-04 20:39:08.166 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-04 20:39:08.170 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescBlackBoxViewModel"' in controller '"Problems"'.
+2018-06-04 20:39:08.227 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescBlackBoxViewModel.cshtml"' started.
+2018-06-04 20:39:08.379 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\Dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescBlackBoxViewModel.cshtml"' completed in 151.038ms.
+2018-06-04 20:39:08.388 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-04 20:39:08.434 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Problems"'.
+2018-06-04 20:39:08.435 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-04 20:39:08.436 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-04 20:39:08.437 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-04 20:39:08.437 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-04 20:39:08.438 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-04 20:39:08.439 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-04 20:39:08.441 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 693.5065ms
+2018-06-04 20:39:08.442 +03:00 [Debug] Connection id ""0HLEA87O6S66N"" completed keep alive response.
+2018-06-04 20:39:08.443 +03:00 [Information] Request finished in 713.0881ms 200 text/html; charset=utf-8
