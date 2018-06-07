@@ -7,11 +7,8 @@ namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly DatabaseContext _dbContext;
-
         public HomeController(DatabaseContext dbContext)
         {
-            _dbContext = dbContext;
         }
 
         public IActionResult Index()

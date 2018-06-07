@@ -66,7 +66,6 @@ namespace WebApp
                 options.UseSqlServer(Configuration.GetConnectionString(connectionStringName)));
 
 
-            // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<IRunner, CSharpRunner>();
             services.AddTransient<ICompiler, RoslynCompiler>();
@@ -153,7 +152,7 @@ namespace WebApp
                 .Map(d => d.Row, s => s.AdditionalData.Row);
 
             #endregion
-            
+
             services.AddMvc();
         }
 
