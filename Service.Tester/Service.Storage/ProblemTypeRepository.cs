@@ -25,5 +25,17 @@ namespace Service.Storage
         {
             return _dbContext.ProblemTypes;
         }
+
+        public void Create(ProblemType type)
+        {
+            _dbContext.ProblemTypes.Add(type);
+            _dbContext.SaveChanges();
+        }
+
+        public void Delete(ProblemType type)
+        {
+            _dbContext.ProblemTypes.Remove(type);
+            _dbContext.SaveChanges();
+        }
     }
 }

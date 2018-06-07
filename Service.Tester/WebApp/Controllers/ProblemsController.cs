@@ -87,7 +87,6 @@ namespace WebApp.Controllers
                         var viewModel = BuildTraceTableViewModel(id, problem, userId);
                         return View(viewModel);
                     }
-
             }
 
             return View("Error", new ErrorViewModel { RequestId = "Такого типа задания не нашлось. УПССССС" });

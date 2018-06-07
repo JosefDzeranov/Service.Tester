@@ -9,5 +9,7 @@ namespace Service.Storage
     {
         ProblemType Get(Expression<Func<ProblemType, bool>> predicate);
         IEnumerable<ProblemType> GetAll();
+        void Create(ProblemType type);
+        void Delete(ProblemType type);
     }
 }

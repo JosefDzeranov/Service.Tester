@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using Service.Storage.Context;
 using Service.Storage.Entities;
@@ -33,11 +32,6 @@ namespace Service.Storage
             return _dbContext.Problems.Include(x => x.Type).ToList();
         }
 
-        public void Update(Problem problem)
-        {
-            _dbContext.Problems.Update(problem);
-        }
-
         public void Delete(Guid id)
         {
             var problem = Get(id);
@@ -46,11 +40,6 @@ namespace Service.Storage
                 _dbContext.Problems.Remove(problem);
                 _dbContext.SaveChanges();
             }
-        }
-
-        public IEnumerable<Problem> Find(Expression<Func<Problem, bool>> predicate)
-        {
-            return _dbContext.Problems.Include(x => x.Type).Where(predicate);
         }
     }
 }

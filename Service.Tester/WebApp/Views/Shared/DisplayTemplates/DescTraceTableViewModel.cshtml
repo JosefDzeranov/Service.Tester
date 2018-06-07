@@ -15,14 +15,14 @@
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-
+            <input asp-for="SourceCodeForCheck" type="hidden" />
             <div class="form-group">
                 <label asp-for="SourceCode" class="control-label"></label>
                 <textarea style="height: 500px" asp-for="SourceCode" class="form-control"></textarea>
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
             </div>
 
-            <input asp-for="SourceCodeForCheck" type="hidden" />
+
 
             <table class="table table-bordered">
                 <thead>
