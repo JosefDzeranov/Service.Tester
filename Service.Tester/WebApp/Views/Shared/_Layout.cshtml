@@ -75,10 +75,9 @@
                             $("#output-data").val(data);
                         }
                     });
+                    });
 
-                });
-
-                $("#SourceCodeForCheck").focusout(function () {
+                $("#SourceCodeCheck").focusout(function () {
                     var url = "http://localhost:52405/Problems/ParseCode";
                     var sourceCodeForCheck = $("#SourceCodeForCheck").val();
                     $.ajax({
