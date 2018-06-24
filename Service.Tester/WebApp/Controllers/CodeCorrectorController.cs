@@ -57,10 +57,10 @@ namespace WebApp.Controllers
         }
 
         [Authorize]
-        public IActionResult Check(DescCodeCorrectorViewModel viewModel)
-        {
-            var generator = _generators[viewModel.GeneratorType];
-            var input = generator.CreateData();
+            public IActionResult Check(DescCodeCorrectorViewModel viewModel)
+            {
+                var generator = _generators[viewModel.GeneratorType];
+                var input = generator.CreateData();
             try
             {
                 var problemId = viewModel.Id;

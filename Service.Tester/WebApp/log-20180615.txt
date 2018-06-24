@@ -1,0 +1,1529 @@
+2018-06-15 18:58:25.242 +03:00 [Information] User profile is available. Using '"C:\Users\Josef\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-15 18:58:25.372 +03:00 [Debug] Reading data from file '"C:\Users\Josef\AppData\Local\ASP.NET\DataProtection-Keys\key-0b2f0195-263a-4c9d-bf05-694b7222876b.xml"'.
+2018-06-15 18:58:25.391 +03:00 [Debug] Reading data from file '"C:\Users\Josef\AppData\Local\ASP.NET\DataProtection-Keys\key-251bafc5-6331-4dbe-a1b5-e965bc0ddce8.xml"'.
+2018-06-15 18:58:25.394 +03:00 [Debug] Reading data from file '"C:\Users\Josef\AppData\Local\ASP.NET\DataProtection-Keys\key-716be574-f9ae-454e-8c36-46012af2ab69.xml"'.
+2018-06-15 18:58:25.406 +03:00 [Debug] Found key {0b2f0195-263a-4c9d-bf05-694b7222876b}.
+2018-06-15 18:58:25.417 +03:00 [Debug] Found key {251bafc5-6331-4dbe-a1b5-e965bc0ddce8}.
+2018-06-15 18:58:25.418 +03:00 [Debug] Found key {716be574-f9ae-454e-8c36-46012af2ab69}.
+2018-06-15 18:58:25.433 +03:00 [Debug] Considering key {716be574-f9ae-454e-8c36-46012af2ab69} with expiration date 2018-06-27 20:07:41Z as default key.
+2018-06-15 18:58:25.437 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-15 18:58:25.439 +03:00 [Debug] Decrypting secret element using Windows DPAPI.
+2018-06-15 18:58:25.442 +03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-06-15 18:58:25.445 +03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-06-15 18:58:25.455 +03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-06-15 18:58:25.468 +03:00 [Debug] Using key {716be574-f9ae-454e-8c36-46012af2ab69} as the default key.
+2018-06-15 18:58:25.470 +03:00 [Debug] Key ring with default key {716be574-f9ae-454e-8c36-46012af2ab69} was loaded during application startup.
+2018-06-15 18:58:26.595 +03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+2018-06-15 18:58:27.214 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 18:58:27.325 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:27.362 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.239 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.241 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.245 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.250 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.253 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.267 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.436 +03:00 [Information] Executed DbCommand ("175"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.439 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.440 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.442 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.443 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.444 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.448 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.451 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.455 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.470 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.507 +03:00 [Information] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.509 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.512 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.520 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.521 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.522 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-15 18:58:28.578 +03:00 [Information] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-15 18:58:28.581 +03:00 [Debug] A data reader was disposed.
+2018-06-15 18:58:28.582 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.583 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.590 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-15 18:58:28.735 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 18:58:28.741 +03:00 [Debug] Migrating using database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.759 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.772 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.774 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.776 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.778 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.779 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.781 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.799 +03:00 [Information] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.801 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.803 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.805 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.806 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.807 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.809 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.810 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.811 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.812 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.829 +03:00 [Information] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'__EFMigrationsHistory');"
+2018-06-15 18:58:28.831 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.834 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.836 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.837 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.838 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-15 18:58:28.853 +03:00 [Information] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+2018-06-15 18:58:28.855 +03:00 [Debug] A data reader was disposed.
+2018-06-15 18:58:28.856 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.857 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.861 +03:00 [Information] No migrations were applied. The database is already up to date.
+2018-06-15 18:58:28.908 +03:00 [Debug] Compiling query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-15 18:58:28.927 +03:00 [Debug] Optimized query model: "
+"'"(from ProblemType <generated>_1 in DbSet<ProblemType>
+select [<generated>_1]).Any()"'
+2018-06-15 18:58:28.982 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<bool> _InterceptExceptions(
+    source: IEnumerable<bool> _ToSequence(bool GetResult(
+            valueBuffers: IEnumerable<ValueBuffer> _Query(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT CASE
+                        WHEN EXISTS (
+                            SELECT 1
+                            FROM [ProblemTypes] AS [p])
+                        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+                    END), 
+            throwOnNullResult: False)), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 18:58:28.991 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:28.994 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.012 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-15 18:58:29.073 +03:00 [Information] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [ProblemTypes] AS [p])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END"
+2018-06-15 18:58:29.082 +03:00 [Debug] A data reader was disposed.
+2018-06-15 18:58:29.084 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.085 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.111 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-15 18:58:29.116 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedName_0
+select [r]).FirstOrDefault()"'
+2018-06-15 18:58:29.144 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 18:58:29.166 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.169 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.186 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-15 18:58:29.315 +03:00 [Information] Executed DbCommand ("130"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-15 18:58:29.332 +03:00 [Debug] A data reader was disposed.
+2018-06-15 18:58:29.332 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.334 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.344 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-15 18:58:29.348 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedEmail == __normalizedEmail_0
+select [u]).FirstOrDefault()"'
+2018-06-15 18:58:29.359 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedEmail] = @__normalizedEmail_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 18:58:29.367 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.368 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.370 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-15 18:58:29.444 +03:00 [Information] Executed DbCommand ("73"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2018-06-15 18:58:29.458 +03:00 [Debug] A data reader was disposed.
+2018-06-15 18:58:29.459 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.460 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 18:58:29.470 +03:00 [Debug] Hosting starting
+2018-06-15 18:58:29.588 +03:00 [Debug] Hosting started
+2018-06-15 18:58:29.589 +03:00 [Debug] Loaded hosting startup assembly "WebApp"
+2018-06-15 18:58:29.590 +03:00 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-06-15 18:58:29.740 +03:00 [Debug] Connection id ""0HLEIR3B901VO"" started.
+2018-06-15 18:58:29.740 +03:00 [Debug] Connection id ""0HLEIR3B901VN"" started.
+2018-06-15 18:58:29.777 +03:00 [Debug] Connection id ""0HLEIR3B901VN"" received FIN.
+2018-06-15 18:58:29.777 +03:00 [Debug] Connection id ""0HLEIR3B901VO"" received FIN.
+2018-06-15 18:58:29.780 +03:00 [Debug] Connection id ""0HLEIR3B901VN"" disconnecting.
+2018-06-15 18:58:29.782 +03:00 [Debug] Connection id ""0HLEIR3B901VO"" disconnecting.
+2018-06-15 18:58:29.786 +03:00 [Debug] Connection id ""0HLEIR3B901VO"" sending FIN.
+2018-06-15 18:58:29.788 +03:00 [Debug] Connection id ""0HLEIR3B901VO"" stopped.
+2018-06-15 18:58:29.784 +03:00 [Debug] Connection id ""0HLEIR3B901VN"" sending FIN.
+2018-06-15 18:58:29.789 +03:00 [Debug] Connection id ""0HLEIR3B901VN"" stopped.
+2018-06-15 18:58:30.207 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" started.
+2018-06-15 18:58:30.417 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/  
+2018-06-15 18:58:30.459 +03:00 [Debug] The request path "/" does not match a supported file type
+2018-06-15 18:58:30.486 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 18:58:30.745 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 18:58:30.809 +03:00 [Debug] Executing action "WebApp.Controllers.HomeController.Index (WebApp)"
+2018-06-15 18:58:30.929 +03:00 [Information] Executing action method "WebApp.Controllers.HomeController.Index (WebApp)" with arguments (null) - ModelState is Valid
+2018-06-15 18:58:30.933 +03:00 [Debug] Executed action method "WebApp.Controllers.HomeController.Index (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 18:58:30.940 +03:00 [Debug] View lookup cache miss for view '"Index"' in controller '"Home"'.
+2018-06-15 18:58:33.441 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Home\Index.cshtml"' started.
+2018-06-15 18:58:36.825 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Home\Index.cshtml"' completed in 3379.6287ms.
+2018-06-15 18:58:36.899 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\_ViewStart.cshtml"' started.
+2018-06-15 18:58:36.960 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\_ViewStart.cshtml"' completed in 59.0443ms.
+2018-06-15 18:58:36.968 +03:00 [Debug] The view '"Index"' was found.
+2018-06-15 18:58:36.971 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-06-15 18:58:37.110 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Home"'.
+2018-06-15 18:58:37.257 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_Layout.cshtml"' started.
+2018-06-15 18:58:38.155 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_Layout.cshtml"' completed in 896.669ms.
+2018-06-15 18:58:38.170 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 18:58:38.174 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 18:58:38.197 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 18:58:38.199 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 18:58:38.226 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Home"'.
+2018-06-15 18:58:38.325 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_LoginPartial.cshtml"' started.
+2018-06-15 18:58:38.403 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_LoginPartial.cshtml"' completed in 75.6419ms.
+2018-06-15 18:58:38.490 +03:00 [Information] Executed action "WebApp.Controllers.HomeController.Index (WebApp)" in 7679.9678ms
+2018-06-15 18:58:38.496 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" completed keep alive response.
+2018-06-15 18:58:38.499 +03:00 [Information] Request finished in 8084.5764ms 200 text/html; charset=utf-8
+2018-06-15 18:58:38.541 +03:00 [Debug] Connection id ""0HLEIR3B901VR"" started.
+2018-06-15 18:58:38.541 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" started.
+2018-06-15 18:58:38.564 +03:00 [Debug] Connection id ""0HLEIR3B901VS"" started.
+2018-06-15 18:58:38.564 +03:00 [Debug] Connection id ""0HLEIR3B901VT"" started.
+2018-06-15 18:58:38.567 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/css/sourceCodeGen.css  
+2018-06-15 18:58:38.564 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/css/site.css  
+2018-06-15 18:58:38.567 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/lib/jquery/dist/jquery.js  
+2018-06-15 18:58:38.575 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" started.
+2018-06-15 18:58:38.583 +03:00 [Information] The file "/css/sourceCodeGen.css" was not modified
+2018-06-15 18:58:38.583 +03:00 [Information] The file "/css/site.css" was not modified
+2018-06-15 18:58:38.583 +03:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2018-06-15 18:58:38.592 +03:00 [Debug] Handled. Status code: 304 File: "/lib/jquery/dist/jquery.js"
+2018-06-15 18:58:38.589 +03:00 [Debug] Handled. Status code: 304 File: "/css/sourceCodeGen.css"
+2018-06-15 18:58:38.599 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/lib/bootstrap/dist/css/bootstrap.css  
+2018-06-15 18:58:38.590 +03:00 [Debug] Handled. Status code: 304 File: "/css/site.css"
+2018-06-15 18:58:38.599 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" completed keep alive response.
+2018-06-15 18:58:38.599 +03:00 [Debug] Connection id ""0HLEIR3B901VS"" completed keep alive response.
+2018-06-15 18:58:38.616 +03:00 [Information] Request finished in 48.6993ms 304 application/javascript
+2018-06-15 18:58:38.614 +03:00 [Information] Request finished in 47.3478ms 304 text/css
+2018-06-15 18:58:38.613 +03:00 [Debug] Connection id ""0HLEIR3B901VR"" completed keep alive response.
+2018-06-15 18:58:38.612 +03:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2018-06-15 18:58:38.628 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/lib/bootstrap/dist/js/bootstrap.js  
+2018-06-15 18:58:38.629 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/js/sourceCodeGen.js?v=HDGTv6ZR6HL8UGa2bfruOGA-50HZdy9DEjqRUyKAE8I  
+2018-06-15 18:58:38.642 +03:00 [Information] The file "/js/sourceCodeGen.js" was not modified
+2018-06-15 18:58:38.645 +03:00 [Debug] Handled. Status code: 304 File: "/js/sourceCodeGen.js"
+2018-06-15 18:58:38.649 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" completed keep alive response.
+2018-06-15 18:58:38.653 +03:00 [Information] Request finished in 24.4691ms 304 application/javascript
+2018-06-15 18:58:38.640 +03:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.js" was not modified
+2018-06-15 18:58:38.663 +03:00 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/js/bootstrap.js"
+2018-06-15 18:58:38.636 +03:00 [Information] Request finished in 72.4796ms 304 text/css
+2018-06-15 18:58:38.664 +03:00 [Debug] Connection id ""0HLEIR3B901VT"" completed keep alive response.
+2018-06-15 18:58:38.637 +03:00 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/css/bootstrap.css"
+2018-06-15 18:58:38.673 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" completed keep alive response.
+2018-06-15 18:58:38.675 +03:00 [Information] Request finished in 76.1345ms 304 text/css
+2018-06-15 18:58:38.672 +03:00 [Information] Request finished in 43.1979ms 304 application/javascript
+2018-06-15 18:58:38.663 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA  
+2018-06-15 18:58:38.692 +03:00 [Information] The file "/js/site.js" was not modified
+2018-06-15 18:58:38.697 +03:00 [Debug] Handled. Status code: 304 File: "/js/site.js"
+2018-06-15 18:58:38.699 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" completed keep alive response.
+2018-06-15 18:58:38.703 +03:00 [Information] Request finished in 39.854ms 304 application/javascript
+2018-06-15 18:58:39.000 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 18:58:39.002 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 18:58:39.058 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" completed keep alive response.
+2018-06-15 18:58:39.060 +03:00 [Information] Request finished in 59.6881ms 200 image/x-icon
+2018-06-15 19:04:23.061 +03:00 [Debug] Connection id ""0HLEIR3B901VS"" received FIN.
+2018-06-15 19:04:23.064 +03:00 [Debug] Connection id ""0HLEIR3B901VS"" disconnecting.
+2018-06-15 19:04:23.069 +03:00 [Debug] Connection id ""0HLEIR3B901VR"" received FIN.
+2018-06-15 19:04:23.073 +03:00 [Debug] Connection id ""0HLEIR3B901VR"" disconnecting.
+2018-06-15 19:04:23.075 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" received FIN.
+2018-06-15 19:04:23.112 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" disconnecting.
+2018-06-15 19:04:23.062 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" received FIN.
+2018-06-15 19:04:23.115 +03:00 [Debug] Connection id ""0HLEIR3B901VS"" sending FIN.
+2018-06-15 19:04:23.124 +03:00 [Debug] Connection id ""0HLEIR3B901VS"" stopped.
+2018-06-15 19:04:23.126 +03:00 [Debug] Connection id ""0HLEIR3B901VR"" stopped.
+2018-06-15 19:04:23.125 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" disconnecting.
+2018-06-15 19:04:23.126 +03:00 [Debug] Connection id ""0HLEIR3B901VR"" sending FIN.
+2018-06-15 19:04:23.130 +03:00 [Debug] Connection id ""0HLEIR3B901VT"" received FIN.
+2018-06-15 19:04:23.144 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" stopped.
+2018-06-15 19:04:23.145 +03:00 [Debug] Connection id ""0HLEIR3B901VT"" disconnecting.
+2018-06-15 19:04:23.144 +03:00 [Debug] Connection id ""0HLEIR3B901VU"" sending FIN.
+2018-06-15 19:04:23.147 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" received FIN.
+2018-06-15 19:04:23.150 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" disconnecting.
+2018-06-15 19:04:23.151 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" stopped.
+2018-06-15 19:04:23.151 +03:00 [Debug] Connection id ""0HLEIR3B901VQ"" sending FIN.
+2018-06-15 19:04:23.155 +03:00 [Debug] Connection id ""0HLEIR3B901VT"" sending FIN.
+2018-06-15 19:04:23.155 +03:00 [Debug] Connection id ""0HLEIR3B901VT"" stopped.
+2018-06-15 19:04:23.156 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" stopped.
+2018-06-15 19:04:23.156 +03:00 [Debug] Connection id ""0HLEIR3B901VP"" sending FIN.
+2018-06-15 19:05:19.360 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" started.
+2018-06-15 19:05:19.364 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Register  
+2018-06-15 19:05:19.365 +03:00 [Debug] The request path "/Account/Register" does not match a supported file type
+2018-06-15 19:05:19.381 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:05:19.383 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Register"'.
+2018-06-15 19:05:19.390 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Register (WebApp)"' with id '"06b12bbc-42bc-4feb-913f-798a3ef260af"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:05:19.432 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Register (WebApp)"
+2018-06-15 19:05:19.454 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:05:19.493 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Register (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:05:19.499 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Register (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:05:19.501 +03:00 [Debug] View lookup cache miss for view '"Register"' in controller '"Account"'.
+2018-06-15 19:05:20.024 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Register.cshtml"' started.
+2018-06-15 19:05:20.556 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Register.cshtml"' completed in 530.1784ms.
+2018-06-15 19:05:20.600 +03:00 [Debug] The view '"Register"' was found.
+2018-06-15 19:05:20.601 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Register.cshtml".
+2018-06-15 19:05:20.630 +03:00 [Debug] A new antiforgery cookie token was created.
+2018-06-15 19:05:20.705 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:05:20.709 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:05:20.711 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:05:20.713 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:05:20.715 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:05:20.718 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:05:20.723 +03:00 [Debug] View lookup cache miss for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:05:20.844 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_ValidationScriptsPartial.cshtml"' started.
+2018-06-15 19:05:20.934 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\_ValidationScriptsPartial.cshtml"' completed in 87.9345ms.
+2018-06-15 19:05:20.954 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Register (WebApp)" in 1519.8638ms
+2018-06-15 19:05:20.956 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" completed keep alive response.
+2018-06-15 19:05:20.957 +03:00 [Information] Request finished in 1593.3185ms 200 text/html; charset=utf-8
+2018-06-15 19:05:21.021 +03:00 [Debug] Connection id ""0HLEIR3B90200"" started.
+2018-06-15 19:05:21.021 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/lib/jquery-validation/dist/jquery.validate.js  
+2018-06-15 19:05:21.025 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+2018-06-15 19:05:21.027 +03:00 [Information] The file "/lib/jquery-validation/dist/jquery.validate.js" was not modified
+2018-06-15 19:05:21.037 +03:00 [Debug] Handled. Status code: 304 File: "/lib/jquery-validation/dist/jquery.validate.js"
+2018-06-15 19:05:21.036 +03:00 [Information] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified
+2018-06-15 19:05:21.044 +03:00 [Debug] Handled. Status code: 304 File: "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+2018-06-15 19:05:21.039 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" completed keep alive response.
+2018-06-15 19:05:21.050 +03:00 [Information] Request finished in 29.155ms 304 application/javascript
+2018-06-15 19:05:21.046 +03:00 [Debug] Connection id ""0HLEIR3B90200"" completed keep alive response.
+2018-06-15 19:05:21.059 +03:00 [Information] Request finished in 34.4449ms 304 application/javascript
+2018-06-15 19:05:21.918 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Login  
+2018-06-15 19:05:21.919 +03:00 [Debug] The request path "/Account/Login" does not match a supported file type
+2018-06-15 19:05:21.921 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:05:21.922 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:05:21.923 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"fed633c1-b72f-46f1-9630-f49f6b36831c"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:05:21.953 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:05:21.956 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:05:21.986 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:05:21.994 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-06-15 19:05:21.996 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:05:21.999 +03:00 [Debug] View lookup cache miss for view '"Login"' in controller '"Account"'.
+2018-06-15 19:05:22.124 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' started.
+2018-06-15 19:05:22.269 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' completed in 142.8636ms.
+2018-06-15 19:05:22.274 +03:00 [Debug] The view '"Login"' was found.
+2018-06-15 19:05:22.274 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-06-15 19:05:22.290 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:05:22.328 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:05:22.330 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:05:22.332 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:05:22.333 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:05:22.335 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:05:22.339 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:05:22.343 +03:00 [Debug] View lookup cache hit for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:05:22.345 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 390.6794ms
+2018-06-15 19:05:22.346 +03:00 [Debug] Connection id ""0HLEIR3B90200"" completed keep alive response.
+2018-06-15 19:05:22.349 +03:00 [Information] Request finished in 431.7323ms 200 text/html; charset=utf-8
+2018-06-15 19:07:02.505 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Login  
+2018-06-15 19:07:02.506 +03:00 [Debug] The request path "/Account/Login" does not match a supported file type
+2018-06-15 19:07:02.507 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:07:02.510 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:07:02.512 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"fed633c1-b72f-46f1-9630-f49f6b36831c"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:07:02.513 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:07:02.516 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:07:02.549 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:07:02.553 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-06-15 19:07:02.555 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:07:02.556 +03:00 [Debug] View lookup cache miss for view '"Login"' in controller '"Account"'.
+2018-06-15 19:07:02.672 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' started.
+2018-06-15 19:07:02.840 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' completed in 165.4447ms.
+2018-06-15 19:07:02.844 +03:00 [Debug] The view '"Login"' was found.
+2018-06-15 19:07:02.845 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-06-15 19:07:02.860 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:07:02.891 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:07:02.893 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:07:02.895 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:07:02.896 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:07:02.898 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:07:02.899 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:07:02.907 +03:00 [Debug] View lookup cache hit for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:07:02.909 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 393.6289ms
+2018-06-15 19:07:02.913 +03:00 [Debug] Connection id ""0HLEIR3B90200"" completed keep alive response.
+2018-06-15 19:07:02.914 +03:00 [Information] Request finished in 409.3321ms 200 text/html; charset=utf-8
+2018-06-15 19:07:03.070 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" received FIN.
+2018-06-15 19:07:03.074 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" disconnecting.
+2018-06-15 19:07:03.075 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" sending FIN.
+2018-06-15 19:07:03.070 +03:00 [Debug] Connection id ""0HLEIR3B90200"" received FIN.
+2018-06-15 19:07:03.076 +03:00 [Debug] Connection id ""0HLEIR3B901VV"" stopped.
+2018-06-15 19:07:03.092 +03:00 [Debug] Connection id ""0HLEIR3B90200"" disconnecting.
+2018-06-15 19:07:03.096 +03:00 [Debug] Connection id ""0HLEIR3B90200"" sending FIN.
+2018-06-15 19:07:03.096 +03:00 [Debug] Connection id ""0HLEIR3B90200"" stopped.
+2018-06-15 19:07:03.242 +03:00 [Debug] Connection id ""0HLEIR3B90201"" started.
+2018-06-15 19:07:03.244 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:07:03.245 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:07:03.248 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:07:03.249 +03:00 [Information] Request finished in 5.0135ms 200 image/x-icon
+2018-06-15 19:07:48.307 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Login  
+2018-06-15 19:07:48.308 +03:00 [Debug] The request path "/Account/Login" does not match a supported file type
+2018-06-15 19:07:48.309 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:07:48.310 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:07:48.312 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"fed633c1-b72f-46f1-9630-f49f6b36831c"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:07:48.313 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:07:48.315 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:07:48.359 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:07:48.362 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-06-15 19:07:48.363 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:07:48.366 +03:00 [Debug] View lookup cache miss for view '"Login"' in controller '"Account"'.
+2018-06-15 19:07:48.626 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' started.
+2018-06-15 19:07:48.817 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' completed in 189.0541ms.
+2018-06-15 19:07:48.823 +03:00 [Debug] The view '"Login"' was found.
+2018-06-15 19:07:48.824 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-06-15 19:07:48.842 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:07:48.880 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:07:48.881 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:07:48.883 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:07:48.885 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:07:48.887 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:07:48.891 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:07:48.896 +03:00 [Debug] View lookup cache hit for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:07:48.898 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 582.9586ms
+2018-06-15 19:07:48.901 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:07:48.903 +03:00 [Information] Request finished in 596.4441ms 200 text/html; charset=utf-8
+2018-06-15 19:07:49.249 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:07:49.251 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:07:49.261 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:07:49.262 +03:00 [Information] Request finished in 13.2628ms 200 image/x-icon
+2018-06-15 19:07:59.517 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Login  
+2018-06-15 19:07:59.521 +03:00 [Debug] The request path "/Account/Login" does not match a supported file type
+2018-06-15 19:07:59.523 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:07:59.525 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:07:59.526 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"fed633c1-b72f-46f1-9630-f49f6b36831c"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:07:59.529 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:07:59.534 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:07:59.584 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:07:59.587 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-06-15 19:07:59.588 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:07:59.590 +03:00 [Debug] View lookup cache miss for view '"Login"' in controller '"Account"'.
+2018-06-15 19:07:59.702 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' started.
+2018-06-15 19:07:59.853 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' completed in 148.5629ms.
+2018-06-15 19:07:59.857 +03:00 [Debug] The view '"Login"' was found.
+2018-06-15 19:07:59.858 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-06-15 19:07:59.872 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:07:59.897 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:07:59.898 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:07:59.900 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:07:59.902 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:07:59.904 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:07:59.908 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:07:59.912 +03:00 [Debug] View lookup cache hit for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:07:59.913 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 380.5212ms
+2018-06-15 19:07:59.915 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:07:59.920 +03:00 [Information] Request finished in 402.691ms 200 text/html; charset=utf-8
+2018-06-15 19:08:00.258 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:08:00.261 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:08:00.265 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:08:00.267 +03:00 [Information] Request finished in 8.7746ms 200 image/x-icon
+2018-06-15 19:08:20.434 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Login  
+2018-06-15 19:08:20.435 +03:00 [Debug] The request path "/Account/Login" does not match a supported file type
+2018-06-15 19:08:20.437 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:08:20.439 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:08:20.441 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"fed633c1-b72f-46f1-9630-f49f6b36831c"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:08:20.443 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:08:20.446 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:08:20.485 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:08:20.487 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-06-15 19:08:20.488 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:08:20.490 +03:00 [Debug] View lookup cache hit for view '"Login"' in controller '"Account"'.
+2018-06-15 19:08:20.492 +03:00 [Debug] The view '"Login"' was found.
+2018-06-15 19:08:20.493 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-06-15 19:08:20.494 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:08:20.499 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:08:20.501 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:08:20.502 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:08:20.504 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:08:20.507 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:08:20.510 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:08:20.511 +03:00 [Debug] View lookup cache hit for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:08:20.512 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 66.57ms
+2018-06-15 19:08:20.514 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:08:20.518 +03:00 [Information] Request finished in 84.7304ms 200 text/html; charset=utf-8
+2018-06-15 19:08:20.835 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:08:20.837 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:08:20.843 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:08:20.846 +03:00 [Information] Request finished in 10.7669ms 200 image/x-icon
+2018-06-15 19:11:06.088 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Account/Login  
+2018-06-15 19:11:06.090 +03:00 [Debug] The request path "/Account/Login" does not match a supported file type
+2018-06-15 19:11:06.092 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:11:06.094 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:11:06.096 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"fed633c1-b72f-46f1-9630-f49f6b36831c"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:11:06.102 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:11:06.104 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:11:06.137 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments ([""]) - ModelState is Valid
+2018-06-15 19:11:06.140 +03:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2018-06-15 19:11:06.141 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:11:06.143 +03:00 [Debug] View lookup cache miss for view '"Login"' in controller '"Account"'.
+2018-06-15 19:11:06.236 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' started.
+2018-06-15 19:11:06.417 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Account\Login.cshtml"' completed in 179.0115ms.
+2018-06-15 19:11:06.422 +03:00 [Debug] The view '"Login"' was found.
+2018-06-15 19:11:06.423 +03:00 [Information] Executing ViewResult, running view at path "/Views/Account/Login.cshtml".
+2018-06-15 19:11:06.434 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:11:06.459 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Account"'.
+2018-06-15 19:11:06.461 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:06.463 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:06.465 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:06.467 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:06.471 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Account"'.
+2018-06-15 19:11:06.479 +03:00 [Debug] View lookup cache hit for view '"_ValidationScriptsPartial"' in controller '"Account"'.
+2018-06-15 19:11:06.483 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 378.9727ms
+2018-06-15 19:11:06.487 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:11:06.489 +03:00 [Information] Request finished in 401.0658ms 200 text/html; charset=utf-8
+2018-06-15 19:11:08.457 +03:00 [Information] Request starting HTTP/1.1 POST http://localhost:63100/Account/Login application/x-www-form-urlencoded 265
+2018-06-15 19:11:08.459 +03:00 [Debug] "POST" requests are not supported
+2018-06-15 19:11:08.462 +03:00 [Debug] AuthenticationScheme: "Identity.Application" was not authenticated.
+2018-06-15 19:11:08.464 +03:00 [Debug] Request successfully matched the route with name 'null' and template '"Account/Login"'.
+2018-06-15 19:11:08.465 +03:00 [Debug] Action '"WebApp.Controllers.AccountController.Login (WebApp)"' with id '"93151ace-654c-4fef-ba92-72bf239640aa"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-06-15 19:11:08.480 +03:00 [Debug] Executing action "WebApp.Controllers.AccountController.Login (WebApp)"
+2018-06-15 19:11:08.495 +03:00 [Debug] Connection id ""0HLEIR3B90201"", Request id ""0HLEIR3B90201:00000009"": started reading request body.
+2018-06-15 19:11:08.500 +03:00 [Debug] Connection id ""0HLEIR3B90201"", Request id ""0HLEIR3B90201:00000009"": done reading request body.
+2018-06-15 19:11:08.505 +03:00 [Debug] Antiforgery successfully validated a request.
+2018-06-15 19:11:08.531 +03:00 [Debug] The temp data cookie ".AspNetCore.Mvc.CookieTempDataProvider" was not found.
+2018-06-15 19:11:08.563 +03:00 [Information] Executing action method "WebApp.Controllers.AccountController.Login (WebApp)" with arguments (["WebApp.Models.AccountViewModels.LoginViewModel", ""]) - ModelState is Valid
+2018-06-15 19:11:08.571 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:11:08.578 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedUserName == __normalizedUserName_0
+select [u]).FirstOrDefault()"'
+2018-06-15 19:11:08.581 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser u in DbSet<ApplicationUser>
+where [u].NormalizedUserName == __normalizedUserName_0
+select [u]).FirstOrDefault()"'
+2018-06-15 19:11:08.595 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+                        FROM [AspNetUsers] AS [u]
+                        WHERE [u].[NormalizedUserName] = @__normalizedUserName_0, 
+                    shaper: UnbufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:08.601 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:08.668 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:08.674 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-06-15 19:11:08.727 +03:00 [Information] Executed DbCommand ("52"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2018-06-15 19:11:08.733 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:08.734 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:08.735 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:08.818 +03:00 [Debug] Compiling query model: "
+"'"from IdentityUserClaim<string> uc in DbSet<IdentityUserClaim<string>>
+where bool [uc].UserId.Equals(__user_Id_0)
+select Claim [uc].ToClaim()"'
+2018-06-15 19:11:08.823 +03:00 [Debug] Optimized query model: "
+"'"from IdentityUserClaim<string> uc in DbSet<IdentityUserClaim<string>>
+where bool [uc].UserId.Equals(__user_Id_0)
+select Claim [uc].ToClaim()"'
+2018-06-15 19:11:08.841 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<Claim> _InterceptExceptions(
+    source: IAsyncEnumerable<Claim> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+            FROM [AspNetUserClaims] AS [uc]
+            WHERE [uc].[UserId] = @__user_Id_0, 
+        shaper: TypedProjectionShaper<UnbufferedOffsetEntityShaper<IdentityUserClaim<string>>, IdentityUserClaim<string>, Claim>), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:08.881 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:08.883 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:08.884 +03:00 [Debug] Executing DbCommand [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-06-15 19:11:08.995 +03:00 [Information] Executed DbCommand ("110"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2018-06-15 19:11:09.001 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:09.002 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.006 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.036 +03:00 [Debug] Compiling query model: "
+"'"from IdentityUserRole<string> userRole in DbSet<IdentityUserRole<string>>
+join IdentityRole role in DbSet<IdentityRole>
+on [userRole].RoleId equals [role].Id
+where bool [userRole].UserId.Equals(__userId_0)
+select [role].Name"'
+2018-06-15 19:11:09.040 +03:00 [Debug] Optimized query model: "
+"'"from IdentityUserRole<string> userRole in DbSet<IdentityUserRole<string>>
+join IdentityRole role in DbSet<IdentityRole>
+on [userRole].RoleId equals [role].Id
+where bool [userRole].UserId.Equals(__userId_0)
+select [role].Name"'
+2018-06-15 19:11:09.065 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<string> _InterceptExceptions(
+    source: IAsyncEnumerable<string> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [role].[Name]
+            FROM [AspNetUserRoles] AS [userRole]
+            INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+            WHERE [userRole].[UserId] = @__userId_0, 
+        shaper: TypedProjectionShaper<TypedCompositeShaper<ValueBufferShaper, ValueBuffer, ValueBufferShaper, ValueBuffer, TransparentIdentifier<ValueBuffer, ValueBuffer>>, TransparentIdentifier<ValueBuffer, ValueBuffer>, string>), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:09.070 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.072 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.073 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-06-15 19:11:09.147 +03:00 [Information] Executed DbCommand ("74"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2018-06-15 19:11:09.153 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:09.154 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.156 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.163 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.165 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.167 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-15 19:11:09.221 +03:00 [Information] Executed DbCommand ("54"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2018-06-15 19:11:09.227 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:09.228 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.230 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.245 +03:00 [Debug] Compiling query model: "
+"'"from IdentityRoleClaim<string> rc in DbSet<IdentityRoleClaim<string>>
+where bool [rc].RoleId.Equals(__role_Id_0)
+select new Claim(
+    [rc].ClaimType, 
+    [rc].ClaimValue
+)"'
+2018-06-15 19:11:09.249 +03:00 [Debug] Optimized query model: "
+"'"from IdentityRoleClaim<string> rc in DbSet<IdentityRoleClaim<string>>
+where bool [rc].RoleId.Equals(__role_Id_0)
+select new Claim(
+    [rc].ClaimType, 
+    [rc].ClaimValue
+)"'
+2018-06-15 19:11:09.258 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<Claim> _InterceptExceptions(
+    source: IAsyncEnumerable<Claim> _ShapedQuery(
+        queryContext: queryContext, 
+        shaperCommandContext: SelectExpression: 
+            SELECT [rc].[ClaimType], [rc].[ClaimValue]
+            FROM [AspNetRoleClaims] AS [rc]
+            WHERE [rc].[RoleId] = @__role_Id_0, 
+        shaper: TypedProjectionShaper<ValueBufferShaper, ValueBuffer, Claim>), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:09.260 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.264 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.265 +03:00 [Debug] Executing DbCommand [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-06-15 19:11:09.319 +03:00 [Information] Executed DbCommand ("54"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AspNetRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0"
+2018-06-15 19:11:09.323 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:09.324 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.325 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:09.332 +03:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2018-06-15 19:11:09.334 +03:00 [Information] User logged in.
+2018-06-15 19:11:09.335 +03:00 [Debug] Executed action method "WebApp.Controllers.AccountController.Login (WebApp)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult".
+2018-06-15 19:11:09.338 +03:00 [Information] Executing RedirectResult, redirecting to "/".
+2018-06-15 19:11:09.341 +03:00 [Information] Executed action "WebApp.Controllers.AccountController.Login (WebApp)" in 859.4143ms
+2018-06-15 19:11:09.343 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:11:09.345 +03:00 [Information] Request finished in 887.0575ms 302 
+2018-06-15 19:11:09.354 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/  
+2018-06-15 19:11:09.355 +03:00 [Debug] The request path "/" does not match a supported file type
+2018-06-15 19:11:09.361 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:11:09.362 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:11:09.364 +03:00 [Debug] Executing action "WebApp.Controllers.HomeController.Index (WebApp)"
+2018-06-15 19:11:09.394 +03:00 [Information] Executing action method "WebApp.Controllers.HomeController.Index (WebApp)" with arguments (null) - ModelState is Valid
+2018-06-15 19:11:09.396 +03:00 [Debug] Executed action method "WebApp.Controllers.HomeController.Index (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:11:09.399 +03:00 [Debug] View lookup cache hit for view '"Index"' in controller '"Home"'.
+2018-06-15 19:11:09.400 +03:00 [Debug] The view '"Index"' was found.
+2018-06-15 19:11:09.401 +03:00 [Information] Executing ViewResult, running view at path "/Views/Home/Index.cshtml".
+2018-06-15 19:11:09.402 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Home"'.
+2018-06-15 19:11:09.405 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:09.407 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:09.408 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:09.409 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:09.411 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Home"'.
+2018-06-15 19:11:09.413 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:11:09.420 +03:00 [Information] Executed action "WebApp.Controllers.HomeController.Index (WebApp)" in 54.8589ms
+2018-06-15 19:11:09.421 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:11:09.422 +03:00 [Information] Request finished in 68.5338ms 200 text/html; charset=utf-8
+2018-06-15 19:11:11.154 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problemset  
+2018-06-15 19:11:11.155 +03:00 [Debug] The request path "/Problemset" does not match a supported file type
+2018-06-15 19:11:11.158 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:11:11.159 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:11:11.165 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsetController.Index (WebApp)"
+2018-06-15 19:11:11.177 +03:00 [Information] Authorization was successful for user: "iodzeranov@mail.ru".
+2018-06-15 19:11:11.211 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsetController.Index (WebApp)" with arguments (null) - ModelState is Valid
+2018-06-15 19:11:11.216 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:11:11.223 +03:00 [Debug] Compiling query model: "
+"'"(from Problem x in DbSet<Problem>
+select [x]).Include(\"Type\")"'
+2018-06-15 19:11:11.228 +03:00 [Debug] Including navigation: '"[x].Type"'
+2018-06-15 19:11:11.242 +03:00 [Debug] Optimized query model: "
+"'"from Problem x in DbSet<Problem>
+join ProblemType x.Type in DbSet<ProblemType>
+on Property([x], \"TypeId\") equals (Nullable<Guid>)Property([x.Type], \"Id\") into x.Type_group
+from ProblemType x.Type in 
+    (from ProblemType x.Type_groupItem in [x.Type_group]
+    select [x.Type_groupItem]).DefaultIfEmpty()
+select Problem _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ [x.Type] }, 
+    fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: Problem)
+        return !(bool ReferenceEquals(included[0], null)) ? 
+        {
+            Void queryContext.QueryBuffer.StartTracking(
+                entity: included[0], 
+                entityType: EntityType: ProblemType)
+            return Void SetRelationshipSnapshotValue(
+                stateManager: queryContext.StateManager, 
+                navigation: Problem.Type, 
+                entity: entity, 
+                value: included[0])
+        }
+         : default(Void)
+    }
+)"'
+2018-06-15 19:11:11.277 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<Problem> _InterceptExceptions(
+    source: IEnumerable<Problem> _TrackEntities(
+        results: IEnumerable<Problem> _Select(
+            source: IEnumerable<TransparentIdentifier<Problem, ProblemType>> _ShapedQuery(
+                queryContext: queryContext, 
+                shaperCommandContext: SelectExpression: 
+                    SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+                    FROM [Problems] AS [x]
+                    LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id], 
+                shaper: TypedCompositeShaper<BufferedOffsetEntityShaper<Problem>, Problem, BufferedOffsetEntityShaper<ProblemType>, ProblemType, TransparentIdentifier<Problem, ProblemType>>), 
+            selector: (TransparentIdentifier<Problem, ProblemType> t1) => Problem _Include(
+                queryContext: queryContext, 
+                entity: t1.Outer, 
+                included: new object[]{ t1.Inner }, 
+                fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+                {
+                    Void queryContext.QueryBuffer.StartTracking(
+                        entity: entity, 
+                        entityType: EntityType: Problem)
+                    return !(bool ReferenceEquals(included[0], null)) ? 
+                    {
+                        Void queryContext.QueryBuffer.StartTracking(
+                            entity: included[0], 
+                            entityType: EntityType: ProblemType)
+                        return Void SetRelationshipSnapshotValue(
+                            stateManager: queryContext.StateManager, 
+                            navigation: Problem.Type, 
+                            entity: entity, 
+                            value: included[0])
+                    }
+                     : default(Void)
+                }
+            )), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: Problem }, 
+        entityAccessors: List<Func<Problem, object>> 
+        { 
+            Func<Problem, Problem>, 
+        }
+    ), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-06-15 19:11:11.290 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:11.292 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:11.294 +03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]"
+2018-06-15 19:11:11.367 +03:00 [Information] Executed DbCommand ("73"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]"
+2018-06-15 19:11:11.440 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:11.442 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:11.444 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:11.447 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsetController.Index (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:11:11.449 +03:00 [Debug] View lookup cache miss for view '"Index"' in controller '"Problemset"'.
+2018-06-15 19:11:11.575 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Problemset\Index.cshtml"' started.
+2018-06-15 19:11:12.082 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Problemset\Index.cshtml"' completed in 505.6978ms.
+2018-06-15 19:11:12.086 +03:00 [Debug] The view '"Index"' was found.
+2018-06-15 19:11:12.087 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problemset/Index.cshtml".
+2018-06-15 19:11:12.101 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"ApplicationDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:11:12.107 +03:00 [Debug] Compiling query model: "
+"'"(from ApplicationUser e in DbSet<ApplicationUser>
+where Property([e], \"Id\") == __get_Item_0
+select [e]).FirstOrDefault()"'
+2018-06-15 19:11:12.110 +03:00 [Debug] Optimized query model: "
+"'"(from ApplicationUser e in DbSet<ApplicationUser>
+where Property([e], \"Id\") == __get_Item_0
+select [e]).FirstOrDefault()"'
+2018-06-15 19:11:12.119 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<ApplicationUser> _InterceptExceptions(
+    source: IAsyncEnumerable<ApplicationUser> _TrackEntities(
+        results: IAsyncEnumerable<ApplicationUser> _ToSequence(Task<ApplicationUser> FirstOrDefault(
+                source: IAsyncEnumerable<ApplicationUser> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+                        FROM [AspNetUsers] AS [e]
+                        WHERE [e].[Id] = @__get_Item_0, 
+                    shaper: BufferedEntityShaper<ApplicationUser>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: ApplicationUser }, 
+        entityAccessors: List<Func<ApplicationUser, object>> 
+        { 
+            Func<ApplicationUser, ApplicationUser>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:12.125 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.127 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.129 +03:00 [Debug] Executing DbCommand [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-06-15 19:11:12.221 +03:00 [Information] Executed DbCommand ("92"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2018-06-15 19:11:12.227 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:12.229 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.230 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.239 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedRoleName_0
+select [r]).SingleOrDefault()"'
+2018-06-15 19:11:12.243 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityRole r in DbSet<IdentityRole>
+where [r].NormalizedName == __normalizedRoleName_0
+select [r]).SingleOrDefault()"'
+2018-06-15 19:11:12.250 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityRole> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityRole> _TrackEntities(
+        results: IAsyncEnumerable<IdentityRole> _ToSequence(Task<IdentityRole> SingleOrDefault(
+                source: IAsyncEnumerable<IdentityRole> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+                        FROM [AspNetRoles] AS [r]
+                        WHERE [r].[NormalizedName] = @__normalizedRoleName_0, 
+                    shaper: UnbufferedEntityShaper<IdentityRole>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityRole }, 
+        entityAccessors: List<Func<IdentityRole, object>> 
+        { 
+            Func<IdentityRole, IdentityRole>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:12.258 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.259 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.260 +03:00 [Debug] Executing DbCommand [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-06-15 19:11:12.329 +03:00 [Information] Executed DbCommand ("68"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2018-06-15 19:11:12.335 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:12.336 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.337 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.345 +03:00 [Debug] Compiling query model: "
+"'"(from IdentityUserRole<string> e in DbSet<IdentityUserRole<string>>
+where Property([e], \"UserId\") == __get_Item_0 && Property([e], \"RoleId\") == __get_Item_1
+select [e]).FirstOrDefault()"'
+2018-06-15 19:11:12.349 +03:00 [Debug] Optimized query model: "
+"'"(from IdentityUserRole<string> e in DbSet<IdentityUserRole<string>>
+where Property([e], \"UserId\") == __get_Item_0 && Property([e], \"RoleId\") == __get_Item_1
+select [e]).FirstOrDefault()"'
+2018-06-15 19:11:12.360 +03:00 [Debug] "(QueryContext queryContext) => IAsyncEnumerable<IdentityUserRole<string>> _InterceptExceptions(
+    source: IAsyncEnumerable<IdentityUserRole<string>> _TrackEntities(
+        results: IAsyncEnumerable<IdentityUserRole<string>> _ToSequence(Task<IdentityUserRole<string>> FirstOrDefault(
+                source: IAsyncEnumerable<IdentityUserRole<string>> _ShapedQuery(
+                    queryContext: queryContext, 
+                    shaperCommandContext: SelectExpression: 
+                        SELECT TOP(1) [e].[UserId], [e].[RoleId]
+                        FROM [AspNetUserRoles] AS [e]
+                        WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1), 
+                    shaper: BufferedEntityShaper<IdentityUserRole`1>), 
+                cancellationToken: queryContext.CancellationToken)), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: IdentityUserRole`1 }, 
+        entityAccessors: List<Func<IdentityUserRole<string>, object>> 
+        { 
+            Func<IdentityUserRole<string>, IdentityUserRole<string>>, 
+        }
+    ), 
+    contextType: WebApp.Data.ApplicationDbContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:12.366 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.367 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.372 +03:00 [Debug] Executing DbCommand [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-06-15 19:11:12.453 +03:00 [Information] Executed DbCommand ("80"ms) [Parameters=["@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[UserId], [e].[RoleId]
+FROM [AspNetUserRoles] AS [e]
+WHERE ([e].[UserId] = @__get_Item_0) AND ([e].[RoleId] = @__get_Item_1)"
+2018-06-15 19:11:12.458 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:12.458 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.460 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:12.510 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-15 19:11:12.514 +03:00 [Debug] View lookup cache hit for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-15 19:11:12.516 +03:00 [Debug] View lookup cache hit for view '"DisplayTemplates/String"' in controller '"Problemset"'.
+2018-06-15 19:11:12.517 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Problemset"'.
+2018-06-15 19:11:12.521 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:12.523 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:12.524 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:12.526 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:12.527 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Problemset"'.
+2018-06-15 19:11:12.532 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:11:12.535 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsetController.Index (WebApp)" in 1368.6273ms
+2018-06-15 19:11:12.537 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:11:12.538 +03:00 [Information] Request finished in 1383.9586ms 200 text/html; charset=utf-8
+2018-06-15 19:11:13.921 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:11:13.923 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:11:13.926 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:11:13.927 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:11:13.932 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:11:13.966 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:11:13.973 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:11:13.980 +03:00 [Debug] Compiling query model: "
+"'"(from Problem x in 
+    (from Problem x in DbSet<Problem>
+    select [x]).Include(\"Type\")
+where [x].Id == __id_0
+select [x]).SingleOrDefault()"'
+2018-06-15 19:11:13.984 +03:00 [Debug] Including navigation: '"[x].Type"'
+2018-06-15 19:11:13.989 +03:00 [Debug] Optimized query model: "
+"'"(from Problem x in DbSet<Problem>
+join ProblemType x.Type in DbSet<ProblemType>
+on Property([x], \"TypeId\") equals (Nullable<Guid>)Property([x.Type], \"Id\") into x.Type_group
+from ProblemType x.Type in 
+    (from ProblemType x.Type_groupItem in [x.Type_group]
+    select [x.Type_groupItem]).DefaultIfEmpty()
+where [x].Id == __id_0
+select Problem _Include(
+    queryContext: queryContext, 
+    entity: [x], 
+    included: new object[]{ [x.Type] }, 
+    fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+    {
+        Void queryContext.QueryBuffer.StartTracking(
+            entity: entity, 
+            entityType: EntityType: Problem)
+        return !(bool ReferenceEquals(included[0], null)) ? 
+        {
+            Void queryContext.QueryBuffer.StartTracking(
+                entity: included[0], 
+                entityType: EntityType: ProblemType)
+            return Void SetRelationshipSnapshotValue(
+                stateManager: queryContext.StateManager, 
+                navigation: Problem.Type, 
+                entity: entity, 
+                value: included[0])
+        }
+         : default(Void)
+    }
+)).SingleOrDefault()"'
+2018-06-15 19:11:14.003 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<Problem> _InterceptExceptions(
+    source: IEnumerable<Problem> _TrackEntities(
+        results: IEnumerable<Problem> _ToSequence(Problem SingleOrDefault(IEnumerable<Problem> _Select(
+                    source: IEnumerable<TransparentIdentifier<Problem, ProblemType>> _ShapedQuery(
+                        queryContext: queryContext, 
+                        shaperCommandContext: SelectExpression: 
+                            SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+                            FROM [Problems] AS [x]
+                            LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+                            WHERE [x].[Id] = @__id_0, 
+                        shaper: TypedCompositeShaper<BufferedOffsetEntityShaper<Problem>, Problem, BufferedOffsetEntityShaper<ProblemType>, ProblemType, TransparentIdentifier<Problem, ProblemType>>), 
+                    selector: (TransparentIdentifier<Problem, ProblemType> t1) => Problem _Include(
+                        queryContext: queryContext, 
+                        entity: t1.Outer, 
+                        included: new object[]{ t1.Inner }, 
+                        fixup: (QueryContext queryContext | Problem entity | Object[] included) => 
+                        {
+                            Void queryContext.QueryBuffer.StartTracking(
+                                entity: entity, 
+                                entityType: EntityType: Problem)
+                            return !(bool ReferenceEquals(included[0], null)) ? 
+                            {
+                                Void queryContext.QueryBuffer.StartTracking(
+                                    entity: included[0], 
+                                    entityType: EntityType: ProblemType)
+                                return Void SetRelationshipSnapshotValue(
+                                    stateManager: queryContext.StateManager, 
+                                    navigation: Problem.Type, 
+                                    entity: entity, 
+                                    value: included[0])
+                            }
+                             : default(Void)
+                        }
+                    )))), 
+        queryContext: Unhandled parameter: queryContext, 
+        entityTrackingInfos: { itemType: Problem }, 
+        entityAccessors: List<Func<Problem, object>> 
+        { 
+            Func<Problem, Problem>, 
+        }
+    ), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: Unhandled parameter: queryContext)"
+2018-06-15 19:11:14.015 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.016 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.022 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:11:14.082 +03:00 [Information] Executed DbCommand ("59"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:11:14.087 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:14.088 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.093 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.441 +03:00 [Debug] Compiling query model: "
+"'"from Solution x in DbSet<Solution>
+where [x].UserId == __userId_0 && [x].Problem.Id == __problemId_1
+select [x]"'
+2018-06-15 19:11:14.444 +03:00 [Debug] Optimized query model: "
+"'"from Solution x in DbSet<Solution>
+where [x].UserId == __userId_0 && Property([x], \"ProblemId\") == (Nullable<Guid>)__problemId_1
+select [x]"'
+2018-06-15 19:11:14.452 +03:00 [Debug] "(QueryContext queryContext) => IEnumerable<Solution> _InterceptExceptions(
+    source: IEnumerable<Solution> _TrackEntities(
+        results: IEnumerable<Solution> _ShapedQuery(
+            queryContext: queryContext, 
+            shaperCommandContext: SelectExpression: 
+                SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+                FROM [Solutions] AS [x]
+                WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1), 
+            shaper: BufferedEntityShaper<Solution>), 
+        queryContext: queryContext, 
+        entityTrackingInfos: { itemType: Solution }, 
+        entityAccessors: List<Func<Solution, object>> 
+        { 
+            Func<Solution, Solution>, 
+        }
+    ), 
+    contextType: Service.Storage.Context.DatabaseContext, 
+    logger: DiagnosticsLogger<Query>, 
+    queryContext: queryContext)"
+2018-06-15 19:11:14.458 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.459 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.463 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:11:14.520 +03:00 [Information] Executed DbCommand ("57"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:11:14.524 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:11:14.525 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.527 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:11:14.530 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:11:14.535 +03:00 [Debug] View lookup cache miss for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:11:14.638 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Problems\Description.cshtml"' started.
+2018-06-15 19:11:14.725 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Problems\Description.cshtml"' completed in 84.9317ms.
+2018-06-15 19:11:14.732 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:11:14.733 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:11:14.746 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:11:14.848 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' started.
+2018-06-15 19:11:15.079 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' completed in 229.6676ms.
+2018-06-15 19:11:15.094 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:11:15.140 +03:00 [Debug] View lookup cache miss for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:11:15.142 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:15.144 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:15.146 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:11:15.147 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:11:15.151 +03:00 [Debug] View lookup cache miss for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:11:15.153 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:11:15.154 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 1220.4872ms
+2018-06-15 19:11:15.156 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:11:15.158 +03:00 [Information] Request finished in 1236.5211ms 200 text/html; charset=utf-8
+2018-06-15 19:13:31.670 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:13:31.672 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:13:31.675 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:13:31.675 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:13:31.681 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:13:31.736 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:13:31.740 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:13:31.742 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.747 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.749 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:13:31.836 +03:00 [Information] Executed DbCommand ("86"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:13:31.841 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:13:31.842 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.848 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.852 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.854 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.856 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:13:31.910 +03:00 [Information] Executed DbCommand ("53"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:13:31.914 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:13:31.916 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.918 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:31.921 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:13:31.924 +03:00 [Debug] View lookup cache hit for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:13:31.925 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:13:31.927 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:13:31.932 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:13:32.080 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' started.
+2018-06-15 19:13:32.256 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' completed in 173.3963ms.
+2018-06-15 19:13:32.271 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:13:32.300 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:13:32.301 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:13:32.303 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:13:32.304 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:13:32.306 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:13:32.307 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:13:32.308 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:13:32.312 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 629.9811ms
+2018-06-15 19:13:32.315 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:13:32.316 +03:00 [Information] Request finished in 646.5606ms 200 text/html; charset=utf-8
+2018-06-15 19:13:32.594 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:13:32.596 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:13:32.599 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:13:32.601 +03:00 [Information] Request finished in 6.0509ms 200 image/x-icon
+2018-06-15 19:13:52.078 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:13:52.082 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:13:52.084 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:13:52.085 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:13:52.088 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:13:52.137 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:13:52.141 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:13:52.144 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.145 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.148 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:13:52.207 +03:00 [Information] Executed DbCommand ("58"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:13:52.212 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:13:52.213 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.215 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.219 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.220 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.222 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:13:52.278 +03:00 [Information] Executed DbCommand ("56"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:13:52.282 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:13:52.282 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.284 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:13:52.286 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:13:52.291 +03:00 [Debug] View lookup cache hit for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:13:52.292 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:13:52.294 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:13:52.295 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:13:52.487 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' started.
+2018-06-15 19:13:52.680 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' completed in 190.1716ms.
+2018-06-15 19:13:52.699 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:13:52.733 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:13:52.735 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:13:52.737 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:13:52.739 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:13:52.741 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:13:52.743 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:13:52.750 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:13:52.753 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 661.7308ms
+2018-06-15 19:13:52.760 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:13:52.762 +03:00 [Information] Request finished in 683.6724ms 200 text/html; charset=utf-8
+2018-06-15 19:13:53.134 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:13:53.136 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:13:53.139 +03:00 [Debug] Connection id ""0HLEIR3B90201"" completed keep alive response.
+2018-06-15 19:13:53.141 +03:00 [Information] Request finished in 6.5637ms 200 image/x-icon
+2018-06-15 19:14:28.130 +03:00 [Debug] Connection id ""0HLEIR3B90201"" received FIN.
+2018-06-15 19:14:28.133 +03:00 [Debug] Connection id ""0HLEIR3B90201"" disconnecting.
+2018-06-15 19:14:28.134 +03:00 [Debug] Connection id ""0HLEIR3B90201"" sending FIN.
+2018-06-15 19:14:28.134 +03:00 [Debug] Connection id ""0HLEIR3B90201"" stopped.
+2018-06-15 19:15:32.388 +03:00 [Debug] Connection id ""0HLEIR3B90202"" started.
+2018-06-15 19:15:32.391 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:15:32.394 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:15:32.397 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:15:32.399 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:15:32.402 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:15:32.446 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:15:32.449 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:15:32.451 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.453 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.459 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:15:32.515 +03:00 [Information] Executed DbCommand ("56"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:15:32.520 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:15:32.522 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.528 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.530 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.531 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.533 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:15:32.610 +03:00 [Information] Executed DbCommand ("77"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:15:32.614 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:15:32.615 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.617 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:15:32.619 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:15:32.624 +03:00 [Debug] View lookup cache hit for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:15:32.626 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:15:32.627 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:15:32.629 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:15:32.757 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' started.
+2018-06-15 19:15:33.003 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' completed in 242.1347ms.
+2018-06-15 19:15:33.031 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:15:33.085 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:15:33.087 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:15:33.089 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:15:33.093 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:15:33.096 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:15:33.099 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:15:33.101 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:15:33.103 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 699.5614ms
+2018-06-15 19:15:33.109 +03:00 [Debug] Connection id ""0HLEIR3B90202"" completed keep alive response.
+2018-06-15 19:15:33.112 +03:00 [Information] Request finished in 721.0893ms 200 text/html; charset=utf-8
+2018-06-15 19:15:33.146 +03:00 [Debug] Connection id ""0HLEIR3B90202"" received FIN.
+2018-06-15 19:15:33.164 +03:00 [Debug] Connection id ""0HLEIR3B90202"" disconnecting.
+2018-06-15 19:15:33.166 +03:00 [Debug] Connection id ""0HLEIR3B90202"" sending FIN.
+2018-06-15 19:15:33.166 +03:00 [Debug] Connection id ""0HLEIR3B90202"" stopped.
+2018-06-15 19:15:33.530 +03:00 [Debug] Connection id ""0HLEIR3B90203"" started.
+2018-06-15 19:15:33.546 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:15:33.547 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:15:33.551 +03:00 [Debug] Connection id ""0HLEIR3B90203"" completed keep alive response.
+2018-06-15 19:15:33.561 +03:00 [Information] Request finished in 14.8133ms 200 image/x-icon
+2018-06-15 19:15:43.148 +03:00 [Debug] Connection id ""0HLEIR3B90203"" received FIN.
+2018-06-15 19:15:43.150 +03:00 [Debug] Connection id ""0HLEIR3B90203"" disconnecting.
+2018-06-15 19:15:43.152 +03:00 [Debug] Connection id ""0HLEIR3B90203"" sending FIN.
+2018-06-15 19:15:43.152 +03:00 [Debug] Connection id ""0HLEIR3B90203"" stopped.
+2018-06-15 19:16:04.666 +03:00 [Debug] Connection id ""0HLEIR3B90204"" started.
+2018-06-15 19:16:04.670 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:16:04.677 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:16:04.681 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:16:04.683 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:16:04.686 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:16:04.733 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:16:04.736 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:16:04.740 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.743 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.773 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:16:04.837 +03:00 [Information] Executed DbCommand ("63"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:16:04.844 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:16:04.845 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.848 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.852 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.854 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.859 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:16:04.935 +03:00 [Information] Executed DbCommand ("76"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:16:04.940 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:16:04.942 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.943 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:04.944 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:16:04.949 +03:00 [Debug] View lookup cache hit for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:16:04.951 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:16:04.953 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:16:04.954 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:16:05.062 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' started.
+2018-06-15 19:16:05.261 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' completed in 197.0527ms.
+2018-06-15 19:16:05.276 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:16:05.308 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:16:05.310 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:16:05.312 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:16:05.314 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:16:05.315 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:16:05.317 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:16:05.320 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:16:05.322 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 630.1797ms
+2018-06-15 19:16:05.324 +03:00 [Debug] Connection id ""0HLEIR3B90204"" completed keep alive response.
+2018-06-15 19:16:05.327 +03:00 [Information] Request finished in 656.2254ms 200 text/html; charset=utf-8
+2018-06-15 19:16:05.608 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:16:05.612 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:16:05.616 +03:00 [Debug] Connection id ""0HLEIR3B90204"" completed keep alive response.
+2018-06-15 19:16:05.617 +03:00 [Information] Request finished in 8.9653ms 200 image/x-icon
+2018-06-15 19:16:13.151 +03:00 [Debug] Connection id ""0HLEIR3B90204"" received FIN.
+2018-06-15 19:16:13.153 +03:00 [Debug] Connection id ""0HLEIR3B90204"" disconnecting.
+2018-06-15 19:16:13.154 +03:00 [Debug] Connection id ""0HLEIR3B90204"" sending FIN.
+2018-06-15 19:16:13.155 +03:00 [Debug] Connection id ""0HLEIR3B90204"" stopped.
+2018-06-15 19:16:17.042 +03:00 [Debug] Connection id ""0HLEIR3B90205"" started.
+2018-06-15 19:16:17.045 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:16:17.047 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:16:17.050 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:16:17.051 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:16:17.056 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:16:17.102 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:16:17.109 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:16:17.136 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.140 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.146 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:16:17.239 +03:00 [Information] Executed DbCommand ("92"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:16:17.243 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:16:17.246 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.251 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.254 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.255 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.257 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:16:17.407 +03:00 [Information] Executed DbCommand ("149"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:16:17.410 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:16:17.411 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.413 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:17.414 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:16:17.421 +03:00 [Debug] View lookup cache hit for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:16:17.423 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:16:17.425 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:16:17.432 +03:00 [Debug] View lookup cache miss for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:16:17.640 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' started.
+2018-06-15 19:16:18.116 +03:00 [Debug] Compilation of the generated code for the Razor file at '"D:\dev\Service.Tester\Service.Tester\WebApp\Views\Shared\DisplayTemplates\DescTraceTableViewModel.cshtml"' completed in 461.9994ms.
+2018-06-15 19:16:18.140 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:16:18.187 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:16:18.193 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:16:18.196 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:16:18.204 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:16:18.206 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:16:18.212 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:16:18.215 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:16:18.219 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 1161.6927ms
+2018-06-15 19:16:18.224 +03:00 [Debug] Connection id ""0HLEIR3B90205"" completed keep alive response.
+2018-06-15 19:16:18.227 +03:00 [Information] Request finished in 1181.9918ms 200 text/html; charset=utf-8
+2018-06-15 19:16:18.653 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/favicon.ico  
+2018-06-15 19:16:18.655 +03:00 [Information] Sending file. Request path: '"/favicon.ico"'. Physical path: '"D:\dev\Service.Tester\Service.Tester\WebApp\wwwroot\favicon.ico"'
+2018-06-15 19:16:18.658 +03:00 [Debug] Connection id ""0HLEIR3B90205"" completed keep alive response.
+2018-06-15 19:16:18.660 +03:00 [Information] Request finished in 6.9434ms 200 image/x-icon
+2018-06-15 19:16:23.154 +03:00 [Debug] Connection id ""0HLEIR3B90205"" received FIN.
+2018-06-15 19:16:23.155 +03:00 [Debug] Connection id ""0HLEIR3B90205"" disconnecting.
+2018-06-15 19:16:23.157 +03:00 [Debug] Connection id ""0HLEIR3B90205"" sending FIN.
+2018-06-15 19:16:23.157 +03:00 [Debug] Connection id ""0HLEIR3B90205"" stopped.
+2018-06-15 19:16:25.051 +03:00 [Debug] Connection id ""0HLEIR3B90206"" started.
+2018-06-15 19:16:25.054 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/lib/bootstrap/dist/css/bootstrap.css.map  
+2018-06-15 19:16:25.055 +03:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified
+2018-06-15 19:16:25.058 +03:00 [Debug] Handled. Status code: 304 File: "/lib/bootstrap/dist/css/bootstrap.css.map"
+2018-06-15 19:16:25.059 +03:00 [Debug] Connection id ""0HLEIR3B90206"" completed keep alive response.
+2018-06-15 19:16:25.063 +03:00 [Information] Request finished in 9.568ms 304 text/plain
+2018-06-15 19:16:27.815 +03:00 [Information] Request starting HTTP/1.1 GET http://localhost:63100/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a  
+2018-06-15 19:16:27.820 +03:00 [Debug] The request path "/Problems/Description/655012ab-e9f7-40fc-2947-08d5cc2f631a" does not match a supported file type
+2018-06-15 19:16:27.825 +03:00 [Information] AuthenticationScheme: "Identity.Application" was successfully authenticated.
+2018-06-15 19:16:27.830 +03:00 [Debug] Request successfully matched the route with name '"default"' and template '"{controller=Home}/{action=Index}/{id?}/{id2?}"'.
+2018-06-15 19:16:27.833 +03:00 [Debug] Executing action "WebApp.Controllers.ProblemsController.Description (WebApp)"
+2018-06-15 19:16:27.883 +03:00 [Information] Executing action method "WebApp.Controllers.ProblemsController.Description (WebApp)" with arguments (["655012ab-e9f7-40fc-2947-08d5cc2f631a"]) - ModelState is Valid
+2018-06-15 19:16:27.887 +03:00 [Information] Entity Framework Core "2.0.3-rtm-10026" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2018-06-15 19:16:27.891 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:27.901 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:27.906 +03:00 [Debug] Executing DbCommand [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:16:27.975 +03:00 [Information] Executed DbCommand ("68"ms) [Parameters=["@__id_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
+FROM [Problems] AS [x]
+LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]
+WHERE [x].[Id] = @__id_0"
+2018-06-15 19:16:27.978 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:16:27.979 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:27.981 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:27.983 +03:00 [Debug] Opening connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:27.989 +03:00 [Debug] Opened connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:27.992 +03:00 [Debug] Executing DbCommand [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:16:28.045 +03:00 [Information] Executed DbCommand ("52"ms) [Parameters=["@__userId_0='?', @__problemId_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CreatedOn], [x].[Input], [x].[ProblemId], [x].[TestResult], [x].[UserId]
+FROM [Solutions] AS [x]
+WHERE ([x].[UserId] = @__userId_0) AND ([x].[ProblemId] = @__problemId_1)"
+2018-06-15 19:16:28.049 +03:00 [Debug] A data reader was disposed.
+2018-06-15 19:16:28.059 +03:00 [Debug] Closing connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:28.060 +03:00 [Debug] Closed connection to database '"ironProgrammer"' on server '".\SQLEXPRESS"'.
+2018-06-15 19:16:28.063 +03:00 [Debug] Executed action method "WebApp.Controllers.ProblemsController.Description (WebApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult".
+2018-06-15 19:16:28.074 +03:00 [Debug] View lookup cache hit for view '"Description"' in controller '"Problems"'.
+2018-06-15 19:16:28.077 +03:00 [Debug] The view '"Description"' was found.
+2018-06-15 19:16:28.081 +03:00 [Information] Executing ViewResult, running view at path "/Views/Problems/Description.cshtml".
+2018-06-15 19:16:28.083 +03:00 [Debug] View lookup cache hit for view '"DisplayTemplates/DescTraceTableViewModel"' in controller '"Problems"'.
+2018-06-15 19:16:28.093 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:16:28.105 +03:00 [Debug] View lookup cache hit for view '"_Layout"' in controller '"Problems"'.
+2018-06-15 19:16:28.108 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:16:28.117 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:16:28.123 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' initialized.
+2018-06-15 19:16:28.125 +03:00 [Debug] Tag helper component '"Microsoft.AspNetCore.ApplicationInsights.HostingStartup.JavaScriptSnippetTagHelperComponent"' processed.
+2018-06-15 19:16:28.127 +03:00 [Debug] View lookup cache hit for view '"_LoginPartial"' in controller '"Problems"'.
+2018-06-15 19:16:28.128 +03:00 [Debug] An antiforgery cookie token was reused.
+2018-06-15 19:16:28.130 +03:00 [Information] Executed action "WebApp.Controllers.ProblemsController.Description (WebApp)" in 294.5718ms
+2018-06-15 19:16:28.134 +03:00 [Debug] Connection id ""0HLEIR3B90206"" completed keep alive response.
+2018-06-15 19:16:28.136 +03:00 [Information] Request finished in 321.3506ms 200 text/html; charset=utf-8
+2018-06-15 19:16:33.154 +03:00 [Debug] Connection id ""0HLEIR3B90206"" received FIN.
+2018-06-15 19:16:33.156 +03:00 [Debug] Connection id ""0HLEIR3B90206"" disconnecting.
+2018-06-15 19:16:33.158 +03:00 [Debug] Connection id ""0HLEIR3B90206"" sending FIN.
+2018-06-15 19:16:33.158 +03:00 [Debug] Connection id ""0HLEIR3B90206"" stopped.

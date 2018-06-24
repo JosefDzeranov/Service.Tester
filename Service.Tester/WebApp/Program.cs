@@ -7,7 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
-using Serilog.Events;
 using Service.Storage.Context;
 using WebApp.Data;
 
@@ -49,8 +48,8 @@ namespace WebApp
                     {
                         var context = services.GetRequiredService<DatabaseContext>();
                         var userContext = services.GetRequiredService<ApplicationDbContext>();
-                        context.Database.Migrate();
                         userContext.Database.Migrate();
+                        context.Database.Migrate();
 
                         DbInitializer.Initialize(context, services);
                     }
