@@ -89,12 +89,6 @@ namespace WebApp.Controllers
             return View("Error", new ErrorViewModel { RequestId = "Такого типа задания не нашлось. УПССССС" });
         }
 
-        public IActionResult Create(ICreateProblemViewModel problemViewModel)
-        {
-            _problemService.Create(problemViewModel.Adapt<ProblemData>());
-            return RedirectToAction("Index", "Problemset");
-        }
-
         [HttpPost]
         public string Check([FromBody]UserAnswer answer)
         {
