@@ -1598,7 +1598,7 @@ WHERE [e].[Id] = @__get_Item_0"
 ""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
 FROM [AspNetUsers] AS [e]
 WHERE [e].[Id] = @__get_Item_0"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -1611,7 +1611,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:ef56cb79-aadd-4112-ab7c-02f02c28909b
 Error Number:208,State:1,Class:16
 2018-06-24 12:11:58.486 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"WebApp.Data.ApplicationDbContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"AspNetUsers\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"AspNetUsers\".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -1662,7 +1662,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
 ClientConnectionId:ef56cb79-aadd-4112-ab7c-02f02c28909b
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -1714,7 +1714,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:ef56cb79-aadd-4112-ab7c-02f02c28909b
 Error Number:208,State:1,Class:16
 2018-06-24 12:11:58.592 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"WebApp.Data.ApplicationDbContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"AspNetUsers\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"AspNetUsers\".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -1770,7 +1770,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
 ClientConnectionId:ef56cb79-aadd-4112-ab7c-02f02c28909b
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -1848,7 +1848,7 @@ File name: 'WebApp.Data, Culture=neutral, PublicKeyToken=null'
 
 
 2018-06-24 12:11:58.767 +03:00 [Error] An unhandled exception has occurred while executing the request
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2127,7 +2127,7 @@ WHERE [e].[Id] = @__get_Item_0"
 ""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
 FROM [AspNetUsers] AS [e]
 WHERE [e].[Id] = @__get_Item_0"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2140,7 +2140,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:da4541a7-c144-4319-86d9-89e615de2e10
 Error Number:208,State:1,Class:16
 2018-06-24 12:16:03.237 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"WebApp.Data.ApplicationDbContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"AspNetUsers\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"AspNetUsers\".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2191,7 +2191,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
 ClientConnectionId:da4541a7-c144-4319-86d9-89e615de2e10
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2243,7 +2243,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:da4541a7-c144-4319-86d9-89e615de2e10
 Error Number:208,State:1,Class:16
 2018-06-24 12:16:03.386 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"WebApp.Data.ApplicationDbContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"AspNetUsers\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"AspNetUsers\".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2299,7 +2299,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
 ClientConnectionId:da4541a7-c144-4319-86d9-89e615de2e10
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2554,7 +2554,7 @@ WHERE [e].[Id] = @__get_Item_0"
 ""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
 FROM [AspNetUsers] AS [e]
 WHERE [e].[Id] = @__get_Item_0"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2567,7 +2567,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:a85d59b7-6d94-4ff7-a863-4cbab8a1caee
 Error Number:208,State:1,Class:16
 2018-06-24 12:19:59.287 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"WebApp.Data.ApplicationDbContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"AspNetUsers\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"AspNetUsers\".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2618,7 +2618,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.<MoveNext>d__5.MoveNext()
 ClientConnectionId:a85d59b7-6d94-4ff7-a863-4cbab8a1caee
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2670,7 +2670,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:a85d59b7-6d94-4ff7-a863-4cbab8a1caee
 Error Number:208,State:1,Class:16
 2018-06-24 12:19:59.428 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"WebApp.Data.ApplicationDbContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"AspNetUsers\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"AspNetUsers\".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -2726,7 +2726,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<ExecuteSingletonAsyncQuery>d__23`1.MoveNext()
 ClientConnectionId:a85d59b7-6d94-4ff7-a863-4cbab8a1caee
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "AspNetUsers".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "AspNetUsers".
    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
    at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
    at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
@@ -3962,7 +3962,7 @@ LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]"
 ""SELECT [x].[Id], [x].[Description], [x].[GeneratorType], [x].[LastModifiedTime], [x].[MemoryLimit], [x].[Name], [x].[Path], [x].[SpecificData], [x].[TimeLimit], [x].[TypeId], [x.Type].[Id], [x.Type].[Name], [x.Type].[Type]
 FROM [Problems] AS [x]
 LEFT JOIN [ProblemTypes] AS [x.Type] ON [x].[TypeId] = [x.Type].[Id]"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "Problems".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "Problems".
    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
@@ -3979,7 +3979,7 @@ System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя
 ClientConnectionId:3d42bb33-691a-4829-a922-8259b95b26d2
 Error Number:208,State:1,Class:16
 2018-06-24 12:31:59.836 +03:00 [Error] An exception occurred in the database while iterating the results of a query for context type '"Service.Storage.Context.DatabaseContext"'."
-""System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта \"Problems\".
+""System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта \"Problems\".
    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
@@ -4002,7 +4002,7 @@ Error Number:208,State:1,Class:16
    at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
 ClientConnectionId:3d42bb33-691a-4829-a922-8259b95b26d2
 Error Number:208,State:1,Class:16"
-System.Data.SqlClient.SqlException (0x80131904): Недопустимое имя объекта "Problems".
+System.Data.SqlClient.SqlException (0x80131904): Недопустимое Наименование объекта "Problems".
    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)

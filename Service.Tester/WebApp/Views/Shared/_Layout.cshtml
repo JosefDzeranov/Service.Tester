@@ -27,15 +27,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">WebApp</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Iron programmer</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Problemset" asp-action="Index">Problems</a></li>
-                    <li><a asp-area="" asp-controller="ProblemTypes" asp-action="Index">ProblemTypes</a></li>
+                   @* <li><a asp-area="" asp-controller="ProblemTypes" asp-action="Index">Типы заданий</a></li>*@
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
@@ -63,7 +62,7 @@
                         return;
                     }
                     var sourceCode = $("#SourceCode").val();
-                    var url = "http://localhost:52405/Problems/Check";
+                    var url = "http://localhost:63100/Problems/Check";
                     $.ajax({
                         type: 'POST',
                         url: url,
@@ -77,8 +76,8 @@
                     });
                 });
 
-                $("#SourceCodeCheck").focusout(function () {
-                    var url = "http://localhost:52405/Problems/ParseCode";
+                $("#SourceCodeForCheck").focusout(function () {
+                    var url = "http://localhost:63100/Problems/ParseCode";
                     var sourceCodeForCheck = $("#SourceCodeForCheck").val();
                     $.ajax({
                         type: 'POST',

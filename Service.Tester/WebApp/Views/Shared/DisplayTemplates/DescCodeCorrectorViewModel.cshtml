@@ -6,18 +6,18 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input asp-for="Id" type="hidden" />
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Наименование</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label asp-for="Description" class="control-label">Описание</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="IncorrectSourceCode" class="control-label"></label>
+                <label asp-for="IncorrectSourceCode" class="control-label">Исходный код программы</label>
                 <textarea style="height: 500px" asp-for="IncorrectSourceCode" class="form-control"></textarea>
                 <span asp-validation-for="IncorrectSourceCode" class="text-danger"></span>
             </div>
