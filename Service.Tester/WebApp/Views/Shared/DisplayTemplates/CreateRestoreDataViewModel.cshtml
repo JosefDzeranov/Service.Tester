@@ -4,38 +4,35 @@
 @{
     ViewData["Title"] = "CreateRestoreDataViewModel";
 }
-
-<h2>CreateRestoreDataViewModel</h2>
-
-<h4>CreateRestoreDataViewModel</h4>
+<h2>Создание задания Восстановление данных</h2>
 <hr />
-<div class="row">
-    <div class="col-md-4">
+<div class="row" style="margin-top: 20px">
+    <div class="col-md-6">
         <form asp-action="Create" asp-controller="RestoreData">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+                <label asp-for="Name" class="control-label">Имя</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
+                <label asp-for="Description" class="control-label">Описание</label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="SourceCode" class="control-label"></label>
-                <textarea asp-for="SourceCode" class="form-control"></textarea>
+                <label asp-for="SourceCode" class="control-label">Исходный код программы</label>
+                <textarea asp-for="SourceCode" style="height: 250px" class="form-control"></textarea>
                 <span asp-validation-for="SourceCode" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="GeneratorType" class="control-label"></label>
+                <label asp-for="GeneratorType" class="control-label">Генератор</label>
                 <select asp-for="GeneratorType" class="form-control" asp-items="ViewBag.GeneratorType"></select>
                 <span asp-validation-for="GeneratorType" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="IsInput" class="control-label"></label>
+                <label asp-for="IsInput" class="control-label">Тип входных данных</label>
                 <select name="IsInput" class="form-control">
                     <option value="@true" selected="selected">Генерировать входные данные</option>
                     <option value="@false">Генерировать выходные данные </option>
@@ -47,14 +44,14 @@
                 <input asp-for="Type" value="@ProblemTypes.RestoreData" type="hidden" />
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Создать" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Назад</a>
 </div>
 
 @section Scripts {

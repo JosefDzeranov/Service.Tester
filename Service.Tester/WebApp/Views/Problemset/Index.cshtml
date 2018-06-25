@@ -22,17 +22,17 @@
     if (isAdmin)
     {
         <p>
-            <a asp-action="SelectProblemType">Create New</a>
+            <a asp-action="SelectProblemType">Создать</a>
         </p>
     }
     <table class="table">
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.Name)
+                    Наименование
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Type)
+                   Тип
                 </th>
             </tr>
         </thead>
